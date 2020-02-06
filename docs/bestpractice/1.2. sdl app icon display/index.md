@@ -81,9 +81,10 @@ The Sequence Diagrams of change in the SDL App Icon display status is below:
 The Sequence Diagrams of change in the SDL App Icon display status is below:
 
 <div style="text-align: center;">
-
+|||
 ![Figure1_Normal case without cache](.\assets\Figure1_Normal case without cache.png)
 **Figure1** SDL App Icon display status sequence (Normal case without cache)
+|||
 <br><br><br>
 
 ![Figure2_Normal case with cache](.\assets\Figure2_Normal case with cache.png)
