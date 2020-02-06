@@ -18,7 +18,7 @@ Therefore, all of the contents describe in "2. Function Detailts" differ from th
 Figure1 below shows the behavior of SDL App when ACC OFF/ON (The last launched SDL App is Media).
 
 |||
-![Figure1_ ACC OFFON](./assets/Figure1_ ACC OFFON.png)
+![Figure1_ ACC OFFON](https://github.com/Akihiro-Miyazaki/sdl_core_guides/tree/sdl_core_guides/bestpractics/docs/bestpractice/2.5.%20Behavior%20after%20ACC%20OFFON(Resume%20of%20last%20launched%20SDL%20App)/assets/Figure1_ ACC OFFON.png)
 |||
 **Figure1** Behavior of the SDL App when ACC OFF/ON (The last launched SDL App is Media)
 
