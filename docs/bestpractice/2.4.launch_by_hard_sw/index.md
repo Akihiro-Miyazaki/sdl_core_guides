@@ -68,7 +68,7 @@ Figure1 describes the following sequence:
 
 <div style="text-align: center;">
 
-![figure1_launch_of_sdl_ app_after_pressing_sw.png](./assets/figure1_launch_of_sdl_ app_after_pressing_sw.png)
+![figure1_launch_of_sdl_ app_after_pressing_sw.png](./assets/figure1_launch_of_sdl_app_after_pressing_sw.png)
 **Figure1** Launch of SDL App after pressing SW sequence
 
 </div>
