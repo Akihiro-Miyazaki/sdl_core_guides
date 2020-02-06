@@ -17,7 +17,7 @@ Therefore, all of the contents describe in "2. Function Detailts" differ from th
 ## 4. Sequence Diagrams
 Figure1 below shows the behavior of SDL App when ACC OFF/ON (The last launched SDL App is Media).
 
-![Figure1_ACC OFFON](./assets/Figure1_ACC OFFON.png)
+![Figure1_ACC OFFON](https://github.com/Akihiro-Miyazaki/sdl_core_guides/blob/sdl_core_guides/bestpractis/docs/bestpractice/2.5. Behavior after ACC OFFON(Resume of last launched SDL App)/assets/Figure1_ACC OFFON.png)
 **Figure1** Behavior of the SDL App when ACC OFF/ON (The last launched SDL App is Media)
 
 ## 5. Impacted Platforms
