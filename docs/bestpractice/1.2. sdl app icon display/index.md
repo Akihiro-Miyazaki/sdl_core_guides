@@ -1,5 +1,5 @@
-#1.2. SDL App Icon Display
-##1. Overview
+# 1.2. SDL App Icon Display
+## 1. Overview
 This chapter describes how the HU displays the SDL App Icon on the screen by the connecting Mobile to the HU.
 ##2. Background/Purpose/Reason for Standardization
 Currently, the SDL App Icon display is an SDL standard behavior, however there are some issues the following below:
