@@ -1,6 +1,8 @@
 # 1.2. SDL App Icon Display
+
 ## 1. Overview
 This chapter describes how the HU displays the SDL App Icon on the screen by the connecting Mobile to the HU.
+
 ## 2. Background/Purpose/Reason for Standardization
 Currently, the SDL App Icon display is an SDL standard behavior, however there are some issues the following below:
 - The position of SDL App Icon display changes every time it connects the Mobile
@@ -8,10 +10,12 @@ Currently, the SDL App Icon display is an SDL standard behavior, however there a
 - The user can not recognize the SDL App state (the progress of launching app) because the SDL App Icon only has two display (SDL App Icon display ON/OFF).
 
 Hence, the purpose of this document is to standardize such cases/issues using the TOYOTA specification, in order to be able to contribute to the SDL Ecosystem.
+
 ## 3. Function Details
 ### 3.1. Function Overview
 The SDL App Icon and the title displayed in the HU are not kept in the HU in advance.
 When it is received from the SDL App installed in the Mobile, the SDL App Icon will be displayed and cached in the memory by the HMI.
+
 ### 3.2. SDL App Icon
 The HU can display the SDL App Icon that is allowed by the PolicyTable on the Menu screen.
 Then, the SDL App Icons are sorted by priority; the AppHMIType as the 1st key, the order list in PolicyTable as the 2nd key.
@@ -25,6 +29,7 @@ The exceeded number of concurrent connections for the SDL Apps (max. 50) registe
 
 The SDL App Icon image is sent by the RPC"PutFile" to the SDL Core from the SDL App, after it is registered by the RPC"RegisterAppInterface".
 Afterwards, the SDL App Icon file name(SDLFileName) is sent by the RPC"SetAppIcon" to the SDL Core from the SDL App .
+
 ### 3.3. Specification for the SDL App Icon Image
 The specifications for the SDL App Icon image that the HU can display:
 - Image date size : 70x70 pixel
@@ -32,6 +37,7 @@ The specifications for the SDL App Icon image that the HU can display:
 
 The HU creates a greyscale SDL App Icon with the SDL App Icon for Tonedown status display.
 Also, depending on the display area, the SDL App Icon size is scaled to keep the aspect ratio by the HU.
+
 ### 3.4. Display Status for the SDL App Icon
 The table below shows the status for each SDL App Icon display.
 
@@ -49,6 +55,7 @@ The SDL App name changes in accordance to the langugage settings of the HU.
 The SDL App name can be updated to the SDL core from the SDL App during the SDL App registration.
 Afterwards, the updated SDL App name is notified to the HMI.
 The HMI will keep the SDL App name, until it is updated again by the SDL App.
+
 ## 4. Differences from the SDL standard specification
 The items (1)-(3) listed below differ from the existing SDL Standard Specification.
 
@@ -64,6 +71,7 @@ However, the change of display SDL App Icon such as Tonedown display is not expl
 <ol>explicitly specified in the SDL Standard Specifcation.<br>
 Thus, we have used TOYOTA Specifications as a reference information to define it.
 There is no problem for OEMs to define the threshold value such as the number of registered SDL Apps by themselves.</ol>
+</ol>
 
 ## 5. Sequence Diagrams
 The following tables below show the cases where the SDL App Icon display status changes.
