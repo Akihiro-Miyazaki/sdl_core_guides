@@ -76,11 +76,10 @@ The following tables below show the cases where the SDL App Icon display status 
 <tr><td> When the SDL App data is deleted from the PolicyTable </td><td> Figure5 </td></tr>
 <tr><td> When the RPC"UnregisterAppInterface" from the Mobile is received </td><td> Figure6 </td></tr>
 </table>
-The Sequence Diagrams of change in the SDL App Icon display status is below:
 
 The Sequence Diagrams of change in the SDL App Icon display status is below:
 
-<div style="text-align: center;">
+<div align="center">
 
 ![Figure1_Normal case without cache](./assets/figure1_normal_case_without_cache.png)
 **Figure1** SDL App Icon display status sequence (Normal case without cache)
