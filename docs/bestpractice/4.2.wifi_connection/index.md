@@ -1,4 +1,5 @@
 # 4.2.WiFi Connection
+
 ## 1. Overview
 This chapter describes about WiFi connection.
 
@@ -16,7 +17,7 @@ If both Primary and Secondary connection were enabled, each will have the follow
 
 WiFi connection will be established between the SDL App and the HU by following the SmartDeviceLink protocol specification (https://www.smartdevicelink.com/en/guides/sdl-overview-guides/protocol-spec/). Then, it will be registered as SecondaryTransport.
 
-*Due to the limitation of iOS specification, WiFi connection will be disabled when the SDL App goes "BACKGROUND" or the mobile screen is locked.
+Note : Due to the limitation of iOS specification, WiFi connection will be disabled when the SDL App goes "BACKGROUND" or the mobile screen is locked.
 Therefore, WiFi can not be connected as a PrimaryTransport.
 
 ### 3.2. Connection Method
@@ -44,8 +45,8 @@ About the parameter setting, please refer to the smartDeviceLink.ini file in the
 |:---:|:---|:---|
 | 1 | protocolVersion | Parameter of "Start Service ACK" frame<br>Shows the version of SmartDeviceLink Protocol specification (Ex. "5.0.0")<br>The newest version of SmartDeviceLink Protocol specification is needed to create the SDL App |
 | 2 | secondaryTransports[] | Parameter of "Start Service ACK" frame<br>Shows transport type which supports as SecondaryTransport<br>The proxy starts to set up SecondaryTransport, when Transport Type is notified<br>If there is no supported Transport Type, the array should be omitted or emptied<br>Please refer to table3 for the kinds of Transport Type |
-| 3 | audioServiceTransports | Parameter of "Start Service ACK" frame<br>Shows transports which support transport path for the Audio service<br>The type is int32 with each of the following meaning below:<br> 1 : Audio service is available on PrimaryTransport<br> 2 : Audio service is available on SecondaryTransport<br>If both Transports (Primary/Secondary) support the Audio service, then it should be in prioritize order and the SDL core will decide which transport will be used<br>If "Start Service ACK" is for SecondaryTransport, this parameter should not be included<br>If this parameter is not included in "StartServiceACK" frame, the SDL App must launch the Audio service on PrimaryTransport |
-| 4 | videoServiceTransports | Parameter of "Start Service ACK" frame<br>Shows transports which support transport path for the Video Projection Mode (VPM) service<br>The type is int32 with each of the following meaning below:<br> 1 : VPM service is available on PrimaryTransport<br> 2 : VPM service is available on SecondaryTransport<br>If both Transports (Primary/Secondary) support the VPM service, then it should be in prioritize order and the SDL core will decide which transport will be used<br>SDL App must not launch transport that is not listed in the array<br>If this parameter is not included in "StartServiceACK" frame, the SDL App must launch the VPM service on PrimaryTransport |
+| 3 | audioServiceTransports | Parameter of "Start Service ACK" frame<br>Shows transports which support transport path for the Audio service<br>The type is int32 with each of the following meaning below:<br><ol> 1 : Audio service is available on PrimaryTransport<br> 2 : Audio service is available on SecondaryTransport</ol><br>If both Transports (Primary/Secondary) support the Audio service, then it should be in prioritize order and the SDL core will decide which transport will be used<br>If "Start Service ACK" is for SecondaryTransport, this parameter should not be included<br>If this parameter is not included in "StartServiceACK" frame, the SDL App must launch the Audio service on PrimaryTransport |
+| 4 | videoServiceTransports | Parameter of "Start Service ACK" frame<br>Shows transports which support transport path for the Video Projection Mode (VPM) service<br>The type is int32 with each of the following meaning below:<br><ol> 1 : VPM service is available on PrimaryTransport<br> 2 : VPM service is available on SecondaryTransport</ol><br>If both Transports (Primary/Secondary) support the VPM service, then it should be in prioritize order and the SDL core will decide which transport will be used<br>SDL App must not launch transport that is not listed in the array<br>If this parameter is not included in "StartServiceACK" frame, the SDL App must launch the VPM service on PrimaryTransport |
 | 5 | tcpIpAddress | Parameter of "Transport Event Update" frame<br>Shows the IP Address used to establish a TCP connection<br>It can be (set as) either IPv4 Address(ex: "192.168.1.1") or IPv6 Address(ex: "fd12:3456:789a::1")<br>If IP address is blank, it indicates that the TCP transport cannot be used |
 | 6 | tcpPort | Parameter of "Transport Event Update" frame<br>Shows TCP port numbers used to establish a connection using tcpIpAddress<br>The value must be the same as TCPAdapterPort in the smartDeviceLink.ini file<br>If this parameter is set, then the value of tcpIpAddress must be included as well |
 
@@ -87,7 +88,7 @@ Note that WiFi connection cannot be set when the DriverDistraction is ON. Thus, 
 | No. | Parameter | Description |
 |:---:|:---|:---|
 | 1 | supportWiFiAutoConnect | Indicates whether the automatic WiFi connection is supported or not, as the parameter of struct DeviceInfo<br> True : Supported<br> False : Not supported |
-| 2 | WiFiStateInfo | Shows WiFi Status as the parameter of RPC"GetWiFiStatusInfo(Response)"<br> WIFI_STATE_DISABLED　：　WiFi is disabled<br> WIFI_STATE_ENABLED　：　WiFi is enabled |
+| 2 | WiFiStateInfo | Shows WiFi Status as the parameter of RPC"GetWiFiStatusInfo(Response)"<br> WIFI_STATE_DISABLED ： WiFi is disabled<br> WIFI_STATE_ENABLED ： WiFi is enabled |
 | 3 | ssid | Shows the specific name of WiFi AccessPoint(AP) as the parameter of RPC"GetWiFiStatusInfo(Response)"<br>Max length is 32 characters, and can use half-width alphanumeric characters |
 | 4 | password | Shows the password to connect WiFi AP as the parameter of RPC"GetWiFiStatusInfo(Response)"<br>Max length is 100 characters, and can use half-width alphanumeric(upper/lowercase) and partical symbols characters |
 | 5 | WiFiSecurityType | Shows the security method to connect WiFi AP as the parameter of RPC"GetWiFiStatusInfo(Response)"<br>Listed below are the securityTypes settings that are currently available:<br> WIFI_SECURITY_NONE : No Security<br> WIFI_SECURITY_WEP : Uses WEP method security<br> WIFI_SECURITY_WPA : Uses WPA method security<br> WIFI_SECURITY_WPA2 : Uses WPA2 method Security |
@@ -97,11 +98,11 @@ Refer to Figure1 for the sequence of SecondaryTransport connection establishment
 
 <div align="center">
 
-![figure1_establishment_of_secondarytransport_connection.png](./assets/figure1_establishment_of_secondarytransport_connection.png)
+![figure1_establishment_of_secondarytransport_connection.png](./assets/figure1_establishment_of_secondarytransport_connection.png)<br>
 **Figure1** Establishment sequence of SecondaryTransport connection
 <br><br><br>
 
-![figure2_wifi_connection.png](./assets/figure2_wifi_connection.png)
+![figure2_wifi_connection.png](./assets/figure2_wifi_connection.png)<br>
 **Figure2** WiFi connection sequence
 
 </div>
