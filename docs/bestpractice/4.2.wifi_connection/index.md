@@ -25,7 +25,7 @@ Below is a list of control frame that is used for SecondaryTransport connection.
 
 **Table1** Control Frame list
 
-| No. | Frame <br>value | Frame |<> Description |
+| No. | Frame <br>value | Frame | Description |
 |:---:|:---:|:---|:---|
 | 1 | 0x01 | Start Service | Requests to start specific (type of) service |
 | 2 | 0x02 | Start Service ACK | "Notifies that Start Service has started successfully<br>Strat Service ACK of PrimariyTransport has the information of SecondaryTransport.<br>When the SDL App establish SecondaryTransport session, this informaton will be refered<br>The information on protocol version is attributed in this frame"|
@@ -42,12 +42,13 @@ About the parameter setting, please refer to the smartDeviceLink.ini file in the
 
 | No. | Parameter | Description |
 |:---:|:---|:---|
-|1 | protocolVersion | Parameter of "Start Service ACK" frame<br>Shows the version of SmartDeviceLink Protocol specification (Ex. "5.0.0")<br>The newest version of SmartDeviceLink Protocol specification is needed to create the SDL App |
+| 1 | protocolVersion | Parameter of "Start Service ACK" frame<br>Shows the version of SmartDeviceLink Protocol specification (Ex. "5.0.0")<br>The newest version of SmartDeviceLink Protocol specification is needed to create the SDL App |
 | 2 | secondaryTransports[] | Parameter of "Start Service ACK" frame<br>Shows transport type which supports as SecondaryTransport<br>The proxy starts to set up SecondaryTransport, when Transport Type is notified<br>If there is no supported Transport Type, the array should be omitted or emptied<br>Please refer to table3 for the kinds of Transport Type |
 | 3 | audioServiceTransports | Parameter of "Start Service ACK" frame<br>Shows transports which support transport path for the Audio service<br>The type is int32 with each of the following meaning below:<br> 1 : Audio service is available on PrimaryTransport<br> 2 : Audio service is available on SecondaryTransport<br>If both Transports (Primary/Secondary) support the Audio service, then it should be in prioritize order and the SDL core will decide which transport will be used<br>If "Start Service ACK" is for SecondaryTransport, this parameter should not be included<br>If this parameter is not included in "StartServiceACK" frame, the SDL App must launch the Audio service on PrimaryTransport |
 | 4 | videoServiceTransports | Parameter of "Start Service ACK" frame<br>Shows transports which support transport path for the Video Projection Mode (VPM) service<br>The type is int32 with each of the following meaning below:<br> 1 : VPM service is available on PrimaryTransport<br> 2 : VPM service is available on SecondaryTransport<br>If both Transports (Primary/Secondary) support the VPM service, then it should be in prioritize order and the SDL core will decide which transport will be used<br>SDL App must not launch transport that is not listed in the array<br>If this parameter is not included in "StartServiceACK" frame, the SDL App must launch the VPM service on PrimaryTransport |
 | 5 | tcpIpAddress | Parameter of "Transport Event Update" frame<br>Shows the IP Address used to establish a TCP connection<br>It can be (set as) either IPv4 Address(ex: "192.168.1.1") or IPv6 Address(ex: "fd12:3456:789a::1")<br>If IP address is blank, it indicates that the TCP transport cannot be used |
 | 6 | tcpPort | Parameter of "Transport Event Update" frame<br>Shows TCP port numbers used to establish a connection using tcpIpAddress<br>The value must be the same as TCPAdapterPort in the smartDeviceLink.ini file<br>If this parameter is set, then the value of tcpIpAddress must be included as well |
+
 Note : [ ] indicates the array type, and able for multiple settings
 
 Listed below are Transport Type strings used in the parameter of SecondaryTransport.
@@ -94,10 +95,10 @@ Note that WiFi connection cannot be set when the DriverDistraction is ON. Thus, 
 ## 4. Sequence Diagrams
 Refer to Figure1 for the sequence of SecondaryTransport connection establishment, and Figure2 for the sequence of WiFi connection.
 
-<div style="text-align: center;">
-
+<div align="center">
 
 ![figure1_establishment_of_secondarytransport_connection.png](./assets/figure1_establishment_of_secondarytransport_connection.png)
+
 **Figure1** Establishment sequence of SecondaryTransport connection
 <br><br><br>
 
