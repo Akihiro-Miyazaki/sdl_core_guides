@@ -65,13 +65,13 @@ There is no problem for OEMs to define the threshold value such as the number of
 ## 5. Sequence Diagrams
 The following tables below show the cases where the SDL App Icon display status changes.
 
+**Table2** SDL App Icon display status in each case
 <table align="left">
-<caption>**Table2** SDL App Icon display status in each case</caption>
 <tr><th> Cases where the SDL App Icon display status changes </th><th> Reference </th></tr>
 <tr><td> When there is no cache (Normal case) </td><td> Figure1 </td></tr>
 <tr><td> When there is a cache (Normal case) </td><td> Figure2 </td></tr>
 <tr><td> When the "RPC'RegisterAppInterface' is not received within 60 seconds <br>after the primary connection" occurs three times from the same device </td><td> Figure3 </td></tr>
-<tr><td> During initialization(Deletion of the personal information) </td><td> Figure4 </td></tr>
+<tr><td> During initialization(Deletion of the personal information) </td><td colspan="2"> Figure4 </td></tr>
 <tr><td> During change in the language </td></tr>
 <tr><td> When the SDL App data is deleted from the PolicyTable </td><td> Figure5 </td></tr>
 <tr><td> When the RPC"UnregisterAppInterface" from the Mobile is received </td><td> Figure6 </td></tr>
@@ -82,19 +82,19 @@ The Sequence Diagrams of change in the SDL App Icon display status is below:
 <div align="center">
 
 ![Figure1_Normal case without cache](./assets/figure1_normal_case_without_cache.png)<br>
-**Figure1** SDL App Icon display status sequence (Normal case without cache)
+**Figure1** SDL App Icon display status sequence(Normal case without cache)
 <br><br><br>
 
 ![Figure2_Normal case with cache](./assets/figure2_normal_case_with_cache.png)<br>
-**Figure2** SDL App Icon display status sequence (Normal case with cache)
+**Figure2** SDL App Icon display status sequence(Normal case with cache)
 <br><br><br>
 
 ![Figure3_occurs three times from the same device](./assets/figure3_occurs_three_times_from_the_same_device.png)<br>
-**Figure3** SDL App Icon display status sequence( The "RPC'RegisterAppInterface' is not received within 60 seconds after the primary connection" occurs three times from the same device)
+**Figure3** SDL App Icon display status sequence<br>(The "RPC'RegisterAppInterface' is not received within 60 seconds after the primary connection" occurs three times from the same device)
 <br><br><br>
 
 ![Figure4_Initialization](./assets/figure4_initialization.png)<br>
-**Figure4** SDL App Icon display status sequence(Initialization (Deletion of the personal information), Change in the language)
+**Figure4** SDL App Icon display status sequence<br>(Initialization (Deletion of the personal information), Change in the language)
 <br><br><br>
 
 ![Figure5_Deletion from the PolicyTable](./assets/figure5_deletion_from_the_policytable.png)<br>
