@@ -20,6 +20,7 @@ Figure1 below shows the behavior of SDL App when ACC OFF/ON (The last launched S
 <div align="center">
 
 ![Figure1_ACC OFFON](./assets/figure1_acc_offon.png)
+
 **Figure1** Behavior of the SDL App when ACC OFF/ON (The last launched SDL App is Media)
 
 </div>
