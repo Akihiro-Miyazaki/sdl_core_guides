@@ -98,7 +98,6 @@ Refer to Figure1 for the sequence of SecondaryTransport connection establishment
 <div align="center">
 
 ![figure1_establishment_of_secondarytransport_connection.png](./assets/figure1_establishment_of_secondarytransport_connection.png)
-
 **Figure1** Establishment sequence of SecondaryTransport connection
 <br><br><br>
 
