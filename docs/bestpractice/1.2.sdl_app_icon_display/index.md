@@ -81,29 +81,28 @@ The Sequence Diagrams of change in the SDL App Icon display status is below:
 The Sequence Diagrams of change in the SDL App Icon display status is below:
 
 <div style="text-align: center;">
-|||
-![Figure1_Normal case without cache](.\assets\Figure1_Normal case without cache.png)
+
+![Figure1_Normal case without cache](.\assets\figure1_normal_case_without_cache.png)
 **Figure1** SDL App Icon display status sequence (Normal case without cache)
-|||
 <br><br><br>
 
-![Figure2_Normal case with cache](.\assets\Figure2_Normal case with cache.png)
+![Figure2_Normal case with cache](.\assets\figure2_normal_case_with_cache.png)
 **Figure2** SDL App Icon display status sequence (Normal case with cache)
 <br><br><br>
 
-![Figure3_occurs three times from the same device](.\assets\Figure3_occurs three times from the same device.png)
+![Figure3_occurs three times from the same device](.\assets\figure3_occurs_three_times_from_the_same_device.png)
 **Figure3** SDL App Icon display status sequence( The "RPC'RegisterAppInterface' is not received within 60 seconds after the primary connection" occurs three times from the same device)
 <br><br><br>
 
-![Figure4_Initialization](.\assets\Figure4_Initialization.png)
+![Figure4_Initialization](.\assets\figure4_initialization.png)
 **Figure4** SDL App Icon display status sequence(Initialization (Deletion of the personal information), Change in the language)
 <br><br><br>
 
-![Figure5_Deletion from the PolicyTable](.\assets\Figure5_Deletion from the PolicyTable.png)
+![Figure5_Deletion from the PolicyTable](.\assets\figure5_deletion_from_the_policytable.png)
 **Figure5** SDL App Icon display status sequence(Deletion from the PolicyTable)
 <br><br><br>
 
-![Figure6_UnregisterAppInterface](.\assets\Figure6_UnregisterAppInterface.png)
+![Figure6_UnregisterAppInterface](.\assets\figure6_unregisterappinterface.png)
 **Figure6** SDL App Icon display status sequence(Reception of the RPC"UnregisterAppInterface")
 
 </div>
