@@ -56,10 +56,10 @@ The items (1)-(3) listed below differ from the existing SDL Standard Specificati
 Priority of the AppHMIType<br>
 The order list in the PolicyTable (corresponding to Policy server )<br>
 Both are defined by OEM's own specification</li><br>
-* (2) The display status of SDL App Icon<br>
+<ol> (2) The display status of SDL App Icon<br>
 Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.<br>
 However, the change of display SDL App Icon such as Tonedown display is not explicitly defined in the SDL Standard Specification.<br>
-* (3) The details in the HMI process defined in the sequence diagrams of SDL App Icon display status below, is not explicitly specified in the SDL Standard Specifcation.<br>
+<ol> (3) The details in the HMI process defined in the sequence diagrams of SDL App Icon display status below, is not explicitly specified in the SDL Standard Specifcation.<br>
 Thus, we have used TOYOTA Specifications as a reference information to define it.
 There is no problem for OEMs to define the threshold value such as the number of registered SDL Apps by themselves.
 
