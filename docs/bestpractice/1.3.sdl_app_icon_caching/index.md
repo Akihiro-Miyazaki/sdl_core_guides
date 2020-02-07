@@ -21,7 +21,7 @@ The information of SDL App icon and name will be deleted if it matches the follo
 
 <ol>
  (1) When the "RPC'RegisterAppInterface' is not received within 60 seconds after the primary connection" 
-<ol>occurs three times from the same device</ol><br>
+<ol>occurs three times from the same device</ol>
  (2) During Initialization (Deletion of personal information)<br>
  (3) During change in the language<br>
  (4) When the SDL App data is deleted from the PolicyTable<br>
@@ -40,7 +40,7 @@ The following sequence diagrams show the sequence for conditions (1) to (5) ment
 <div align="center">
 
 ![figure1_occurs_three_times_from_the_same_device.png](./assets/figure1_occurs_three_times_from_the_same_device.png)<br>
-**Figure1** Deletion of SDL App Icon Data( The "RPC'RegisterAppInterface' is not received within 60 seconds after the primary connection" occurs three times from the same device)
+**Figure1** Deletion of SDL App Icon Data<br>(The "RPC'RegisterAppInterface' is not received within 60 seconds after the primary connection" occurs three times from the same device)
 <br><br><br>
 
 ![figure2_initialization.png](./assets/figure2_initialization.png)<br>
