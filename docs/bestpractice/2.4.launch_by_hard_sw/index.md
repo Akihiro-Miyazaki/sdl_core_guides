@@ -31,7 +31,7 @@ When the Hard SW, the HU will launch either the SDL Navigation App or the Native
 
   (1) If the Native Navigation exists, display the Native Navigation screen<br>
   (2) If the Native Navigation does NOT exist, but the SDL Navigation App exists, launch the SDL Navigation App and display the SDL Navigation App screen<br>
-If there are the multiple SDL Navigation App, the following below occurs :
+If there are the multiple SDL Navigation App, the following below occurs :<br>
       1) If there is an existing SDL Navigation App launched, display the launched SDL Navigation App<br>
       2) If there is no running SDL Navigation App, launch and display the SDL Navigation App in the first order as the AppHMIType is "NAVIGATION" in sort(However, there is no problem if the OEM specifies it by themselves)<br>
       3) If there is already a launched SDL Navigation App displayed, keep all status<br>
