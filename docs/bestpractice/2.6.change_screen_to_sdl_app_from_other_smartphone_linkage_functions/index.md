@@ -22,32 +22,6 @@ Therefore, all of the contents describe in "3. Function Details" differ from the
 ## 5. Sequence Diagrams
 Table1 shows the behavior when each smartphone linkage functions are switched.
 
-<table border="1" align="left">
-
-<caption>**Table1** Switching behavior Matrix</caption>
-
-<tr><th  rowspan="2" colspan="2" bgcolor=lightblue></th><th colspan="3" bgcolor=lightblue> Turn on "Use for SDL" </th><th colspan="2" bgcolor=lightblue> Turn on "Use for Android Auto" </th><th colspan="3" bgcolor=lightblue> Turn on "Use for Apple CarPlay" </th></tr>
-
-<tr><th bgcolor=lightblue> BT<br>(HFP/AVP) </th><th bgcolor=lightblue> USB </th><th bgcolor=lightblue>WiFi+BT<br>(HFP/AVP) </th><th bgcolor=lightblue>USB+BT<br>(HFP) </th><th bgcolor=lightblue>WiFi+BT<br>(HFP) </th><th bgcolor=lightblue>USB </th><th bgcolor=lightblue>WiFi<br>(2.4GHz) </th><th bgcolor=lightblue>WiFi<br>(5GHz) </th></tr>
-
-<tr><td rowspan="3" bgcolor=lightblue> **SDL** </td><td bgcolor=lightblue> **BT<br>(HFP/AVP)** </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>No combination </td><td> Start AA session<br>End SDL session </td><td bgcolor=gray> NA<br>No combination </td><td> Start CP session<br>End SDL session </td><td> Start CP session<br>End SDL session </td></tr>
-
-<tr><td bgcolor=lightblue> **USB** </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td> Start AA session<br>End SDL session </td><td bgcolor=gray> NA<br>No combination </td><td> Start CP session<br>End SDL session </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>No combination </td></tr>
-
-<tr><td bgcolor=lightblue> **WiFi+BT<br>(HFP/AVP)** </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>No combination </td><td> Start AA session<br>End SDL session </td><td bgcolor=gray> NA<br>No combination </td><td> Start CP session<br>End SDL session </td><td> Start CP session<br>End SDL session </td></tr>
-
-<tr><td rowspan="2" bgcolor=lightblue> **AA** </td><td bgcolor=lightblue> **USB+BT<br>(HFP)** </td><td bgcolor=gray> NA<br>No combination </td><td> Start SDL session<br>End AA session </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>No combination </td></tr>
-
-<tr><td bgcolor=lightblue> **WiFi+BT<br>(HFP)** </td><td> Start SDL session<br>End AA session </td><td bgcolor=gray> NA<br>No combination </td><td> Start SDL session<br>End AA session </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>No combination </td></tr>
-
-<tr><td rowspan="3" bgcolor=lightblue> **CP** </td><td bgcolor=lightblue> **USB** </td><td bgcolor=gray> NA<br>No combination </td><td> Start SDL session<br>End CP session </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td></tr>
-
-<tr><td bgcolor=lightblue> **WiFi<br>(2.4GHz)** </td><td> Start SDL session<br>End CP session </td><td bgcolor=gray> NA<br>No combination </td><td> Start SDL session<br>End CP session </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td></tr>
-
-<tr><td bgcolor=lightblue> **WiFi<br>(5GHz)** </td><td> Start SDL session<br>End CP session </td><td bgcolor=gray> NA<br>No combination </td><td> Start SDL session<br>End CP session </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td></tr>
-
-</table>
-
 **Table1** Switching behavior Matrix
 ![table1_switching_behavior_matrix.png](./assets/table1_switching_behavior_matrix.png)
 
