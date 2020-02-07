@@ -78,6 +78,7 @@ The following tables below show the cases where the SDL App Icon display status 
 </table>
 
 **Table2** SDL App Icon display status in each case
+
 | Cases where the SDL App Icon display status changes | Reference |
 |:---|:---:|
 | When there is no cache (Normal case) | Figure1 |
