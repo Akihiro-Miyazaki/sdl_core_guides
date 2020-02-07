@@ -48,6 +48,9 @@ Table1 shows the behavior when each smartphone linkage functions are switched.
 
 </table>
 
+**Table1** Switching behavior Matrix
+![table1_switching_behavior_matrix.png](./assets/table1_switching_behavior_matrix.png)
+
 
 ## 6. Impacted Platforms
 Changes impact the following platform/s:
