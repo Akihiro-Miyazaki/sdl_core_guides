@@ -52,16 +52,16 @@ The HMI will keep the SDL App name, until it is updated again by the SDL App.
 ## 4. Differences from the SDL standard specification
 The items (1)-(3) listed below differ from the existing SDL Standard Specification.
 
-<li> (1) The parameters which defines the sort by priority<br>
-Priority of the AppHMIType<br>
+<ol> (1) The parameters which defines the sort by priority<br>
+<ol>Priority of the AppHMIType<br>
 The order list in the PolicyTable (corresponding to Policy server )<br>
-Both are defined by OEM's own specification</li><br>
-<ol> (2) The display status of SDL App Icon<br>
-Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.<br>
-However, the change of display SDL App Icon such as Tonedown display is not explicitly defined in the SDL Standard Specification.<br>
-<ol> (3) The details in the HMI process defined in the sequence diagrams of SDL App Icon display status below, is not explicitly specified in the SDL Standard Specifcation.<br>
-Thus, we have used TOYOTA Specifications as a reference information to define it.
-There is no problem for OEMs to define the threshold value such as the number of registered SDL Apps by themselves.
+Both are defined by OEM's own specification</ol><br>
+(2) The display status of SDL App Icon<br>
+<ol>Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.<br>
+However, the change of display SDL App Icon such as Tonedown display is not explicitly defined in the SDL Standard Specification.</ol><br>
+(3) The details in the HMI process defined in the sequence diagrams of SDL App Icon display status below, is not explicitly specified in the SDL Standard Specifcation.<br>
+<ol>Thus, we have used TOYOTA Specifications as a reference information to define it.
+There is no problem for OEMs to define the threshold value such as the number of registered SDL Apps by themselves.</ol>
 
 ## 5. Sequence Diagrams
 The following tables below show the cases where the SDL App Icon display status changes.
