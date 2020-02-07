@@ -52,16 +52,17 @@ The HMI will keep the SDL App name, until it is updated again by the SDL App.
 ## 4. Differences from the SDL standard specification
 The items (1)-(3) listed below differ from the existing SDL Standard Specification.
 
-(1) The parameters which defines the sort by priority
-Priority of the AppHMIType
-The order list in the PolicyTable (corresponding to Policy server )
-Both are defined by OEM's own specification
-(2) The display status of SDL App Icon
-Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.
-However, the change of display SDL App Icon such as Tonedown display is not explicitly defined in the SDL Standard Specification.
-(3) The details in the HMI process defined in the sequence diagrams of SDL App Icon display status below, is not explicitly specified in the SDL Standard Specifcation.
+(1) The parameters which defines the sort by priority<br>
+Priority of the AppHMIType<br>
+The order list in the PolicyTable (corresponding to Policy server )<br>
+Both are defined by OEM's own specification<br>
+(2) The display status of SDL App Icon<br>
+Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.<br>
+However, the change of display SDL App Icon such as Tonedown display is not explicitly defined in the SDL Standard Specification.<br>
+(3) The details in the HMI process defined in the sequence diagrams of SDL App Icon display status below, is not explicitly specified in the SDL Standard Specifcation.<br>
 Thus, we have used TOYOTA Specifications as a reference information to define it.
 There is no problem for OEMs to define the threshold value such as the number of registered SDL Apps by themselves.
+
 ## 5. Sequence Diagrams
 The following tables below show the cases where the SDL App Icon display status changes.
 
@@ -71,7 +72,7 @@ The following tables below show the cases where the SDL App Icon display status 
 <tr><td> When there is no cache (Normal case) </td><td> Figure1 </td></tr>
 <tr><td> When there is a cache (Normal case) </td><td> Figure2 </td></tr>
 <tr><td> When the "RPC'RegisterAppInterface' is not received within 60 seconds <br>after the primary connection" occurs three times from the same device </td><td> Figure3 </td></tr>
-<tr><td> During initialization(Deletion of the personal information) </td><td rowspan=g2> Figure4 </td></tr>
+<tr><td> During initialization(Deletion of the personal information) </td><td rowspan="2"> Figure4 </td></tr>
 <tr><td> During change in the language </td></tr>
 <tr><td> When the SDL App data is deleted from the PolicyTable </td><td> Figure5 </td></tr>
 <tr><td> When the RPC"UnregisterAppInterface" from the Mobile is received </td><td> Figure6 </td></tr>
