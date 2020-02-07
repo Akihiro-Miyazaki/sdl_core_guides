@@ -20,7 +20,7 @@ Enable/disable SDL is set.
 - SDL set to DISABLE:CP/AA works
 
 ## 4. Differences from the SDL standard specification
-The switching smartphone linkage(CP, AA(, Car Life, WeLink) is not explicitly defined in the SDL specification, because it is processed in the HMI.
+The switching smartphone linkage(CP, AA(, Car Life, WeLink)) is not explicitly defined in the SDL specification, because it is processed in the HMI.
 Additionally, the switching between similar functions and related exclusive functions needs, that need to be desclibe in the HU specification, however, there is no definition about it in the SDL standard specification itself.
 Therefore, all of the contents describe in "3. Function Details" differ from the existing SDL standard specification.
 
