@@ -13,10 +13,10 @@ Hence, the purpose of this document is to standardize such cases/issues using th
 ### 3.1. Function Overview
 The user operations that trigger the launch of SDL App are listed below:
 
- (1) By pressing the SDL App Icon
- (2) By launching Voice Recognition
- (3) By choosing the Audio source on the Audio screen
- (4) By pressing the Hard SW
+ (1) By pressing the SDL App Icon<br>
+ (2) By launching Voice Recognition<br>
+ (3) By choosing the Audio source on the Audio screen<br>
+ (4) By pressing the Hard SW<br>
  (5) By pressing the ModeSW on the Steering Wheel
 
 The following (1), (2), (3) mentioned above, already each has of their own documents. Thus, this chapter provides information about (4) and (5).
@@ -29,13 +29,13 @@ This chapter will provide information regarding the Hard SW to call the SDL Navi
 
 When the Hard SW, the HU will launch either the SDL Navigation App or the Native Navigation in accordance with the following status listed below:
 
-  (1) If the Native Navigation exists, display the Native Navigation screen
-  (2) If the Native Navigation does NOT exist, but the SDL Navigation App exists, launch the SDL Navigation App and display the SDL Navigation App screen
+  (1) If the Native Navigation exists, display the Native Navigation screen<br>
+  (2) If the Native Navigation does NOT exist, but the SDL Navigation App exists, launch the SDL Navigation App and display the SDL Navigation App screen<br>
 If there are the multiple SDL Navigation App, the following below occurs :
-      1) If there is an existing SDL Navigation App launched, display the launched SDL Navigation App
-      2) If there is no running SDL Navigation App, launch and display the SDL Navigation App in the first order as the AppHMIType is "NAVIGATION" in sort(However, there is no problem if the OEM specifies it by themselves)
-      3) If there is already a launched SDL Navigation App displayed, keep all status
-   (3) If both the Native Navigation and the SDL Navgiation App do NOT exist, keep the state before the Hard SW is pressed.
+      1) If there is an existing SDL Navigation App launched, display the launched SDL Navigation App<br>
+      2) If there is no running SDL Navigation App, launch and display the SDL Navigation App in the first order as the AppHMIType is "NAVIGATION" in sort(However, there is no problem if the OEM specifies it by themselves)<br>
+      3) If there is already a launched SDL Navigation App displayed, keep all status<br>
+   (3) If both the Native Navigation and the SDL Navgiation App do NOT exist, keep the state before the Hard SW is pressed<br>
 In addition, if the Software SW is used as a hard SW, there is no problem even if the OEMs specify not to display the Hard SW
 
 ### 3.3. Pressing the ModeSW on the steering wheel
@@ -53,6 +53,7 @@ The following table below shows the SDL Media App state when the ModeSW on the s
 |:---|:---:|:---:|
 | Audio screen | HMI Level = "FULL" <br>＆ Start playback | HMI Level = "BACKGROUND" <br>＆ Stop playback |
 | Aside from the Audio screen <br>(such as the Navigation screen) | HMI Level = "LIMITED" <br>＆ Start playback | HMI Level = "BACKGROUND" <br>＆ Stop playback |
+
 Note:Regarding the HMI Level, please refer to "6. Behavior of each HMI status".
 
 
@@ -62,11 +63,11 @@ The trigger that launches the SDL App is not explicitly defined in the SDL stand
 Therefore, all of the contents describe in "3. Function Details" differ from the existing SDL standard specification.
 
 ## 5. Sequence Diagrams
-Figure1 describes the following sequence:
-  (1) The launch of SDL App after pressing SW
+Figure1 describes the following sequence:<br>
+  (1) The launch of SDL App after pressing SW<br>
   (2) The change of SDL Apps
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure1_launch_of_sdl_app_after_pressing_sw.png](./assets/figure1_launch_of_sdl_app_after_pressing_sw.png)
 **Figure1** Launch of SDL App after pressing SW sequence
