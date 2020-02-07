@@ -65,7 +65,7 @@ There is no problem for OEMs to define the threshold value such as the number of
 ## 5. Sequence Diagrams
 The following tables below show the cases where the SDL App Icon display status changes.
 
-<table border="1" align="left">
+<table align="left">
 <caption>**Table2** SDL App Icon display status in each case</caption>
 <tr><th> Cases where the SDL App Icon display status changes </th><th> Reference </th></tr>
 <tr><td> When there is no cache (Normal case) </td><td> Figure1 </td></tr>
