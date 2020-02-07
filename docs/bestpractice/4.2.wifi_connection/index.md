@@ -87,11 +87,11 @@ Note that WiFi connection cannot be set when the DriverDistraction is ON. Thus, 
 
 | No. | Parameter | Description |
 |:---:|:---|:---|
-| 1 | supportWiFiAutoConnect | Indicates whether the automatic WiFi connection is supported or not, as the parameter of struct DeviceInfo<br> True : Supported<br> False : Not supported |
-| 2 | WiFiStateInfo | Shows WiFi Status as the parameter of RPC"GetWiFiStatusInfo(Response)"<br> WIFI_STATE_DISABLED ： WiFi is disabled<br> WIFI_STATE_ENABLED ： WiFi is enabled |
+| 1 | supportWiFiAutoConnect | Indicates whether the automatic WiFi connection is supported or not, as the parameter of struct DeviceInfo<br><ol> True : Supported<br> False : Not supported</ol> |
+| 2 | WiFiStateInfo | Shows WiFi Status as the parameter of RPC"GetWiFiStatusInfo(Response)"<br><ol> WIFI_STATE_DISABLED ： WiFi is disabled<br> WIFI_STATE_ENABLED ： WiFi is enabled</ol> |
 | 3 | ssid | Shows the specific name of WiFi AccessPoint(AP) as the parameter of RPC"GetWiFiStatusInfo(Response)"<br>Max length is 32 characters, and can use half-width alphanumeric characters |
 | 4 | password | Shows the password to connect WiFi AP as the parameter of RPC"GetWiFiStatusInfo(Response)"<br>Max length is 100 characters, and can use half-width alphanumeric(upper/lowercase) and partical symbols characters |
-| 5 | WiFiSecurityType | Shows the security method to connect WiFi AP as the parameter of RPC"GetWiFiStatusInfo(Response)"<br>Listed below are the securityTypes settings that are currently available:<br> WIFI_SECURITY_NONE : No Security<br> WIFI_SECURITY_WEP : Uses WEP method security<br> WIFI_SECURITY_WPA : Uses WPA method security<br> WIFI_SECURITY_WPA2 : Uses WPA2 method Security |
+| 5 | WiFiSecurityType | Shows the security method to connect WiFi AP as the parameter of RPC"GetWiFiStatusInfo(Response)"<br>Listed below are the securityTypes settings that are currently available:<br><ol> WIFI_SECURITY_NONE : No Security<br> WIFI_SECURITY_WEP : Uses WEP method security<br> WIFI_SECURITY_WPA : Uses WPA method security<br> WIFI_SECURITY_WPA2 : Uses WPA2 method Security</ol> |
 
 ## 4. Sequence Diagrams
 Refer to Figure1 for the sequence of SecondaryTransport connection establishment, and Figure2 for the sequence of WiFi connection.
