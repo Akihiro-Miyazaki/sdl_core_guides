@@ -62,7 +62,7 @@ The following tables below show the rules of status change, when the user switch
 <tr><td> Other </td><td> 1st Other : NS<br>2nd NAVIGATION : S </td><td> 1st Other : NS<br>2nd PROJECTION : S </td><td>1st Other : NS<br>2nd Other : S </td></tr>
 
 </table><br>
-Note : S : STREAMABLE, NS : NOT_STREAMABLE<br><br>
+* S : STREAMABLE, NS : NOT_STREAMABLE<br><br>
 
 **Table5.** Matrix table for Audio Streaming status
 <table align="left">
@@ -79,7 +79,7 @@ Note : S : STREAMABLE, NS : NOT_STREAMABLE<br><br>
 <tr><td> Other </td><td> 1st Other : NA<br>2nd NAVIGATION : A </td><td> 1st Other : NA<br>2nd PROJECTION :A </td><td> 1st Other : NA<br>2nd IsMediaApp : A </td><td>1st Other : NA<br>2nd Other : A </td></tr>
 
 </table><br>
-Note A : AUDIBLE, NA : NOT_AUDIBLE
+* A : AUDIBLE, NA : NOT_AUDIBLE
 
 
 
