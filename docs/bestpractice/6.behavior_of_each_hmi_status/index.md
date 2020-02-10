@@ -36,6 +36,7 @@ In Figure1 below shows the diagram of status transition based on the current sta
 Also, Table3 below shows the various status transition and the expected behavior related to various triggers.
 
 <div align="center">
+
 ![figuer1_status_transition_diagram.png](./assets/figuer1_status_transition_diagram.png)
 **Figuer1.** Status Transition Diagram
 </div>
@@ -61,7 +62,7 @@ The following tables below show the rules of status change, when the user switch
 <tr><td> Other </td><td> 1st Other : NS<br>2nd NAVIGATION : S </td><td> 1st Other : NS<br>2nd PROJECTION : S </td><td>1st Other : NS<br>2nd Other : S </td></tr>
 
 </table><br>
-Note : S : STREAMABLE, NS : NOT_STREAMABLE
+Note : S : STREAMABLE, NS : NOT_STREAMABLE<br>
 
 **Table5.** Matrix table for Audio Streaming status
 <table align="left">
