@@ -55,11 +55,11 @@ The following tables below show the rules of status change, when the user switch
 
 <tr><th> NAVIGATION </th><th> PROJECTION </th><th> Other </th></tr>
 
-<tr><td rowspan="3"> 1st <br>launched</td><td> NAVIGATION </td><td> 1st NAVIGATION : NS<br>2nd NAVIGATION : S </td><td> 1st NAVIGATION : NS<br>2nd PROJECTION : S </td><td>1st NAVIGATION : S<br>2nd Other : NS </td></tr>
+<tr><td rowspan="3"> 1st <br>launched</td><td> NAVIGATION </td><td> 1st NAVIGATION: NS<br>2nd NAVIGATION: S </td><td> 1st NAVIGATION: NS<br>2nd PROJECTION: S </td><td>1st NAVIGATION: S<br>2nd Other: NS </td></tr>
 
-<tr><td> PROJECTION </td><td> 1st PROJECTION : NS<br>2nd NAVIGATION : S </td><td> 1st PROJECTION : NS<br>2nd PROJECTION : S </td><td>1st PROJECTION : S<br>2nd Other : NS </td></tr>
+<tr><td> PROJECTION </td><td> 1st PROJECTION: NS<br>2nd NAVIGATION: S </td><td> 1st PROJECTION: NS<br>2nd PROJECTION: S </td><td>1st PROJECTION: S<br>2nd Other: NS </td></tr>
 
-<tr><td> Other </td><td> 1st Other : NS<br>2nd NAVIGATION : S </td><td> 1st Other : NS<br>2nd PROJECTION : S </td><td>1st Other : NS<br>2nd Other : S </td></tr>
+<tr><td> Other </td><td> 1st Other: NS<br>2nd NAVIGATION: S </td><td> 1st Other: NS<br>2nd PROJECTION: S </td><td>1st Other: NS<br>2nd Other: S </td></tr>
 
 </table><br>
 * S : STREAMABLE, NS : NOT_STREAMABLE<br><br>
@@ -70,13 +70,13 @@ The following tables below show the rules of status change, when the user switch
 
 <tr><th> NAVIGATION </th><th> PROJECTION </th><th> IsMediaApp </th><th> Other </th></tr>
 
-<tr><td rowspan="4"> 1st <br>launched</td><td> NAVIGATION </td><td> 1st NAVIGATION : NA<br>2nd NAVIGATION : A </td><td> 1st NAVIGATION : A<br>2nd PROJECTION : NA </td><td> 1st NAVIGATION : A<br>2nd IsMediaApp : NA </td><td>1st NAVIGATION : A<br>2nd Other : NA </td></tr>
+<tr><td rowspan="4"> 1st <br>launched</td><td> NAVIGATION </td><td> 1st NAVIGATION: NA<br>2nd NAVIGATION: A </td><td> 1st NAVIGATION: A<br>2nd PROJECTION: NA </td><td> 1st NAVIGATION: A<br>2nd IsMediaApp: NA </td><td>1st NAVIGATION: A<br>2nd Other: NA </td></tr>
 
-<tr><td> PROJECTION </td><td> 1st PROJECTION : A<br>2nd NAVIGATION : NA </td><td> 1st PROJECTION : NA<br>2nd PROJECTION : A </td><td> 1st PROJECTION : A<br>2nd IsMediaApp : NA </td><td>1st PROJECTION : A<br>2nd Other : NA </td></tr>
+<tr><td> PROJECTION </td><td> 1st PROJECTION: A<br>2nd NAVIGATION: NA </td><td> 1st PROJECTION: NA<br>2nd PROJECTION: A </td><td> 1st PROJECTION: A<br>2nd IsMediaApp: NA </td><td>1st PROJECTION: A<br>2nd Other: NA </td></tr>
 
-<tr><td> IsMediaApp </td><td> 1st IsMediaApp : A<br>2nd NAVIGATION : NA </td><td> 1st IsMediaApp : A<br>2nd PROJECTION :NA </td><td> 1st IsMediaApp : NA<br>2nd IsMediaApp : A </td><td>1st IsMediaApp : A<br>2nd Other : NA </td></tr>
+<tr><td> IsMediaApp </td><td> 1st IsMediaApp: A<br>2nd NAVIGATION: NA </td><td> 1st IsMediaApp: A<br>2nd PROJECTION: NA </td><td> 1st IsMediaApp: NA<br>2nd IsMediaApp: A </td><td>1st IsMediaApp: A<br>2nd Other: NA </td></tr>
 
-<tr><td> Other </td><td> 1st Other : NA<br>2nd NAVIGATION : A </td><td> 1st Other : NA<br>2nd PROJECTION :A </td><td> 1st Other : NA<br>2nd IsMediaApp : A </td><td>1st Other : NA<br>2nd Other : A </td></tr>
+<tr><td> Other </td><td> 1st Other: NA<br>2nd NAVIGATION: A </td><td> 1st Other: NA<br>2nd PROJECTION: A </td><td> 1st Other: NA<br>2nd IsMediaApp: A </td><td>1st Other: NA<br>2nd Other: A </td></tr>
 
 </table><br>
 * A : AUDIBLE, NA : NOT_AUDIBLE
