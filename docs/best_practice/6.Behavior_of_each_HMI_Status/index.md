@@ -27,9 +27,9 @@ Therefore, the definition of behavior and state of transition of each HMI level 
 
 | Status Transition Rule |
 |:---|
-| If the SDL App HMI Level is FULL", the behavior of other SDL Apps is as follows:<br><ol>- All SDL Apps except SDL Media/Video App will be BACKGROUND.<br>- All SDL Media/Video Apps(such as NAVIGATION, VC, MEDIA and PROJECTION) will be LIMITED.<br>- SDL Apps which AppHMIType are same will be BACKGROUND.</ol> |
-| If the SDL App HMI Level is "LIMITED", the behavior of other SDL Apps is as follows:<br><ol>- All SDL Apps except SDL Media/Video Apps will keep the current status.<br>- SDL Apps which AppHMIType are different will keep the current status.<br>- SDL Apps which AppHMIType are same will be BACKGROUND.</ol> |
-| If the SDL App HMI Level is "BACKGROUND", the behavior of other SDL Apps is as follows:<br><ol>- All SDL Apps will keep the current status.</ol> |
+| If the SDL App HMI Level is FULL", the behavior of other SDL Apps is as follows:<ol>- All SDL Apps except SDL Media/Video App will be BACKGROUND.<br>- All SDL Media/Video Apps(such as NAVIGATION, VC, MEDIA and PROJECTION) will be LIMITED.<br>- SDL Apps which AppHMIType are same will be BACKGROUND.</ol> |
+| If the SDL App HMI Level is "LIMITED", the behavior of other SDL Apps is as follows:<ol>- All SDL Apps except SDL Media/Video Apps will keep the current status.<br>- SDL Apps which AppHMIType are different will keep the current status.<br>- SDL Apps which AppHMIType are same will be BACKGROUND.</ol> |
+| If the SDL App HMI Level is "BACKGROUND", the behavior of other SDL Apps is as follows:<ol>- All SDL Apps will keep the current status.</ol> |
 
 ### 3.2. Status Transition Diagram
 In Figure1 below shows the diagram of status transition based on the current status transition rule.
