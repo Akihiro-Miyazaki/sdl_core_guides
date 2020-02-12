@@ -25,7 +25,7 @@ Additionally, the switching between similar functions and related exclusive func
 Therefore, all of the contents describe in "3. Function Details" differ from the existing SDL standard specification.
 
 ## 5. Sequence Diagrams
-Table1 shows the behavior when each smartphone linkage functions are switched.
+Table1 shows the behavior when each smartphone linkage functions are switched..
 
 **Table1** Switching behavior Matrix
 ![table1_switching_behavior_matrix.png](./assets/table1_switching_behavior_matrix.png)
