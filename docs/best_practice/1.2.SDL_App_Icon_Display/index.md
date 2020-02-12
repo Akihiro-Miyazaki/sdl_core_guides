@@ -45,9 +45,9 @@ The table below shows the status for each SDL App Icon display.
 
 | Icon Display | Description | Icon Status |
 |:---|:---|:---:|
-| Not displayed | If there is no SDL App Icon data in the cache | - |
-| Tonedown Icon <br>is displayed | There is SDL App Icon data in the cache.<br>If the RPC "RegisterAppInterface" is not received or <br>the RPC"UnregisterAppInterface" <br>is received during Toneup SDL App Icon display | Inactive |
-| Toneup Icon <br>is displayed | If the RPC"RegisterAppInterface" is received | Active |
+| Not displayed | If there is no SDL App Icon data in the cache. | - |
+| Tonedown Icon <br>is displayed | There is SDL App Icon data in the cache.<br>If the RPC "RegisterAppInterface" is not received or <br>the RPC"UnregisterAppInterface" <br>is received during Toneup SDL App Icon display. | Inactive |
+| Toneup Icon <br>is displayed | If the RPC"RegisterAppInterface" is received. | Active |
 
 ### 3.5. SDL App Icon name
 The SDL App Icons are given with the SDL App name.
@@ -81,7 +81,7 @@ The following tables below show the cases where the SDL App Icon display status 
 <tr><th> Cases where the SDL App Icon display status changes </th><th> Reference </th></tr>
 <tr><td> When there is no cache (Normal case) </td><td> Figure1 </td></tr>
 <tr><td> When there is a cache (Normal case) </td><td> Figure2 </td></tr>
-<tr><td> When the "RPC'RegisterAppInterface' is not received within 60 seconds <br>after the primary connection" occurs three times from the same device </td><td> Figure3 </td></tr>
+<tr><td> When the "RPC'RegisterAppInterface' is not received within 60 seconds <br>after the primary connection." occurs three times from the same device </td><td> Figure3 </td></tr>
 <tr><td> During initialization(Deletion of the personal information) </td><td rowspan="2"> Figure4 </td></tr>
 <tr><td> During change in the language </td></tr>
 <tr><td> When the SDL App data is deleted from the PolicyTable </td><td> Figure5 </td></tr>
