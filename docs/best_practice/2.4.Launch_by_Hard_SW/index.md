@@ -33,25 +33,25 @@ This chapter will provide information regarding the Hard SW to call the SDL Navi
 When the Hard SW, the HU will launch either the SDL Navigation App or the Native Navigation in accordance with the following status listed below:
 
 <ol>
-  (1) If the Native Navigation exists, display the Native Navigation screen<br>
+  (1) If the Native Navigation exists, display the Native Navigation screen.<br>
   (2) If the Native Navigation does NOT exist, but the SDL Navigation App exists, launch the SDL Navigation App and 
 <ol>
-display the SDL Navigation App screen<br>
+display the SDL Navigation App screen.<br>
 If there are the multiple SDL Navigation App, the following below occurs :<br>
 <ol>
-      1) If there is an existing SDL Navigation App launched, display the launched SDL Navigation App<br>
+      1) If there is an existing SDL Navigation App launched, display the launched SDL Navigation App.<br>
       2) If there is no running SDL Navigation App, launch and display the SDL Navigation App in the first order as 
       <ol>
       the AppHMIType is "NAVIGATION" in sort(However, there is no problem if the OEM specifies it 
-      by themselves)<br>
+      by themselves).<br>
       </ol>
-      3) If there is already a launched SDL Navigation App displayed, keep all status<br>
+      3) If there is already a launched SDL Navigation App displayed, keep all status.<br>
 </ol>
 </ol>
    (3) If both the Native Navigation and the SDL Navgiation App do NOT exist, keep the state before the Hard SW 
 <ol>
-is pressed<br>
-In addition, if the Software SW is used as a hard SW, there is no problem even if the OEMs specify not to display the Hard SW
+is pressed.<br>
+In addition, if the Software SW is used as a hard SW, there is no problem even if the OEMs specify not to display the Hard SW.
 </ol>
 </ol>
 
