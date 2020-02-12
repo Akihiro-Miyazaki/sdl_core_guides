@@ -21,7 +21,7 @@ In this case, the priority order is decided by the Native side. Then, the interr
 The priority order of interruptions are specified by the OEMs themselves.
 
 ## 4. Differences from SDL standard specification
-The interruptions between SDL Apps, and between Native and SDL App are not explicitly defined in the SDL official documentｓ.
+The interruptions between SDL Apps, and between Native and SDL App are not explicitly defined in the SDL official documents.
 Therefore, all of the sequences in this chapter differ from the existing SDL Standard Specifications.
 
 ## 5. Sequence Diagrams
@@ -29,7 +29,7 @@ Therefore, all of the sequences in this chapter differ from the existing SDL Sta
 Ex) The sequence below shows if an APT interruption occurs when ScrollableMessage is displayed on the screen.
 In the TOYOTA specification, the HU closes the displayed ScrollableMessage screen and displays the APT screen.
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure1.atp_interruption.png](./assets/figure1.atp_interruption.png)<br>
 **Figure1.** Sequence of ATP interruption while the scrollableMessage screen is being displayed
@@ -39,13 +39,15 @@ In the TOYOTA specification, the HU closes the displayed ScrollableMessage scree
 ### 5.2.  Interruption from SDL App while Native is running
 #### 5.2.1. When the interruption of SDL App screen occurs while Native screen is being displayed
 In this case, you can refer to case of Alert in the SDL standard specification in the URL below:
+<ol>
 https://www.smartdevicelink.com/zh-hans/guides/hmi/ui/alert/
+</ol>
 
 #### 5.2.2. When the SDL app requests for (a) TTS playback while the Native voice is playing
 When the SDL App requests for (a) TTS playback while the Native voice is playing, the SDL App notifies that request to the Native.
 Then, the Native decides whether it can play the TTS (or not) on the Native side, and notifies the result to the SDL App.
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure2.sdl_app_requesting_for_tts_playback.png](./assets/figure2.sdl_app_requesting_for_tts_playback.png)<br>
 **Figure2.** Sequence of SDL App requesting for TTS playback while Native voice is playing
@@ -56,14 +58,14 @@ Then, the Native decides whether it can play the TTS (or not) on the Native side
 #### 5.3.1. When interruption of Native screen occurs while SDL App screen is being displayed
 For the following cases, please refer to the SDL standard specification in the URL provided below:
 <ol>
-Case of OnEventChange : https://www.smartdevicelink.com/zh-hans/guides/hmi/basiccommunication/oneventchanged/
+Case of OnEventChange : https://www.smartdevicelink.com/zh-hans/guides/hmi/basiccommunication/oneventchanged/<br>
 Case of OnAppDeactivated : https://www.smartdevicelink.com/zh-hans/guides/hmi/basiccommunication/onappdeactivated/
 </ol>
 
 #### 5.3.2. When interruption of Native SubAudio(TTS or voice guide) occurs while SDL App TTS is playing
 The Native decides whether (a) playback (on the Native side) is possible or not, and notifies the result to the SDL App.
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure3.native_subaudio_interruption.png](./assets/figure3.native_subaudio_interruption.png)<br>
 **Figure3.** Sequence of Native SubAudio (TTS or voice guide, etc.) interruption while SDL App TTS is playing
@@ -73,7 +75,7 @@ The Native decides whether (a) playback (on the Native side) is possible or not,
 #### 5.3.3. When interruption of Native voice(TTS or voice guide, etc.) occurs while SDL AudioStreaming is running
 The Native decides whether (a) playback (on the Native side) is possible or not, and it notifies the result to the SDL App.
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure4.native_voice_interruption.png](./assets/figure4.native_voice_interruption.png)<br>
 **Figure4.** Sequence of Native voice (TTS or voice guide, etc. ) interruption occurs while SDL App Audio is streaming
