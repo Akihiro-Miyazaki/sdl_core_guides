@@ -6,10 +6,10 @@ This chapter describes the sequence of switching SDL Apps.
 In addition, regarding the behavior of "Pressing other SDL App Icon on the HU screen" and "The launch by pressing HardSW" please refer to the following:
 
 <ol>
-"2.1. Press the SDL App Icon on the SDL Menu screen"
-"2.2. Launch by  Voice Recognition"
-"2.3. Launch by choosing the Audio source on the Audio screen"
-"2.4. Launch by HardSW"
+"2.1. Press the SDL App Icon on the SDL Menu screen"<br>
+"2.2. Launch by  Voice Recognition"<br>
+"2.3. Launch by choosing the Audio source on the Audio screen"<br>
+"2.4. Launch by HardSW"<br>
 </ol>
 
 In this chapter, the overall sequence of switching SDL Apps for each type is described.
@@ -63,7 +63,7 @@ Therefore, all of the following sequences  describe in "5. Sequence Diagrams" di
 ## 5. Sequence Diagrams
 ### 5.1. Switching from "MEDIA" type SDL App to "MEDIA" type SDL App
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure1.from_media_sdl_app_to_media_sdl_app.png](./assets/figure1.from_media_sdl_app_to_media_sdl_app.png)<br>
 **Figure1.** Sequence of switching from "MEDIA" type SDL App to "MEDIA" type SDL App
@@ -72,7 +72,7 @@ Therefore, all of the following sequences  describe in "5. Sequence Diagrams" di
 
 ### 5.2. Switching from "MEDIA" type SDL App to "NAVIGATION"/"PROJECTION" type SDL App
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure2.from_media_sdl_app_to_navipro_sdl_app.png](./assets/figure2.from_media_sdl_app_to_navipro_sdl_app.png)<br>
 **Figure2.** Sequence of switching from "MEDIA" type SDL App to "NAVIGATION/PROJECTION" type SDL App
@@ -81,7 +81,7 @@ Therefore, all of the following sequences  describe in "5. Sequence Diagrams" di
 
 ### 5.3. Switching from "MEDIA" type SDL App to Normal type SDL App
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure3.from_media_sdl_app_to_other_sdl_app.png](./assets/figure3.from_media_sdl_app_to_other_sdl_app.png)<br>
 **Figure3.** Sequence of switching from "MEDIA" type SDL App to Normal type SDL App
@@ -90,7 +90,7 @@ Therefore, all of the following sequences  describe in "5. Sequence Diagrams" di
 
 ### 5.4. Switching from "NAVIGATION"/"PROJECTION" type SDL App to "MEDIA" type SDL App
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure4.from_navipro_sdl_app_to_media_sdl_app.png](./assets/figure4.from_navipro_sdl_app_to_media_sdl_app.png)<br>
 **Figure4.** Sequence of switching from "NAVIGATION/PROJECTION" type SDL App to "MEDIA" type SDL App
@@ -99,7 +99,7 @@ Therefore, all of the following sequences  describe in "5. Sequence Diagrams" di
 
 ### 5.5. Switching from "NAVIGATION"/"PROJECTION" type SDL App to "NAVIGATION"/"PROJECTION" type SDL App
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure5.from_navipro_sdl_app_to_navipro_sdl_app.png](./assets/figure5.from_navipro_sdl_app_to_navipro_sdl_app.png)<br>
 **Figure5.** Sequence of switching from "NAVIGATION/PROJECTION" type SDL App to "NAVIGATION/PROJECTION" type SDL App
@@ -108,7 +108,7 @@ Therefore, all of the following sequences  describe in "5. Sequence Diagrams" di
 
 ### 5.6. Switching from "NAVIGATION"/"PROJECTION" type SDL App to Normal type SDL App
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure6.from_navipro_sdl_app_to_other_sdl_app.png](./assets/figure6.from_navipro_sdl_app_to_other_sdl_app.png)<br>
 **Figure6.** Sequence of switching from "NAVIGATION/PROJECTION" type SDL App to Normal type SDL App
@@ -117,7 +117,7 @@ Therefore, all of the following sequences  describe in "5. Sequence Diagrams" di
 
 ### 5.7. Switching from Normal type SDL App to "MEDIA" type SDL App
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure7.from_other_sdl_app_to_media_sdl_app.png](./assets/figure7.from_other_sdl_app_to_media_sdl_app.png)<br>
 **Figure7.** Sequence of switching from Normal type SDL App to "MEDIA" type SDL App
@@ -126,7 +126,7 @@ Therefore, all of the following sequences  describe in "5. Sequence Diagrams" di
 
 ### 5.8. Switching from Normal SDL App to "NAVIGATION"/"PROJECTION" type SDL App
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure8.from_other_sdl_app_to_navipro_sdl_app.png](./assets/figure8.from_other_sdl_app_to_navipro_sdl_app.png)<br>
 **Figure8.** Sequence of switching from Normal type SDL App to "NAVIGATION/PROJECTION" type SDL App
@@ -135,7 +135,7 @@ Therefore, all of the following sequences  describe in "5. Sequence Diagrams" di
 
 ### 5.9. Switching from Normal type SDL App to Normal type SDL App
 
-<div style="text-align: center;">
+<div align="center">
 
 ![figure9.from_other_sdl_app_to_other_sdl_app.png](./assets/figure9.from_other_sdl_app_to_other_sdl_app.png)<br>
 **Figure9.** Sequence of switching from Normal type SDL App to Normal type SDL App
