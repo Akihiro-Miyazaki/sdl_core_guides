@@ -5,7 +5,7 @@ This chapter describes how the HU displays the SDL App Icon on the screen by the
 
 ## 2. Background/Purpose/Reason for Standardization
 Currently, the SDL App Icon display is an SDL standard behavior, however there are some issues the following below:
-- The position of SDL App Icon display changes every time it connects the Mobile
+- The position of SDL App Icon display changes every time it connects the Mobile.
 - It takes time to display the SDL App Icon every time the system launches, because there is no internal memory to cache the SDL App information such as the SDL App Icon in the HU.
 - The user can not recognize the SDL App state (the progress of launching app) because the SDL App Icon only has two display (SDL App Icon display ON/OFF).
 
@@ -28,7 +28,7 @@ The SDL App Icon cached in the HMI is displayed.
 The exceeded number of concurrent connections for the SDL Apps (max. 50) registered by the RPC"RegisterAppInterface", the SDL App Icon that over registered will not be displayed on the menu screen.
 
 The SDL App Icon image is sent by the RPC"PutFile" to the SDL Core from the SDL App, after it is registered by the RPC"RegisterAppInterface".
-Afterwards, the SDL App Icon file name(SDLFileName) is sent by the RPC"SetAppIcon" to the SDL Core from the SDL App .
+Afterwards, the SDL App Icon file name(SDLFileName) is sent by the RPC"SetAppIcon" to the SDL Core from the SDL App.
 
 ### 3.3. Specification for the SDL App Icon Image
 The specifications for the SDL App Icon image that the HU can display:
@@ -63,7 +63,7 @@ The items (1)-(3) listed below differ from the existing SDL Standard Specificati
 <ol>
  - Priority of the AppHMIType<br>
  - The order list in the PolicyTable (corresponding to Policy server )<br>
-Both are defined by OEM's own specification</ol><br>
+Both are defined by OEM's own specification.</ol><br>
 (2) The display status of SDL App Icon<br>
 <ol>Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.<br>
 However, the change of display SDL App Icon such as Tonedown display is not explicitly defined in the SDL Standard Specification.</ol><br>
