@@ -72,7 +72,7 @@ Listed below are Transport Type strings used in the parameter of SecondaryTransp
 Using SecondaryTransport connection has the following conditions below:
 
  - "Transport Event Update" and "Register Secondary Transport" are not sent before the detarmination of SmartDeviceLink protocol version.
- - If PrimaryTransport is disconnected, then SecondaryTransport is stopped too/
+ - If PrimaryTransport is disconnected, then SecondaryTransport is stopped too.
  - "Register Secondary Transport" frame is sent after all of the information of SecondaryTransport configuration is determined.
  - (To avoid interference with each other) using WiFi in 5GHz frequency band is recommended, because Bluetooth runs in a 2.4Ghz frequency band.
  - There is no means to terminate SecondaryTransport connection.
