@@ -101,7 +101,7 @@ The Sequence Diagrams of change in the SDL App Icon display status is below:
 <br><br><br>
 
 ![Figure3_occurs three times from the same device](./assets/figure3_occurs_three_times_from_the_same_device.png)<br>
-**Figure3** SDL App Icon display status sequence(The "RPC'RegisterAppInterface' <br>is not received within 60 seconds after the primary connection" occurs three times from the same device)
+**Figure3** SDL App Icon display status sequence(The "RPC'RegisterAppInterface' <br>is not received within 60 seconds after the primary connection." occurs three times from the same device)
 <br><br><br>
 
 ![Figure4_Initialization](./assets/figure4_initialization.png)<br>
