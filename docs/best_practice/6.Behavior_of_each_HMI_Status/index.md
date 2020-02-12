@@ -55,11 +55,11 @@ The following tables below show the rules of status change, when the user switch
 
 <tr><th> NAVIGATION </th><th> PROJECTION </th><th> Other </th></tr>
 
-<tr><td rowspan="3"> 1st <br>launched</td><td> NAVIGATION </td><td> 1st NAVIGATION: NS<br>2nd NAVIGATION: S </td><td> 1st NAVIGATION: NS<br>2nd PROJECTION: S </td><td>1st NAVIGATION: S<br>2nd Other: NS </td></tr>
+<tr><td rowspan="3"> 1st <br>launched</td><td> NAVIGATION </td><td> 1stNAVIGATION:NS<br>2ndNAVIGATION:S </td><td> 1stNAVIGATION:NS<br>2ndPROJECTION:S </td><td>1stNAVIGATION:S<br>2ndOther:NS </td></tr>
 
-<tr><td> PROJECTION </td><td> 1st PROJECTION: NS<br>2nd NAVIGATION: S </td><td> 1st PROJECTION: NS<br>2nd PROJECTION: S </td><td>1st PROJECTION: S<br>2nd Other: NS </td></tr>
+<tr><td> PROJECTION </td><td> 1stPROJECTION:NS<br>2ndNAVIGATION:S </td><td> 1stPROJECTION:NS<br>2ndPROJECTION:S </td><td>1stPROJECTION:S<br>2ndOther:NS </td></tr>
 
-<tr><td> Other </td><td> 1st Other: NS<br>2nd NAVIGATION: S </td><td> 1st Other: NS<br>2nd PROJECTION: S </td><td>1st Other: NS<br>2nd Other: S </td></tr>
+<tr><td> Other </td><td> 1stOther:NS<br>2ndNAVIGATION:S </td><td> 1stOther:NS<br>2ndPROJECTION:S </td><td>1stOther:NS<br>2ndOther:S </td></tr>
 
 </table><br>
 * S : STREAMABLE, NS : NOT_STREAMABLE<br><br>
