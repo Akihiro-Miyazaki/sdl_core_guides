@@ -52,7 +52,7 @@ The following sequence diagrams show the sequence for conditions (1) to (5) ment
 <br><br><br>
 
 ![figure4_mobile_connected_is_changed.png](./assets/figure4_mobile_connected_is_changed.png)<br>
-**Figure4** Deletion of SDL App Icon Data(The Mobile connected via SDL is changed)
+**Figure4** Deletion of SDL App Icon Data(The Mobile connected via SDL is changed.)
 </div>
 
 ## 6. Impacted Platforms
