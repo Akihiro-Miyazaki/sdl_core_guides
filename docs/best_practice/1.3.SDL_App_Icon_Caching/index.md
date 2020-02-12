@@ -40,7 +40,7 @@ The following sequence diagrams show the sequence for conditions (1) to (5) ment
 <div align="center">
 
 ![figure1_occurs_three_times_from_the_same_device.png](./assets/figure1_occurs_three_times_from_the_same_device.png)<br>
-**Figure1** Deletion of SDL App Icon Data(The "RPC'RegisterAppInterface' <br>is not received within 60 seconds after the primary connection" occurs three times from the same device)
+**Figure1** Deletion of SDL App Icon Data(The "RPC'RegisterAppInterface' <br>is not received within 60 seconds after the primary connection." occurs three times from the same device)
 <br><br><br>
 
 ![figure2_initialization.png](./assets/figure2_initialization.png)<br>
