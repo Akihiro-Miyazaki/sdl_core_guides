@@ -25,13 +25,13 @@ The following Table1 describes the specification for switching the multiple Tran
 
 <tr><th> BT </th><th> USB </th><th> WiFi </th></tr>
 
-<tr><td rowspan="4"> Current <br>Connection </td><td> BT </td><td> - </td><td> USB<br>*1 </td><td> BT + WiFi<br>*2 </td></tr>
+<tr><td rowspan="4"> Current <br>Connection </td><td style="text-align:center"> BT </td><td style="text-align:center"> - </td><td style="text-align:center"> USB<br>*1 </td><td style="text-align:center"> BT + WiFi<br>*2 </td></tr>
 
-<tr><td> USB </td><td> USB<br>*3 </td><td> - </td><td> USB<br>*3 </td></tr>
+<tr><td style="text-align:center"> USB </td><td style="text-align:center"> USB<br>*3 </td><td style="text-align:center"> - </td><td style="text-align:center"> USB<br>*3 </td></tr>
 
-<tr><td> WiFi </td><td> BT + WiFi </td><td> USB </td><td> - </td></tr>
+<tr><td style="text-align:center"> WiFi </td><td style="text-align:center"> BT + WiFi </td><td style="text-align:center"> USB </td><td style="text-align:center"> - </td></tr>
 
-<tr><td> BT + WiFi </td><td> - </td><td> USB<br>*4 </td><td> - </td></tr>
+<tr><td style="text-align:center"> BT + WiFi </td><td> - </td><td style="text-align:center"> USB<br>*4 </td><td style="text-align:center"> - </td></tr>
 </table>
 <ol>
 *1 : If the SDL App is able to judge as the same device, it should switch Transport to USB.<br>
