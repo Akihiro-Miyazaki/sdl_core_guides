@@ -31,8 +31,9 @@ The following Table1 describes the specification for switching the multiple Tran
 
 <tr><td> WiFi </td><td> BT + WiFi </td><td> USB </td><td> - </td></tr>
 
-<tr><td> BT + WiFi </td><td> - </td><td> USB<br>*4 </td><td> - </td><tr>
+<tr><td> BT + WiFi </td><td> - </td><td> USB<br>*4 </td><td> - </td></tr>
 </table>
+
 <br>
 *1 : If the SDL App is able to judge as the same device, it should switch Transport to USB.<br>
 *2 : If the SDL App will use the VPM after detecting WiFi tranport(which judge to be same with the device using BT), <br>the SDL App will start the VPM.<br>
