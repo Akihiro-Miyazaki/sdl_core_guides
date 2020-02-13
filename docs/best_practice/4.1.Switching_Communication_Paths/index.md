@@ -46,7 +46,7 @@ the SDL App will start the VPM.<br>
 ### 3.2. Logic for switching communication paths in iOS
 Process the switching communication path from BT to USB:
 <ol>
-1. When the switching transport occurs, the SDL Core starts the timer by setting in timeout value in the configuration file
+1. When the switching transport occurs, the SDL Core starts the timer by setting in timeout value in the configuration file<br>
 2. Cache the HMI Level of current running SDL App, after the SDL App switched the device, then, perform the following process
 <ol>
 - Create the list of SDL Apps which is waitting for re-registering<br>
