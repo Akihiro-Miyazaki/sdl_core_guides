@@ -34,11 +34,12 @@ The following Table1 describes the specification for switching the multiple Tran
 <tr><td> BT + WiFi </td><td> - </td><td> USB<br>*4 </td><td> - </td></tr>
 </table>
 
-<br>
+<ol>
 *1 : If the SDL App is able to judge as the same device, it should switch Transport to USB.<br>
-*2 : If the SDL App will use the VPM after detecting WiFi tranport(which judge to be same with the device using BT), <br>the SDL App will start the VPM.<br>
+*2 : If the SDL App will use the VPM after detecting WiFi tranport(which judge to be same with the device using BT), the SDL App will start the VPM.<br>
 *3 : USB connection path is priority, even if the same device.<br>
 *4 : If the SDL App is able to judge as the same device, it should switch the connection method to USB.
+</ol>
 
 ### 3.2. Logic for switching communication paths in iOS
 Process the switching communication path from BT to USB:
