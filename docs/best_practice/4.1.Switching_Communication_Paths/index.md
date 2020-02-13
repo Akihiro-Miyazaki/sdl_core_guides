@@ -35,7 +35,7 @@ The following Table1 describes the specification for switching the multiple Tran
 </table>
 <br>
 *1 : If the SDL App is able to judge as the same device, it should switch Transport to USB.<br>
-*2 : If the SDL App will use the VPM after detecting WiFi tranport(which judge to be same with the device using BT), the SDL App will start the VPM.<br>
+*2 : If the SDL App will use the VPM after detecting WiFi tranport(which judge to be same with the device using BT), <br>the SDL App will start the VPM.<br>
 *3 : USB connection path is priority, even if the same device.<br>
 *4 : If the SDL App is able to judge as the same device, it should switch the connection method to USB.
 
