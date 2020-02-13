@@ -90,3 +90,5 @@ The Native decides whether (a) playback (on the Native side) is possible or not,
 ## 6. Impacted Platforms
 Changes impact the following platform/s:
 - HMI
+
+
