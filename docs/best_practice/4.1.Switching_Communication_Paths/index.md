@@ -60,7 +60,7 @@ If the process finishes within the timeout of switching transprt : <ol>If the SD
 </ol>
 </ol>
 
-<p indent="6em">If the process finishes within the timeout of switching transprt : <ol>If the SDL App is included in the list of SDL Apps which is waitting for the re-registering when the SDL App receives the RegisterApp notification, the HMI goes back the SDL App to the previous HMILevel and notifies the success to launch the SDL App to the Mobile.
+<p indent="6">If the process finishes within the timeout of switching transprt : <ol>If the SDL App is included in the list of SDL Apps which is waitting for the re-registering when the SDL App receives the RegisterApp notification, the HMI goes back the SDL App to the previous HMILevel and notifies the success to launch the SDL App to the Mobile.
 </p>
 
 ## 4. Differences from SDL standard specification
