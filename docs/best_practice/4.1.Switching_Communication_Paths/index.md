@@ -33,21 +33,31 @@ The following Table1 describes the specification for switching the multiple Tran
 
 <tr><td> BT + WiFi </td><td> - </td><td> USB<br>*4 </td><td> - </td></tr>
 </table>
+<ol>
 *1 : If the SDL App is able to judge as the same device, it should switch Transport to USB.<br>
-*2 : If the SDL App will use the VPM after detecting WiFi tranport(which judge to be same with the device using BT), the SDL App will start the VPM.<br>
+*2 : If the SDL App will use the VPM after detecting WiFi tranport(which judge to be same with the device using BT), 
+<ol>
+the SDL App will start the VPM.<br>
+</ol>
 *3 : USB connection path is priority, even if the same device.<br>
 *4 : If the SDL App is able to judge as the same device, it should switch the connection method to USB.
+</ol>
 
 ### 3.2. Logic for switching communication paths in iOS
 Process the switching communication path from BT to USB:
+<ol>
 1. When the switching transport occurs, the SDL Core starts the timer by setting in timeout value in the configuration file
 2. Cache the HMI Level of current running SDL App, after the SDL App switched the device, then, perform the following process
+<ol>
 - Create the list of SDL Apps which is waitting for re-registering<br>
 - Terminate the current BT Transport<br>
 - Copy the current BT status to the USB device
+</ol>
 3. If the timeout of switching transport occurs : Clear the list of SDL Apps which are waitting for the re-registering, and perform "Unregisterd()" against the SDL Apps which are not registered within the switching time, then, notify them to the HMI.
+<ol>
 If the process finishes within the timeout of switching transprt : If the SDL App is included in the list of SDL Apps which is waitting for the re-registering when the SDL App receives the RegisterApp notification, the HMI goes back the SDL App to the previous HMILevel and notifies the success to launch the SDL App to the Mobile.
-
+</ol>
+</ol>
 ## 4. Differences from SDL standard specification
 The specification for the switching communication paths is not explicitly defined in the SDLC Official document.
 Therefore, the contents described in Table1 above differ from the existing SDL standard specification.
