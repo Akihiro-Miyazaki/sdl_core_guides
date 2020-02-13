@@ -61,7 +61,7 @@ If the process finishes within the timeout of switching transprt : <ol>If the SD
 </ol>
 
 ## 4. Differences from SDL standard specification
-The specification for the switching communication paths is not explicitly defined in the SDLC Official document.
+The specification for the switching communication paths is not explicitly defined in the SDLC Official documents.
 Therefore, the contents described in Table1 above differ from the existing SDL standard specification.
 
 ## 5. Implementation Methods
