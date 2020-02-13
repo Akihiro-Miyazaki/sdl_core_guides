@@ -54,7 +54,7 @@ Process the switching communication path from BT to USB:
 - Copy the current BT status to the USB device
 </ol>
 </ol>
-3. If the timeout of switching transport occurs : <ol>Clear the list of SDL Apps which are waitting for the re-registering, and perform "Unregisterd()" against the SDL Apps which are not registered within the switching time, then, notify them to the HMI.</ol><br>
+3. If the timeout of switching transport occurs : <ol><ol>Clear the list of SDL Apps which are waitting for the re-registering, and perform "Unregisterd()" against the SDL Apps which are not registered within the switching time, then, notify them to the HMI.</ol>
 If the process finishes within the timeout of switching transprt : <ol>If the SDL App is included in the list of SDL Apps which is waitting for the re-registering when the SDL App receives the RegisterApp notification, the HMI goes back the SDL App to the previous HMILevel and notifies the success to launch the SDL App to the Mobile.
 </ol>
 </ol>
