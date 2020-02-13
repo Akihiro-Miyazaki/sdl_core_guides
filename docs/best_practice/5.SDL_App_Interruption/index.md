@@ -66,6 +66,7 @@ Case of OnAppDeactivated :
 <ol>
 https://www.smartdevicelink.com/zh-hans/guides/hmi/basiccommunication/onappdeactivated/
 </ol>
+</ol>
 
 #### 5.3.2. When interruption of Native SubAudio(TTS or voice guide) occurs while SDL App TTS is playing
 The Native decides whether (a) playback (on the Native side) is possible or not, and notifies the result to the SDL App.
