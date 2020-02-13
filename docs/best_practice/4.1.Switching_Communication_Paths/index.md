@@ -58,6 +58,7 @@ Process the switching communication path from BT to USB:
 If the process finishes within the timeout of switching transprt : If the SDL App is included in the list of SDL Apps which is waitting for the re-registering when the SDL App receives the RegisterApp notification, the HMI goes back the SDL App to the previous HMILevel and notifies the success to launch the SDL App to the Mobile.
 </ol>
 </ol>
+
 ## 4. Differences from SDL standard specification
 The specification for the switching communication paths is not explicitly defined in the SDLC Official document.
 Therefore, the contents described in Table1 above differ from the existing SDL standard specification.
