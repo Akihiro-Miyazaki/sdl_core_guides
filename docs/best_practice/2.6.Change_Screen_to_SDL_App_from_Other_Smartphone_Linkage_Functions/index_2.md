@@ -35,7 +35,7 @@ Table1 shows the behavior when each smartphone linkage functions are switched.
 
 <tr><th bgcolor=lightblue> BT<br>(HFP/AVP) </th><th bgcolor=lightblue> USB </th><th bgcolor=lightblue>WiFi+BT<br>(HFP/AVP) </th><th bgcolor=lightblue>USB+BT<br>(HFP) </th><th bgcolor=lightblue>WiFi+BT<br>(HFP) </th><th bgcolor=lightblue>USB </th><th bgcolor=lightblue>WiFi<br>(2.4GHz) </th><th bgcolor=lightblue>WiFi<br>(5GHz) </th></tr>
 
-<tr><td rowspan="3" bgcolor=lightblue> SDL </td><td bgcolor=lightblue> BT<br>(HFP/AVP) </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>No combination </td><td> Start AA session<br>End SDL session </td><td bgcolor=gray> NA<br>No combination </td><td> Start CP session<br>End SDL session </td><td> Start CP session<br>End SDL session </td></tr>
+<tr><td rowspan="3" bgcolor=lightblue> SDL </td><td bgcolor=lightblue> BT<br>(HFP/AVP) </td><td bgcolor=black> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>No combination </td><td> Start AA session<br>End SDL session </td><td bgcolor=gray> NA<br>No combination </td><td> Start CP session<br>End SDL session </td><td> Start CP session<br>End SDL session </td></tr>
 
 <tr><td bgcolor=lightblue> USB </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td bgcolor=gray> NA<br>Same Service </td><td> Start AA session<br>End SDL session </td><td bgcolor=gray> NA<br>No combination </td><td> Start CP session<br>End SDL session </td><td bgcolor=gray> NA<br>No combination </td><td bgcolor=gray> NA<br>No combination </td></tr>
 
