@@ -79,13 +79,13 @@ The following tables below show the cases where the SDL App Icon display status 
 **Table2** SDL App Icon display status in each case
 <table align="left">
 <tr><th> Cases where the SDL App Icon display status changes </th><th> Reference </th></tr>
-<tr><td> When there is no cache (Normal case) </td><td> Figure1 </td></tr>
-<tr><td> When there is a cache (Normal case) </td><td> Figure2 </td></tr>
-<tr><td> When the "RPC'RegisterAppInterface' is not received within 60 seconds <br>after the primary connection." occurs three times from the same device </td><td> Figure3 </td></tr>
-<tr><td> During initialization(Deletion of the personal information) </td><td rowspan="2"> Figure4 </td></tr>
+<tr><td> When there is no cache (Normal case) </td><td align="center"> Figure1 </td></tr>
+<tr><td> When there is a cache (Normal case) </td><td align="center"> Figure2 </td></tr>
+<tr><td> When the "RPC'RegisterAppInterface' is not received within 60 seconds <br>after the primary connection." occurs three times from the same device </td><td align="center"> Figure3 </td></tr>
+<tr><td> During initialization(Deletion of the personal information) </td><td rowspan="2" align="center"> Figure4 </td></tr>
 <tr><td> During change in the language </td></tr>
-<tr><td> When the SDL App data is deleted from the PolicyTable </td><td> Figure5 </td></tr>
-<tr><td> When the RPC"UnregisterAppInterface" from the Mobile is received </td><td> Figure6 </td></tr>
+<tr><td> When the SDL App data is deleted from the PolicyTable </td><td align="center"> Figure5 </td></tr>
+<tr><td> When the RPC"UnregisterAppInterface" from the Mobile is received </td><td align="center"> Figure6 </td></tr>
 </table>
 
 The Sequence Diagrams of change in the SDL App Icon display status is below:
