@@ -145,5 +145,3 @@ Therefore, all of the following sequences  describe in "5. Sequence Diagrams" di
 ## 6. Impacted Platforms
 Changes impact the following platform/s:
 - HMI
-
-
