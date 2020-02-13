@@ -80,11 +80,3 @@ The following tables below show the rules of status change, when the user switch
 
 </table><br>
 * A : AUDIBLE, NA : NOT_AUDIBLE
-
-
-
-
-
-
-
-
