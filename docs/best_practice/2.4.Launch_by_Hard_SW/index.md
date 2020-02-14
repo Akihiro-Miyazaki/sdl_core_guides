@@ -64,7 +64,7 @@ The SDL Media App that is available to choose, is the AppHMIType "MEDIA" and is 
 The following table below shows the SDL Media App state when the ModeSW on the steering wheel is pressed.
 
 
-**Table1** The HMI Level and the behavior after the ModeSW is pressed on the HU display screen
+**Table1.** The HMI Level and the behavior after the ModeSW is pressed on the HU display screen
 
 |<div align="center"> HU display screen </div>|<div align="center"> Target SDL Media App <br>is selected </div>|<div align="center"> Target SDL Media App <br>is not selected </div>|
 |:---|:---:|:---:|
