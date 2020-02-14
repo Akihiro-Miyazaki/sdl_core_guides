@@ -4,7 +4,9 @@
 <ol>
 This chapter describes how the HU displays the SDL App Icon on the screen by the connecting Mobile to the HU.
 </ol>
+
 ### [1.3.SDL App Icon Caching](./1.3.SDL_App_Icon_Caching/index.md)
+This chapter describes the caching of SDL App Icon on the SDL menu screen.
 ### [2.4.Launch by Hard SW](./2.4.Launch_by_Hard_SW/index.md)
 ### [2.5.Behavior after ACC OFFON(Resume of Last Launched SDL App)](./2.5.Behavior_after_ACC_OFFON(Resume_of_Last_Launched_SDL_App))
 ### [2.6.Change Screen to SDL App from Other Smartphone Linkage Functions](./2.6.Change_Screen_to_SDL_App_from_Other_Smartphone_Linkage_Functions/index.md).
