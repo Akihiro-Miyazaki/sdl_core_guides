@@ -1,6 +1,9 @@
 # Contests of Best Practice documents
 
-### 1.1. Establish Session
+### [1.1. Establish Session](./1.1.Establish_Session/index.md)
+<ol>
+This chapter describes the launch sequence of normal type, MEDIA type and the NAVIGATION/PROJECTION type apps.
+</ol>
 
 ### [1.2. SDL App Icon Display](./1.2.SDL_App_Icon_Display/index.md)
 <ol>
@@ -16,13 +19,25 @@ This chapter describes the caching of SDL App Icon on the SDL menu screen.
 
 ### 1.5. Definitions when the HU returns RPC error
 
-### 1.6. Behavior when the HU returns RPC error
+### [1.6. Behavior when the HU returns RPC error](./1.6.Behavior_when_the_HU_returns_RPC_Error/index.md)
+<ol>
+This chapter describes the behavior when the SDL App terminates unexpectedly.
+</ol>
 
-### 2.1. Press the App icon on the SDL menu screen
+### [2.1. Press the App icon on the SDL menu screen](./2.1.Press_the_App_Icon_on_the_SDL_menu_screen/index.md)
+<ol>
+This chapter describes the launch of the SDL App by pressing the SDL App icon on the main menu.
+</ol>
 
-### 2.2. Launch by Voice Recognition
+### [2.2. Launch by Voice Recognition](./2.2.Launch_by_Voice_Recognition/index.md)
+<ol>
+This chapter describes the launch of the SDL App by Voice Recognition (pushing Push To Talk (PTT) button).
+</ol>
 
-### 2.3. Launch by choosing Audio source on the Audio screen
+### [2.3. Launch by choosing Audio source on the Audio screen](./2.3.Launch_by_choosing_the_Audio_source_on_the_Audio_screen)
+<ol>
+This chapter describes the launch of the SDL App from the Audio source selection screen.The icon of SDL Media App which AppHMIType is "MEDIA" will be displayed on the audio source selection screen.
+</ol>
 
 ### [2.4. Launch by Hard SW](./2.4.Launch_by_Hard_SW/index.md)
 <ol>
@@ -71,4 +86,4 @@ This chapter provides information about the definition of the HMI Status (Level)
 The HU controls the status of display and playback audio by notifying the HMI Level to the mobile.
 </ol>
 
-### Appendix. Terminologies and Definitions
+### [Appendix. Terminologies and Definitions](./Appendix.Terminologies_and_Definitions/index.md)
