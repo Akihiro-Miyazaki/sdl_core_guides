@@ -24,7 +24,8 @@ The following (1), (3), (4), (5) mentioned above, already each has of their own 
 By short press of the PTT button, voice recognition is activated, and the user can launch and display the SDL App on HU by recognizing the SDL App name.
 Even after launching the SDL App, you can still continue to use Voice Recognition.
 The Voice Recognition is canceled, when it detects a voice key word or a silence during the voice recognition state.In addition, if the HU receives a launching request of the SDL App by Voice Recognition, then the HU will decide that the SDL App can not be launched, (in this case, when the mobile is not connected or the SDL app is not registed, etc.)
-Then the HU should notify an error to user.<br>
+Then the HU should notify an error to user.
+
 The SDL App can be launched by Voice Recognition with Wakeup Word without pressing down the PTT button.	After detecting the Wakeup Word, the user can continuously use the same microphone for Voice Recognition to launch the SDL App.
 The Wakeup Word is specified in OEM's specification.
 
