@@ -1,7 +1,8 @@
 # 2.3 Launch by choosing the Audio source on the Audio screen
 
 ## 1. Overview
-This chapter describes the launch of the SDL App from the Audio source selection screen.The icon of SDL Media App which AppHMIType is "MEDIA" will be displayed on the audio source selection screen.
+This chapter describes the launch of the SDL App from the Audio source selection screen.
+The Icon of SDL Media App which AppHMIType is "MEDIA" will be displayed on the audio source selection screen.
 
 ## 2. Background/Purpose/Reason for Standardization
 Currently, the launch of the SDL App is an SDL standard behavior.
@@ -23,7 +24,8 @@ The user operations that trigger the launch of SDL App are listed below:
 The following (1), (2), (4), (5) mentioned above, already each has of their own documents. Thus, this chapter provides information about (3).
 
 ### 3.2. Press App icon on the Audio source selection screen.
-The SDL App can be launched by pressing the SDL App Icon displayed on the Audio Source selection screen.If the Native Audio is running, it will stop.
+The SDL App can be launched by pressing the SDL App Icon displayed on the Audio Source selection screen.
+If the Native Audio is running, it will stop.
 If other SDL Media App is running, that App will be in "BACKGROUND" state.
 
 ## 4. Differences from the SDL standard specification
@@ -36,10 +38,14 @@ Therefore, all of the contents describe in "3. Function Details" differ from the
 3. The user presses the SDL App icon on the Audio source seclection screen.
 4. Then, the HMI will start the SDL App launch sequence.<br>
  *1 The display of the Audio source selction screen during 1 and 2, is specified by the OEMs.<br>
- *2 Refer to “1.1.Session establishment” for the SDL App launch sequence.<br>
- 
+ *2 Refer to “1.1. Establish_Session” for the SDL App launch sequence.<br>
+
+<div align="center">
+
 ![Figure1_launch_of_SDLApp_by_choosing_the_AudioSource.png](./assets/Figure1_launch_of_SDLApp_by_choosing_the_AudioSource.png)<br>
-<b>Figure1 </b> The launch of SDL App by choosing the Audio source on the Audio screen
+<b>Figure1.</b> The launch of SDL App by choosing the Audio source on the Audio screen
+
+</div>
 
 ## 5. Sequence Diagrams
 Changes impact the following platform/s:
