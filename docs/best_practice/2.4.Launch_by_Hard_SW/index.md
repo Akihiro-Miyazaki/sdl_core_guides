@@ -66,7 +66,7 @@ The following table below shows the SDL Media App state when the ModeSW on the s
 
 **Table1** The HMI Level and the behavior after the ModeSW is pressed on the HU display screen
 
-| HU display screen | Target SDL Media App <br>is selected | Target SDL Media App <br>is not selected |
+|<div align="center"> HU display screen </div>|<div align="center"> Target SDL Media App <br>is selected </div>|<div align="center"> Target SDL Media App <br>is not selected </div>|
 |:---|:---:|:---:|
 | Audio screen | HMI Level = "FULL" <br>＆ Start playback | HMI Level = "BACKGROUND" <br>＆ Stop playback |
 | Aside from the Audio screen <br>(such as the Navigation screen) | HMI Level = "LIMITED" <br>＆ Start playback | HMI Level = "BACKGROUND" <br>＆ Stop playback |
@@ -90,7 +90,7 @@ Figure1 describes the following sequence:<br>
 <div align="center">
 
 ![figure1_launch_of_sdl_app_after_pressing_sw.png](./assets/figure1_launch_of_sdl_app_after_pressing_sw.png)<br>
-**Figure1** Launch of SDL App after pressing SW sequence
+**Figure1.** Launch of SDL App after pressing SW sequence
 
 </div>
 
