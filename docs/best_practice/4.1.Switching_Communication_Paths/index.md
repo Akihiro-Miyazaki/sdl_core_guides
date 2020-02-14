@@ -20,19 +20,42 @@ The following Table1 describes the specification for switching the multiple Tran
 
 **Table1.** Table for switching multiple Transport
 
-<table align="left">
-<tr><th colspan="2" rowspan="2"></th><th colspan="3"> Additional Connection Method </th></tr>
-
-<tr><th> BT </th><th> USB </th><th> WiFi </th></tr>
-
-<tr><td rowspan="4"> Current <br>Connection </td><td align="center"> BT </td><td align="center"> - </td><td align="center"> USB<br>*1 </td><td align="center"> BT + WiFi<br>*2 </td></tr>
-
-<tr><td align="center"> USB </td><td align="center"> USB<br>*3 </td><td align="center"> - </td><td align="center"> USB<br>*3 </td></tr>
-
-<tr><td align="center"> WiFi </td><td align="center"> BT + WiFi </td><td align="center"> USB </td><td align="center"> - </td></tr>
-
-<tr><td align="center"> BT + WiFi </td><td align="center"> - </td><td align="center"> USB<br>*4 </td><td align="center"> - </td></tr>
+<table>
+  <tr>
+    <th colspan="2" rowspan="2"></th>
+    <th align="center" colspan="3"> Additional Connection Method </th>
+  </tr>
+  <tr>
+    <th align="center"> BT </th>
+    <th align="center"> USB </th>
+    <th align="center"> WiFi </th>
+  </tr>
+  <tr>
+    <td align="left" rowspan="4"> Current <br>Connection </td>
+    <td align="center"> BT </td><td align="center"> - </td>
+    <td align="center"> USB<br>*1 </td>
+    <td align="center"> BT + WiFi<br>*2 </td>
+  </tr>
+  <tr>
+    <td align="center"> USB </td>
+    <td align="center"> USB<br>*3 </td>
+    <td align="center"> - </td>
+    <td align="center"> USB<br>*3 </td>
+  </tr>
+  <tr>
+    <td align="center"> WiFi </td>
+    <td align="center"> BT + WiFi </td>
+    <td align="center"> USB </td>
+    <td align="center"> - </td>
+  </tr>
+  <tr>
+    <td align="center"> BT + WiFi </td>
+    <td align="center"> - </td>
+    <td align="center"> USB<br>*4 </td>
+    <td align="center"> - </td>
+  </tr>
 </table>
+
 <ol>
 *1 : If the SDL App is able to judge as the same device, it should switch Transport to USB.<br>
 *2 : If the SDL App will use the VPM after detecting WiFi tranport(which judge to be same with the device using BT), 
