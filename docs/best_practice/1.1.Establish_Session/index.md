@@ -133,6 +133,7 @@ Additional sequence is added in the red frame of Figure1 for each App type.
 Parts other than the red frame are common to/shared by all App type, and there are no lack in the sequences.
 The sequence described in the red part refers to the RPC communication sequence; it is not described in the SDL standard specification.
 <br>
+<br>
 
 <div align="center">
 
