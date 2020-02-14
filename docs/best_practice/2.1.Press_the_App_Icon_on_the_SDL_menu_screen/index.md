@@ -30,7 +30,7 @@ Therefore, all of the contents describe in "5. Sequence Diagrams" differ from th
 ## 5. Sequence Diagrams
 1. The user presses the SDL App Icon.
 2. Then, the HMI will start the SDL App launch sequence.<br>
- *Refer to "1.1. Establish Session" for the SDL App launch sequence.
+ *Refer to "1.1. Establish_Session" for the SDL App launch sequence.
 
 <div align="center">
 
