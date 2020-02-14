@@ -71,4 +71,4 @@ This chapter provides information about the definition of the HMI Status (Level)
 The HU controls the status of display and playback audio by notifying the HMI Level to the mobile.
 </ol>
 
-### Appendix. Terminologies and definitions
+### Appendix. Terminologies and Definitions
