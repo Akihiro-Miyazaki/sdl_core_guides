@@ -40,19 +40,26 @@ The following sequence diagrams show the sequence for conditions (1) to (5) ment
 <div align="center">
 
 ![figure1_occurs_three_times_from_the_same_device.png](./assets/figure1_occurs_three_times_from_the_same_device.png)<br>
-**Figure1** Deletion of SDL App Icon Data(The "RPC'RegisterAppInterface' <br>is not received within 60 seconds after the primary connection." occurs three times from the same device)
-<br><br><br>
+**Figure1.** Deletion of SDL App Icon Data(The "RPC'RegisterAppInterface' <br>is not received within 60 seconds after the primary connection." occurs three times from the same device)
+<br>
+<br>
+<br>
 
 ![figure2_initialization.png](./assets/figure2_initialization.png)<br>
-**Figure2** Deletion of SDL App Icon Data(Initialization (Deletion of the personal information), Change in the language)
-<br><br><br>
+**Figure2.** Deletion of SDL App Icon Data(Initialization (Deletion of the personal information), Change in the language)
+<br>
+<br>
+<br>
 
 ![figure3_deletion_from_the_policytable.png](./assets/figure3_deletion_from_the_policytable.png)<br>
-**Figure3** Deletion of SDL App Icon Data(Deletion from the PolicyTable)
-<br><br><br>
+**Figure3.** Deletion of SDL App Icon Data(Deletion from the PolicyTable)
+<br>
+<br>
+<br>
 
 ![figure4_mobile_connected_is_changed.png](./assets/figure4_mobile_connected_is_changed.png)<br>
-**Figure4** Deletion of SDL App Icon Data(The Mobile connected via SDL is changed.)
+**Figure4.** Deletion of SDL App Icon Data(The Mobile connected via SDL is changed.)
+
 </div>
 
 ## 6. Impacted Platforms
