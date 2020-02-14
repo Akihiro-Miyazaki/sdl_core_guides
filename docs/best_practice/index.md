@@ -34,7 +34,7 @@ This chapter describes the launch of the SDL App by pressing the SDL App icon on
 This chapter describes the launch of the SDL App by Voice Recognition (pushing Push To Talk (PTT) button).
 </ol>
 
-### [2.3. Launch by choosing Audio source on the Audio screen](./2.3.Launch_by_choosing_the_Audio_source_on_the_Audio_screen)
+### [2.3. Launch by choosing Audio source on the Audio screen](./2.3.Launch_by_choosing_the_Audio_source_on_the_Audio_screen/index.md)
 <ol>
 This chapter describes the launch of the SDL App from the Audio source selection screen.The icon of SDL Media App which AppHMIType is "MEDIA" will be displayed on the audio source selection screen.
 </ol>
