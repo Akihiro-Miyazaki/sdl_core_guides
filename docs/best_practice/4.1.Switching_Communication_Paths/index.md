@@ -31,25 +31,26 @@ The following Table1 describes the specification for switching the multiple Tran
     <th align="center"> WiFi </th>
   </tr>
   <tr>
-    <td align="left" rowspan="4"> Current <br>Connection </td>
-    <td align="center"> BT </td><td align="center"> - </td>
+    <td align="left" rowspan="4"><b> Current <br>Connection </b></td>
+    <td align="center"><b> BT </b></td>
+    <td align="center"> - </td>
     <td align="center"> USB<br>*1 </td>
     <td align="center"> BT + WiFi<br>*2 </td>
   </tr>
   <tr>
-    <td align="center"> USB </td>
+    <td align="center"><b> USB </b></td>
     <td align="center"> USB<br>*3 </td>
     <td align="center"> - </td>
     <td align="center"> USB<br>*3 </td>
   </tr>
   <tr>
-    <td align="center"> WiFi </td>
+    <td align="center"><b> WiFi </b></td>
     <td align="center"> BT + WiFi </td>
     <td align="center"> USB </td>
     <td align="center"> - </td>
   </tr>
   <tr>
-    <td align="center"> BT + WiFi </td>
+    <td align="center"><b> BT + WiFi </b></td>
     <td align="center"> - </td>
     <td align="center"> USB<br>*4 </td>
     <td align="center"> - </td>
