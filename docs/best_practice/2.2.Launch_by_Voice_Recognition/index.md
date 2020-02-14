@@ -64,7 +64,8 @@ Also, when the SDL feature is disabled (for example, disabled by OTA), the speec
 
 ## 4. Differences from the SDL standard specification
 The trigger that launches the SDL App is not explicitly defined in the SDL standard specification, because it is processed in the HMI.
-(Information such as the maximum number of registration of ttsName, and characters for one device are the only ones specified)Therefore, all of the contents describe in "3. Function Details" differ from the existing SDL Standard Specification.
+(Information such as the maximum number of registration of ttsName, and characters for one device are the only ones specified.)
+Therefore, all of the contents describe in "3. Function Details" differ from the existing SDL Standard Specification.
 
 ## 5. Sequence Diagrams
 [Prerequisites]<br>
