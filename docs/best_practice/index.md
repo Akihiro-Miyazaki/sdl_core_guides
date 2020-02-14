@@ -15,11 +15,11 @@ This chapter describes how the HU displays the SDL App Icon on the screen by the
 This chapter describes the caching of SDL App Icon on the SDL menu screen.
 </ol>
 
-### 1.4. Capabilities definition with TOYOTA settings
+### 1.4. Capabilities Definition with TOYOTA Settings
 
-### 1.5. Definitions when the HU returns RPC error
+### 1.5. Definitions when the HU returns RPC Error
 
-### [1.6. Behavior when the HU returns RPC error](./1.6.Behavior_when_the_HU_returns_RPC_Error/index.md)
+### [1.6. Behavior when the HU returns RPC Error](./1.6.Behavior_when_the_HU_returns_RPC_Error/index.md)
 <ol>
 This chapter describes the behavior when the SDL App terminates unexpectedly.
 </ol>
