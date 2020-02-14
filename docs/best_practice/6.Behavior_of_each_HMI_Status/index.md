@@ -61,26 +61,25 @@ The following tables below show the rules of status change, when the user switch
     <th align="center"> Other </th>
   </tr>
   <tr>
-    <td align="left" rowspan="3"> 1st <br>launched</td>
-    <td align="center"> NAVIGATION </td>
+    <td align="left" rowspan="3"><b> 1st <br>launched </b></td>
+    <td align="center"><b> NAVIGATION </b></td>
     <td align="left"> 1stNAVIGATION:NS<br>2ndNAVIGATION:S </td>
     <td align="left"> 1stNAVIGATION:NS<br>2ndPROJECTION:S </td>
     <td align="left"> 1stNAVIGATION:S<br>2ndOther:NS </td>
   </tr>
   <tr>
-    <td align="center"> PROJECTION </td>
+    <td align="center"><b> PROJECTION </b></td>
     <td align="left"> 1stPROJECTION:NS<br>2ndNAVIGATION:S </td>
     <td align="left"> 1stPROJECTION:NS<br>2ndPROJECTION:S </td>
     <td align="left"> 1stPROJECTION:S<br>2ndOther:NS </td>
   </tr>
   <tr>
-    <td align="center"> Other </td>
+    <td align="center"><b> Other </b></td>
     <td align="left"> 1stOther:NS<br>2ndNAVIGATION:S </td>
     <td align="left"> 1stOther:NS<br>2ndPROJECTION:S </td>
     <td align="left"> 1stOther:NS<br>2ndOther:S </td>
   </tr>
 </table>
-<br>
 * S : STREAMABLE, NS : NOT_STREAMABLE<br><br>
 
 **Table5.** Matrix table for Audio Streaming status
@@ -97,34 +96,33 @@ The following tables below show the rules of status change, when the user switch
     <th align="center"> Other </th>
   </tr>
   <tr>
-    <td align="left" rowspan="4"> 1st <br>launched</td>
-    <td align="center"> NAVIGATION </td>
+    <td align="left" rowspan="4"><b> 1st <br>launched </b></td>
+    <td align="center"><b> NAVIGATION </b></td>
     <td align="left"> 1stNAVIGATION:NA<br>2ndNAVIGATION:A </td>
     <td align="left"> 1stNAVIGATION:A<br>2ndPROJECTION:NA </td>
     <td align="left"> 1stNAVIGATION:A<br>2ndIsMediaApp:NA </td>
     <td align="left"> 1stNAVIGATION:A<br>2ndOther:NA </td>
   </tr>
   <tr>
-    <td align="center"> PROJECTION </td>
+    <td align="center"><b> PROJECTION </b></td>
     <td align="left"> 1stPROJECTION:A<br>2ndNAVIGATION:NA </td>
     <td align="left"> 1stPROJECTION:NA<br>2ndPROJECTION:A </td>
     <td align="left"> 1stPROJECTION:A<br>2ndIsMediaApp:NA </td>
     <td align="left"> 1stPROJECTION:A<br>2ndOther:NA </td>
   </tr>
   <tr>
-    <td align="center"> IsMediaApp </td>
+    <td align="center"><b> IsMediaApp </b></td>
     <td align="left"> 1stIsMediaApp:A<br>2ndNAVIGATION:NA </td>
     <td align="left"> 1stIsMediaApp:A<br>2ndPROJECTION:NA </td>
     <td align="left"> 1stIsMediaApp:NA<br>2ndIsMediaApp:A </td>
     <td align="left"> 1stIsMediaApp:A<br>2ndOther:NA </td>
   </tr>
   <tr>
-    <td align="center"> Other </td>
+    <td align="center"><b> Other </b></td>
     <td align="left"> 1stOther:NA<br>2ndNAVIGATION:A </td>
     <td align="left"> 1stOther:NA<br>2ndPROJECTION:A </td>
     <td align="left"> 1stOther:NA<br>2ndIsMediaApp:A </td>
     <td align="left"> 1stOther:NA<br>2ndOther:A </td>
   </tr>
 </table>
-<br>
 * A : AUDIBLE, NA : NOT_AUDIBLE
