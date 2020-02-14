@@ -137,19 +137,19 @@ The sequence described in the red part refers to the RPC communication sequence;
 
 <div align="center">
 
-![Figure2_Normal_type_App_launch_sequence.png](./assets/Figure2_Normal_type_App_launch_sequence.png)<br>
+![Figure2_Normal_type_App_launch_sequence.png](./assets/Figure2_Normal_type_App_launch_sequence.png)
 <b>Figure2.</b> Normal type App launch sequence
 <br>
 <br>
 <br>
 
-![Figure3_MEDIA_type_App_launch_sequence.png](./assets/Figure3_MEDIA_type_App_launch_sequence.png)<br>
+![Figure3_MEDIA_type_App_launch_sequence.png](./assets/Figure3_MEDIA_type_App_launch_sequence.png)
 <b>Figure3.</b> MEDIA type App launch sequence
 <br>
 <br>
 <br>
 
-![Figure4_NAVIGATION-PROJECTION_type_App_launch_sequence.png](./assets/Figure4_NAVIGATION-PROJECTION_type_App_launch_sequence.png)<br>
+![Figure4_NAVIGATION-PROJECTION_type_App_launch_sequence.png](./assets/Figure4_NAVIGATION-PROJECTION_type_App_launch_sequence.png)
 <b>Figure4.</b> NAVIGATION / PROJECTION type App launch sequence
 
 </div>
