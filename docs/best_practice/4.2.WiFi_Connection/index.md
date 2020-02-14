@@ -24,9 +24,9 @@ Therefore, WiFi can not be connected as a PrimaryTransport.
 The communication on SecondaryTransport follows the SmartDeviceLink protocol specification.
 Below is a list of control frame that is used for SecondaryTransport connection.
 
-**Table1** Control Frame list
+**Table1.** Control Frame list
 
-| No. | Frame <br>value | Frame | Description |
+|<div align="center"> No. </div>|<div align="center"> Frame <br>value </div>|<div align="center"> Frame </div>|<div align="center"> Description </div>|
 |:---:|:---:|:---|:---|
 | 1 | 0x01 | Start Service | Requests to start specific (type of) service. |
 | 2 | 0x02 | Start Service ACK | Notifies that Start Service has started successfully.<br>Strat Service ACK of PrimariyTransport has the information of SecondaryTransport.<br>When the SDL App establish SecondaryTransport session, this informaton will be refered.<br>The information on protocol version is attributed in this frame. |
@@ -39,9 +39,9 @@ Below is a list of control frame that is used for SecondaryTransport connection.
 Next, listed below are the parameter set in the control frame.
 About the parameter setting, please refer to the smartDeviceLink.ini file in the SDL Core.
 
-**Table2** Parameters set in Control frame
+**Table2.** Parameters set in Control frame
 
-| No. | Parameter | Description |
+|<div align="center"> No. </div>|<div align="center"> Parameter </div>|<div align="center"> Description </div>|
 |:---:|:---|:---|
 | 1 | protocolVersion | Parameter of "Start Service ACK" frame.<br>Shows the version of SmartDeviceLink Protocol specification (Ex. "5.0.0").<br>The newest version of SmartDeviceLink Protocol specification is needed to create the SDL App. |
 | 2 | secondaryTransports[] | Parameter of "Start Service ACK" frame.<br>Shows transport type which supports as SecondaryTransport.<br>The proxy starts to set up SecondaryTransport, when Transport Type is notified.<br>If there is no supported Transport Type, the array should be omitted or emptied.<br>Please refer to table3 for the kinds of Transport Type. |
@@ -54,9 +54,9 @@ Note : [] indicates the array type, and able for multiple settings.
 
 Listed below are Transport Type strings used in the parameter of SecondaryTransport.
 
-**Table3** TransportType strings list set on SecondaryTransports
+**Table3.** TransportType strings list set on SecondaryTransports
 
-| No. | TransportType string | Description |
+|<div align="center"> No. </div>|<div align="center"> TransportType string </div>|<div align="center"> Description </div>|
 |:---:|:---|:---|
 | 1 | IAP_BLUETOOTH | iPhone Accessary Protocol(iAP) via Bluetooth |
 | 2 | IAP_USB | iAP via USB, cannot distinguish between the Host mode and the Device mode |
@@ -83,9 +83,9 @@ By setting all of the information, WiFi connection can be used as SecondaryTrans
 For the sequence of WiFi connection, refer to "4. Sequence Diagrams".
 Note that WiFi connection cannot be set when the DriverDistraction is ON. Thus, it is set during parking.
 
-**Table4** WiFi setting Parameter
+**Table4.** WiFi setting Parameter
 
-| No. | Parameter | Description |
+|<div align="center"> No. </div>|<div align="center"> Parameter </div>|<div align="center"> Description </div>|
 |:---:|:---|:---|
 | 1 | supportWiFiAutoConnect | Indicates whether the automatic WiFi connection is supported or not, as the parameter of struct DeviceInfo.<br><ol> True : Supported<br> False : Not supported</ol> |
 | 2 | WiFiStateInfo | Shows WiFi Status as the parameter of RPC"GetWiFiStatusInfo(Response)".<br><ol> WIFI_STATE_DISABLED ： WiFi is disabled.<br> WIFI_STATE_ENABLED ： WiFi is enabled.</ol> |
@@ -99,11 +99,13 @@ Refer to Figure1 for the sequence of SecondaryTransport connection establishment
 <div align="center">
 
 ![figure1_establishment_of_secondarytransport_connection.png](./assets/figure1_establishment_of_secondarytransport_connection.png)<br>
-**Figure1** Establishment sequence of SecondaryTransport connection
-<br><br><br>
+**Figure1.** Establishment sequence of SecondaryTransport connection
+<br>
+<br>
+<br>
 
 ![figure2_wifi_connection.png](./assets/figure2_wifi_connection.png)<br>
-**Figure2** WiFi connection sequence
+**Figure2.** WiFi connection sequence
 
 </div>
 
