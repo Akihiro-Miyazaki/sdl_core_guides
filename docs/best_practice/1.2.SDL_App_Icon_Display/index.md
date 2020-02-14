@@ -96,7 +96,7 @@ The following tables below show the cases where the SDL App Icon display status 
   </tr>
   <tr>
     <td align="left"> During initialization(Deletion of the personal information) </td>
-    <td align="center rowspan="2"> Figure4 </td>
+    <td align="center" rowspan="2"> Figure4 </td>
   </tr>
   <tr>
     <td align="left"> During change in the language </td>
