@@ -155,3 +155,4 @@ The sequence described in the red part refers to the RPC communication sequence;
 ## 6. Impacted Platforms
 Changes only affects the SDLC Guideline documents.
 There is no impact to the SDL Core and Proxy.
+
