@@ -27,7 +27,7 @@ Therefore, all of the contents describe in "3. Function Details" differ from the
 ## 5. Sequence Diagrams
 Table1 shows the behavior when each smartphone linkage functions are switched.
 
-**Table1** Switching behavior Matrix
+**Table1.** Switching behavior Matrix
 ![table1_switching_behavior_matrix.png](./assets/table1_switching_behavior_matrix.png)
 
 
