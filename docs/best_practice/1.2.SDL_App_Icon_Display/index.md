@@ -43,7 +43,7 @@ The table below shows the status for each SDL App Icon display.
 
 **Table1** Status in each SDL App Icon status
 
-| Icon Display | Description | Icon Status |
+|<div align="center"> Icon Display </div>|<div align="center"> Description </div> |<div align="center"> Icon Status </div>|
 |:---|:---|:---:|
 | Not displayed | If there is no SDL App Icon data in the cache. | - |
 | Tonedown Icon <br>is displayed | There is SDL App Icon data in the cache.<br>If the RPC "RegisterAppInterface" is not received or <br>the RPC"UnregisterAppInterface" <br>is received during Toneup SDL App Icon display. | Inactive |
@@ -77,15 +77,38 @@ There is no problem for OEMs to define the threshold value such as the number of
 The following tables below show the cases where the SDL App Icon display status changes.
 
 **Table2** SDL App Icon display status in each case
-<table align="left">
-<tr><th> Cases where the SDL App Icon display status changes </th><th> Reference </th></tr>
-<tr><td> When there is no cache (Normal case) </td><td align="center"> Figure1 </td></tr>
-<tr><td> When there is a cache (Normal case) </td><td align="center"> Figure2 </td></tr>
-<tr><td> When the "RPC'RegisterAppInterface' is not received within 60 seconds <br>after the primary connection." occurs three times from the same device </td><td align="center"> Figure3 </td></tr>
-<tr><td> During initialization(Deletion of the personal information) </td><td rowspan="2" align="center"> Figure4 </td></tr>
-<tr><td> During change in the language </td></tr>
-<tr><td> When the SDL App data is deleted from the PolicyTable </td><td align="center"> Figure5 </td></tr>
-<tr><td> When the RPC"UnregisterAppInterface" from the Mobile is received </td><td align="center"> Figure6 </td></tr>
+<table>
+  <tr>
+    <th align="center"> Cases where the SDL App Icon display status changes </th>
+    <th align="center"> Reference </th>
+  </tr>
+  <tr>
+    <td align="left"> When there is no cache (Normal case) </td>
+    <td align="center"> Figure1 </td>
+  </tr>
+  <tr>
+    <td align="left"> When there is a cache (Normal case) </td>
+    <td align="center"> Figure2 </td>
+  </tr>
+  <tr>
+    <td align="left"> When the "RPC'RegisterAppInterface' is not received within 60 seconds <br>after the primary connection." occurs three times from the same device </td>
+    <td align="center"> Figure3 </td>
+  </tr>
+  <tr>
+    <td align="left"> During initialization(Deletion of the personal information) </td>
+    <td align="center rowspan="2"> Figure4 </td>
+  </tr>
+  <tr>
+    <td align="left"> During change in the language </td>
+  </tr>
+  <tr>
+    <td align="left"> When the SDL App data is deleted from the PolicyTable </td>
+    <td align="center"> Figure5 </td>
+  </tr>
+  <tr>
+    <td align="left"> When the RPC"UnregisterAppInterface" from the Mobile is received </td>
+    <td align="center"> Figure6 </td>
+  </tr>
 </table>
 
 The Sequence Diagrams of change in the SDL App Icon display status is below:
@@ -98,19 +121,27 @@ The Sequence Diagrams of change in the SDL App Icon display status is below:
 
 ![Figure2_Normal case with cache](./assets/figure2_normal_case_with_cache.png)<br>
 **Figure2** SDL App Icon display status sequence(Normal case with cache)
-<br><br><br>
+<br>
+<br>
+<br>
 
 ![Figure3_occurs three times from the same device](./assets/figure3_occurs_three_times_from_the_same_device.png)<br>
 **Figure3** SDL App Icon display status sequence(The "RPC'RegisterAppInterface' <br>is not received within 60 seconds after the primary connection." occurs three times from the same device)
-<br><br><br>
+<br>
+<br>
+<br>
 
 ![Figure4_Initialization](./assets/figure4_initialization.png)<br>
 **Figure4** SDL App Icon display status sequence<br>(Initialization (Deletion of the personal information), Change in the language)
-<br><br><br>
+<br>
+<br>
+<br>
 
 ![Figure5_Deletion from the PolicyTable](./assets/figure5_deletion_from_the_policytable.png)<br>
 **Figure5** SDL App Icon display status sequence(Deletion from the PolicyTable)
-<br><br><br>
+<br>
+<br>
+<br>
 
 ![Figure6_UnregisterAppInterface](./assets/figure6_unregisterappinterface.png)<br>
 **Figure6** SDL App Icon display status sequence(Reception of the RPC"UnregisterAppInterface")
