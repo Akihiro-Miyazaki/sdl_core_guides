@@ -1,4 +1,4 @@
-# Contests of Best Practice
+# Contests of Best Practice Documents
 
 ### 1.1. Establish Session
 
