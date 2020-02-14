@@ -1,5 +1,7 @@
 # Contests of Best Practice
 
+### 1.1.Establish Session
+
 ### [1.2.SDL App Icon Display](./1.2.SDL_App_Icon_Display/index.md)
 <ol>
 This chapter describes how the HU displays the SDL App Icon on the screen by the connecting Mobile to the HU.
@@ -9,6 +11,18 @@ This chapter describes how the HU displays the SDL App Icon on the screen by the
 <ol>
 This chapter describes the caching of SDL App Icon on the SDL menu screen.
 </ol>
+
+### 1.4. Capabilities definition with TOYOTA settings
+
+### 1.5.Definitions when the HU returns RPC error
+
+### 1.6.Behavior when the HU returns RPC error
+
+### 2.1.Press the App icon on the SDL menu screen
+
+### 2.2.Launch by Voice Recognition
+
+### 2.3.Launch by choosing Audio source on the Audio screen
 
 ### [2.4.Launch by Hard SW](./2.4.Launch_by_Hard_SW/index.md)
 <ol>
@@ -56,3 +70,5 @@ Listed below are three cases considered as kinds of interruption.
 This chapter provides information about the definition of the HMI Status (Level) and the behavior of SDL Apps by HMI status.
 The HU controls the status of display and playback audio by notifying the HMI Level to the mobile.
 </ol>
+
+### Appendix. Terminologies and definitions
