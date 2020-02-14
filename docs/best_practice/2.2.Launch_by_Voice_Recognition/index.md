@@ -1,4 +1,4 @@
-# 2.2. Launch by Voice recognition
+# 2.2. Launch by Voice Recognition
 
 ## 1. Overview
 This chapter describes the launch of the SDL App by Voice Recognition (pushing Push To Talk (PTT) button).
@@ -38,13 +38,18 @@ The maximum number of pronounciations data that can be registered for one SDL Ap
 #### 3.3.1. Registration of ttsName
 The timing for registering the acquired App name phoneme data (ttsName), App name (appName), and alias definition for speech recognition (vrSynonyms) to the speech recognition function is:
 <ol>
- (1) After 60 seconds have passed since device connection or language switching, all cached SDL Apps will be registered at once.<br>
- (2) Following (1), every time there is a new registration from the SDL App, all cached SDL Apps will be registered at once.<br>
+ (1) After 60 seconds have passed since device connection or language switching, all cached SDL Apps <ol>will be registered at once.</ol>
+ (2) Following (1), every time there is a new registration from the SDL App, all cached SDL Apps will be registered <ol>at once.</ol>
 </ol>
 
 The registration sequence of ttsName for the voice recognition function is as follows.
+
+<div align="center">
+
 ![Figure1_The_registration_sequence_of_ttsName.png](./assets/Figure1_The_registration_sequence_of_ttsName.png)<br>
-<b>Figure1 </b>The registration sequence of ttsName
+<b>Figure1.</b> The registration sequence of ttsName
+
+</div>
 
 #### 3.3.2. Deletion of ttsName
 When ttsName, appName, and vrSynonyms are updated, the voice recognition commands for launching the SDL App are also updated, and old commands are deleted.Also, when the SDL feature is disabled (for example, disabled by OTA), the speech recognition commands in the SDL App are removed.
@@ -59,20 +64,24 @@ The SDL App must be registered.
 1. The user presses the PTT button to activate voice recognition.
 2. The user calls the SDL App name.
 3. Then, the HMI will start the SDL App launch sequence.
-<br>*Refer to "1.1. Establish Session" for the SDL App launch sequence.
+<br>*Refer to "1.1. Establish_Session" for the SDL App launch sequence.
+
+<div align="center">
 
 ![Figure2_The_SDLApp_launch_is_ok.png](./assets/Figure2_The_SDLApp_launch_is_ok.png)<br>
-<b>Figure2 </b>The SDL App launch by voice recognition.(In case the launch is possible)
+<b>Figure2.</b> The SDL App launch by voice recognition.(In case the launch is possible)
+
+</div>
 
 If the SDL App has not been registered, the operation shown in the sequence diagram below will be executed.
 
-![Figure3_The_SDLApp_launch_is_ng.png](./assets/Figure3_The_SDLApp_launch_is_ng.png)<br>
-<b>Figure3 </b>The SDL App launch by voice recognition. (In case the launch is not possible)
+<div align="center">
 
+![Figure3_The_SDLApp_launch_is_ng.png](./assets/Figure3_The_SDLApp_launch_is_ng.png)<br>
+<b>Figure3.</b> The SDL App launch by voice recognition. (In case the launch is not possible)
+
+</div>
 
 ## 6. Impacted Platforms
 Changes impact the following platform/s:
 - HMI
-
-
-
