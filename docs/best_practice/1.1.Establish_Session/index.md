@@ -83,7 +83,7 @@ The SDL App launch sequence in the SDL Standard Specification is below Figure1.
 
 </div>
 
-To launch SDL App, additional communication is needed in the red frame of Figure.1. However, currently that additional communication is not discribed.
+To launch SDL App, additional communication is needed in the red frame of Figure1. However, currently that additional communication is not discribed.
 For details about "Connect to Device" , please refer to the "Establishing a Transport" chapter of SDL Overview Guides on the SDLC official website.
 And since there is no lack of information (on the topics mentioned) , these topic will be omitted in this chapter.
 
