@@ -25,35 +25,99 @@ Table 1 shows the 9 patterns for switching SDL Apps.
 
 **Table1.** Sequence pattern of switching SDL Apps
 <table>
-<tr><th> No. </th><th> 1st Launched App	</th><th> 2nd launched App </th></tr>
-<tr><td> 1 </td><td rowspan="3"> "MEDIA" type SDL App </td><td> "MEDIA" type SDL App </td></tr>
-<tr><td> 2 </td><td> "NAVIGATION"/"PROJECTION" type SDL App </td></tr>
-<tr><td> 3 </td><td> Normal type SDL App </td></tr>
-<tr><td> 4 </td><td rowspan="3"> "NAVIGATION"/"PROJECTION" type SDL App </td><td> "MEDIA" type SDL App </td></tr>
-<tr><td> 5 </td><td> "NAVIGATION"/"PROJECTION" type SDL App </td></tr>
-<tr><td> 6 </td><td> Normal type SDL App </td></tr>
-<tr><td> 7 </td><td rowspan="3"> Normal type SDL App </td><td> "MEDIA" type SDL App </td></tr>
-<tr><td> 8 </td><td> "NAVIGATION"/"PROJECTION" type SDL App </td></tr>
-<tr><td> 9 </td><td> Normal type SDL App </td></tr>
+  <tr>
+    <th align="center"> No. </th>
+    <th align="center"> 1st Launched App	</th>
+    <th align="center"> 2nd launched App </th>
+  </tr>
+  <tr>
+    <td align="center"> 1 </td>
+    <td align="left" rowspan="3"> "MEDIA" type SDL App </td>
+    <td align="left"> "MEDIA" type SDL App </td>
+  </tr>
+  <tr>
+    <td align="center"> 2 </td>
+    <td align="left"> "NAVIGATION"/"PROJECTION" type SDL App </td>
+  </tr>
+  <tr>
+    <td align="center"> 3 </td>
+    <td align="left"> Normal type SDL App </td>
+  </tr>
+  <tr>
+    <td align="center"> 4 </td>
+    <td align="left" rowspan="3"> "NAVIGATION"/"PROJECTION" type SDL App </td>
+    <td align="left"> "MEDIA" type SDL App </td>
+  </tr>
+  <tr>
+    <td align="center"> 5 </td>
+    <td align="left"> "NAVIGATION"/"PROJECTION" type SDL App </td>
+  </tr>
+  <tr>
+    <td align="center"> 6 </td>
+    <td align="left"> Normal type SDL App </td>
+  </tr>
+  <tr>
+    <td align="center"> 7 </td>
+    <td align="left" rowspan="3"> Normal type SDL App </td>
+    <td align="left"> "MEDIA" type SDL App </td>
+  </tr>
+  <tr>
+    <td align="center"> 8 </td>
+    <td align="left"> "NAVIGATION"/"PROJECTION" type SDL App </td>
+  </tr>
+  <tr>
+    <td align="center"> 9 </td>
+    <td align="left"> Normal type SDL App </td>
+  </tr>
 </table>
 
 App types are determined by 'AppHMIType' in Table2 :
 
 **Table2.** AppType Categorized by each AppHMIType
 <table>
-<tr><th> app type </th><th> AppHMIType </th></tr>
-<tr><td rowspan="9"> Normal type SDL App </td><td> DEFAULT </td></tr>
-<tr><td> COMMUNICATION </td></tr>
-<tr><td> MESSAGING </td></tr>
-<tr><td> INFORMATION </td></tr>
-<tr><td> SOCIAL </td></tr>
-<tr><td> BACKGROUND_PROCESS </td></tr>
-<tr><td> TESTING </td></tr>
-<tr><td> SYSTEM </td></tr>
-<tr><td> REMOTE_CONTROL </td></tr>
-<tr><td> "MEDIA" type SDL App </td><td> MEDIA </td></tr>
-<tr><td rowspan="2"> "NAVIGATION"/"PROJECTION" type SDL App </td><td> NAVIGATION </td></tr>
-<tr><td> PROJECTION </td></tr>
+  <tr>
+    <th align="center"> App Type </th>
+    <th align="center"> AppHMIType </th>
+  </tr>
+  <tr>
+     <td align="left" rowspan="9"> Normal type App </td>
+     <td align="left"> DEFAULT </td></tr>
+  </tr>
+  <tr>
+     <td align="left"> COMMUNICATION </td></tr>
+  </tr>
+  <tr>
+     <td align="left"> MESSAGING </td></tr>
+  </tr>
+  <tr>
+     <td align="left"> INFORMATION </td></tr>
+  </tr>
+  <tr>
+     <td align="left"> SOCIAL </td></tr>
+  </tr>
+  <tr>
+     <td align="left"> BACKGROUND_PROCESS </td></tr>
+  </tr>
+  <tr>
+     <td align="left"> TESTING </td></tr>
+  </tr>
+  <tr>
+     <td align="left"> SYSTEM </td></tr>
+  </tr>
+  <tr>
+     <td align="left"> REMOTE_CONTROL </td></tr>
+  </tr>
+  <tr>
+     <td align="left"> MEDIA type App </td>
+     <td align="left"> MEDIA </td></tr>
+  </tr>
+  <tr>
+     <td align="left" rowspan = "2"> NAVIGATION / PROJECTION type App </td>
+     <td align="left"> NAVIGATION </td></tr>
+  </tr>
+  <tr>
+     <td align="left"> PROJECTION </td></tr>
+  </tr>
 </table>
 
 ## 4. Differences from SDL standard specification
