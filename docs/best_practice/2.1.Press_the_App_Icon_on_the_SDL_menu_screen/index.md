@@ -1,7 +1,7 @@
-# 2.1. Press the App icon on the SDL menu screen
+# 2.1. Press the App Icon on the SDL menu screen
 
 ## 1. Overview
-This chapter describes the launch of the SDL App by pressing the SDL App icon on the main menu.
+This chapter describes the launch of the SDL App by pressing the SDL App Icon on the main menu.
 
 ## 2. Background/Purpose/Reason for Standardization
 Currently, the launch of the SDL App is an SDL standard behavior.
@@ -24,18 +24,18 @@ The following (2)-(5) mentioned above, already each has of their own documents. 
 
 
 ## 4. Differences from the SDL standard specification
-The launch of SDL App by pressing the SDL App icon is not explicitly defined in the SDL standardard specification, because it is processed in the HMI.
+The launch of SDL App by pressing the SDL App Icon is not explicitly defined in the SDL standardard specification, because it is processed in the HMI.
 Therefore, all of the contents describe in "5. Sequence Diagrams" differ from the existing SDL standard specification.
 
 ## 5. Sequence Diagrams
-1. The user presses the SDL App icon.
+1. The user presses the SDL App Icon.
 2. Then, the HMI will start the SDL App launch sequence.<br>
  *Refer to "1.1. Establish Session" for the SDL App launch sequence.
 
 <div align="center">
 
 ![Figure1_The_launch_of_SDLApp_by_pressing_the_SDLAppicon.png](./assets/Figure1_The_launch_of_SDLApp_by_pressing_the_SDLAppicon.png)<br>
-<b>Figure1.</b> The launch of SDL App by pressing the SDL App icon
+<b>Figure1.</b> The launch of SDL App by pressing the SDL App Icon
 
 </div>
 
