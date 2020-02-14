@@ -1,7 +1,9 @@
-# Best_Practice
-## Contents
+# Contests of Best Practice
 
 ### [1.2.SDL App Icon Display](./1.2.SDL_App_Icon_Display/index.md)
+<ol>
+This chapter describes how the HU displays the SDL App Icon on the screen by the connecting Mobile to the HU.
+</ol>
 ### [1.3.SDL App Icon Caching](./1.3.SDL_App_Icon_Caching/index.md)
 ### [2.4.Launch by Hard SW](./2.4.Launch_by_Hard_SW/index.md)
 ### [2.5.Behavior after ACC OFFON(Resume of Last Launched SDL App)](./2.5.Behavior_after_ACC_OFFON(Resume_of_Last_Launched_SDL_App))
