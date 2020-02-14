@@ -16,7 +16,7 @@ Therefore, the definition of behavior and state of transition of each HMI level 
 
 **Table1.** Definition of each HMI Level
 
-| HMI Level | Definition |
+|<div align="center"> HMI Level </div>|<div align="center"> Definition </div>|
 |:---:|:---|
 | FULL | The SDL App state is "FULL".<br>An SDL App with this state is displayed on full screen.<br>The SDL App can also operate interactively with other HMI modules(such as UI, VR, TT, Audio system, etc). |
 | LIMITED | The SDL App state is "LIMITED".<br>A part of the function or display is limited (Currently, the "Limited" state is only applied to Navigation and Media Apps, for example, SDL App which AppHMIType is "NAVIGATION", "PROJECTION" and "MEDIA". |
@@ -25,7 +25,7 @@ Therefore, the definition of behavior and state of transition of each HMI level 
 
 **Table2.** Status Transition Rule of HMI Level
 
-| Status Transition Rule |
+|<div align="center"> Status Transition Rule </div>|
 |:---|
 | If the SDL App HMI Level is FULL", the behavior of other SDL Apps is as follows:<ol>- All SDL Apps except SDL Media/Video App will be BACKGROUND.<br>- All SDL Media/Video Apps(such as NAVIGATION, VC, MEDIA and PROJECTION) will be LIMITED.<br>- SDL Apps which AppHMIType are same will be BACKGROUND.</ol> |
 | If the SDL App HMI Level is "LIMITED", the behavior of other SDL Apps is as follows:<ol>- All SDL Apps except SDL Media/Video Apps will keep the current status.<br>- SDL Apps which AppHMIType are different will keep the current status.<br>- SDL Apps which AppHMIType are same will be BACKGROUND.</ol> |
@@ -50,33 +50,81 @@ The following tables below show the rules of status change, when the user switch
 
 **Table4.** Matrix table of Video Stream status
 
-<table align="left">
-<tr><th colspan="2" rowspan="2">  </th><th colspan="3"> 2nd launched </th></tr>
-
-<tr><th> NAVIGATION </th><th> PROJECTION </th><th> Other </th></tr>
-
-<tr><td rowspan="3"> 1st <br>launched</td><td> NAVIGATION </td><td> 1stNAVIGATION:NS<br>2ndNAVIGATION:S </td><td> 1stNAVIGATION:NS<br>2ndPROJECTION:S </td><td>1stNAVIGATION:S<br>2ndOther:NS </td></tr>
-
-<tr><td> PROJECTION </td><td> 1stPROJECTION:NS<br>2ndNAVIGATION:S </td><td> 1stPROJECTION:NS<br>2ndPROJECTION:S </td><td>1stPROJECTION:S<br>2ndOther:NS </td></tr>
-
-<tr><td> Other </td><td> 1stOther:NS<br>2ndNAVIGATION:S </td><td> 1stOther:NS<br>2ndPROJECTION:S </td><td>1stOther:NS<br>2ndOther:S </td></tr>
-
-</table><br>
+<table>
+  <tr>
+    <th colspan="2" rowspan="2">  </th>
+    <th align="center" colspan="3"> 2nd launched </th>
+  </tr>
+  <tr>
+    <th align="center"> NAVIGATION </th>
+    <th align="center"> PROJECTION </th>
+    <th align="center"> Other </th>
+  </tr>
+  <tr>
+    <td align="left" rowspan="3"> 1st <br>launched</td>
+    <td align="center"> NAVIGATION </td>
+    <td align="left"> 1stNAVIGATION:NS<br>2ndNAVIGATION:S </td>
+    <td align="left"> 1stNAVIGATION:NS<br>2ndPROJECTION:S </td>
+    <td align="left"> 1stNAVIGATION:S<br>2ndOther:NS </td>
+  </tr>
+  <tr>
+    <td align="center"> PROJECTION </td>
+    <td align="left"> 1stPROJECTION:NS<br>2ndNAVIGATION:S </td>
+    <td align="left"> 1stPROJECTION:NS<br>2ndPROJECTION:S </td>
+    <td align="left"> 1stPROJECTION:S<br>2ndOther:NS </td>
+  </tr>
+  <tr>
+    <td align="center"> Other </td>
+    <td align="left"> 1stOther:NS<br>2ndNAVIGATION:S </td>
+    <td align="left"> 1stOther:NS<br>2ndPROJECTION:S </td>
+    <td align="left"> 1stOther:NS<br>2ndOther:S </td>
+  </tr>
+</table>
+<br>
 * S : STREAMABLE, NS : NOT_STREAMABLE<br><br>
 
 **Table5.** Matrix table for Audio Streaming status
-<table align="left">
-<tr><th colspan="2" rowspan="2">  </th><th colspan="4"> 2nd launched </th></tr>
 
-<tr><th> NAVIGATION </th><th> PROJECTION </th><th> IsMediaApp </th><th> Other </th></tr>
-
-<tr><td rowspan="4"> 1st <br>launched</td><td> NAVIGATION </td><td> 1stNAVIGATION:NA<br>2ndNAVIGATION:A </td><td> 1stNAVIGATION:A<br>2ndPROJECTION:NA </td><td> 1stNAVIGATION:A<br>2ndIsMediaApp:NA </td><td>1stNAVIGATION:A<br>2ndOther:NA </td></tr>
-
-<tr><td> PROJECTION </td><td> 1stPROJECTION:A<br>2ndNAVIGATION:NA </td><td> 1stPROJECTION:NA<br>2ndPROJECTION:A </td><td> 1stPROJECTION:A<br>2ndIsMediaApp:NA </td><td>1stPROJECTION:A<br>2ndOther:NA </td></tr>
-
-<tr><td> IsMediaApp </td><td> 1stIsMediaApp:A<br>2ndNAVIGATION:NA </td><td> 1stIsMediaApp:A<br>2ndPROJECTION:NA </td><td> 1stIsMediaApp:NA<br>2ndIsMediaApp:A </td><td>1stIsMediaApp:A<br>2ndOther:NA </td></tr>
-
-<tr><td> Other </td><td> 1stOther:NA<br>2ndNAVIGATION:A </td><td> 1stOther:NA<br>2ndPROJECTION:A </td><td> 1stOther:NA<br>2ndIsMediaApp:A </td><td>1stOther:NA<br>2ndOther:A </td></tr>
-
-</table><br>
+<table>
+  <tr>
+    <th colspan="2" rowspan="2">  </th>
+    <th align="center" colspan="4"> 2nd launched </th>
+  </tr>
+  <tr>
+    <th align="center"> NAVIGATION </th>
+    <th align="center"> PROJECTION </th>
+    <th align="center"> IsMediaApp </th>
+    <th align="center"> Other </th>
+  </tr>
+  <tr>
+    <td align="left" rowspan="4"> 1st <br>launched</td>
+    <td align="center"> NAVIGATION </td>
+    <td align="left"> 1stNAVIGATION:NA<br>2ndNAVIGATION:A </td>
+    <td align="left"> 1stNAVIGATION:A<br>2ndPROJECTION:NA </td>
+    <td align="left"> 1stNAVIGATION:A<br>2ndIsMediaApp:NA </td>
+    <td align="left"> 1stNAVIGATION:A<br>2ndOther:NA </td>
+  </tr>
+  <tr>
+    <td align="center"> PROJECTION </td>
+    <td align="left"> 1stPROJECTION:A<br>2ndNAVIGATION:NA </td>
+    <td align="left"> 1stPROJECTION:NA<br>2ndPROJECTION:A </td>
+    <td align="left"> 1stPROJECTION:A<br>2ndIsMediaApp:NA </td>
+    <td align="left"> 1stPROJECTION:A<br>2ndOther:NA </td>
+  </tr>
+  <tr>
+    <td align="center"> IsMediaApp </td>
+    <td align="left"> 1stIsMediaApp:A<br>2ndNAVIGATION:NA </td>
+    <td align="left"> 1stIsMediaApp:A<br>2ndPROJECTION:NA </td>
+    <td align="left"> 1stIsMediaApp:NA<br>2ndIsMediaApp:A </td>
+    <td align="left"> 1stIsMediaApp:A<br>2ndOther:NA </td>
+  </tr>
+  <tr>
+    <td align="center"> Other </td>
+    <td align="left"> 1stOther:NA<br>2ndNAVIGATION:A </td>
+    <td align="left"> 1stOther:NA<br>2ndPROJECTION:A </td>
+    <td align="left"> 1stOther:NA<br>2ndIsMediaApp:A </td>
+    <td align="left"> 1stOther:NA<br>2ndOther:A </td>
+  </tr>
+</table>
+<br>
 * A : AUDIBLE, NA : NOT_AUDIBLE
