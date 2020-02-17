@@ -357,14 +357,14 @@ The definition of "WindowCapability" and the setting example of TOYOTA are descr
 |
 <br>
 
-[Common.AppServiceCapability](#2.16.-appservicecapability)
+[Common.AppServiceCapability](#216-appservicecapability)
 
 ### 2.15. AppServicesCapabilities
 The definition of "AppServicesCapabilities" and the setting example of TOYOTA are described below.
 
 | No | NAME       |  TYPE                     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:        | :-:                       | :-:       | :-:        |--------------|-----------|
-|1   |appServices |[Common.AppServiceCapability](#2.16.-appservicecapability)|FALSE      |array: true |N/A           |An array of currently available services. If this is an update to the capability the affected services will include an update reason in that item.|
+|1   |appServices |[Common.AppServiceCapability](#216-appservicecapability)|FALSE      |array: true |N/A           |An array of currently available services. If this is an update to the capability the affected services will include an update reason in that item.|
 <br>
 
 
