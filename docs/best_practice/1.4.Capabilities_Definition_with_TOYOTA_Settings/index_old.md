@@ -4,7 +4,6 @@ This chapter describes about the capability, a function setting information that
 
 ## 2. SDL standard specification definition and TOYOTA setting example
 Below is the definition of the existing SDL standard specifications and the setting example of TOYOTA.
-
 ### 2.1. DisplayCapabilities
 The definition of "DisplayCapabilities" and the setting example of TOYOTA are described below.
 
@@ -17,9 +16,9 @@ The definition of "DisplayCapabilities" and the setting example of TOYOTA are de
 |5   |mediaClockFormats   |Common.MediaClockFormat |TRUE       |array: true<br>minsize: 0<br>maxsize: 100|"CLOCK1", "CLOCK2", "CLOCK3", "CLOCKTEXT1", "CLOCKTEXT2", "CLOCKTEXT3", "CLOCKTEXT4"|-|
 |6   |imageCapabilities   |Common.ImageType        |FALSE      |array: true<br>minsize: 0<br>maxsize: 2|DYNAMIC|-|
 |7   |graphicSupported    |Boolean                 |TRUE       |-           |TRUE          |-|
-|8   |templatesAvailable  |String                  |TRUE       |array: true<br>minsize: 0<br>maxsize: 100<br>maxlength: 100|"DEFAULT", "MEDIA", "NON-MEDIA", "ONSCREEN_PRESETS", "GRAPHIC_WITH_TEXT", "TEXT_WITH_GRAPHIC", "TILES_ONLY", "TEXTBUTTONS_ONLY", "GRAPHIC_WITH_TILES", "TILES_WITH_GRAPHIC", "GRAPHIC_WITH_TEXT_AND_SOFTBUTTONS","TEXT_AND_SOFTBUTTONS_WITH_GRAPHIC", "GRAPHIC_WITH_TEXTBUTTONS", "TEXTBUTTONS_WITH_GRAPHIC", "LARGE_GRAPHIC_WITH_SOFTBUTTONS", "DOUBLE_GRAPHIC_WITH_SOFTBUTTONS", "LARGE_GRAPHIC_ONLY"|-|
-|9   |screenParams        |Common.ScreenParams     |FALSE      |-           |"resolution": {<br>    "resolutionWidth": 1163,<br>    "resolutionHeight": 720<br>},<br>"touchEventAvailable": {<br>    "pressAvailable": true,<br>    "multiTouchAvailable": false,<br>    "doublePressAvailable": false<br>}|-|
-|10  |numCustomPresetsAvailable |Integer           |FALSE      |minvalue: 1<br>maxvalue: 100| 10      |-|
+|8   |templatesAvailable  |String                  |TRUE       |array: true<br>minsize: 0<br>maxsize: 100<br>maxlength: 100|"DEFAULT", "MEDIA", "NON-MEDIA", "ONSCREEN_PRESETS", "GRAPHIC_WITH_TEXT", "TEXT_WITH_GRAPHIC", "TILES_ONLY", "TEXTBUTTONS_ONLY", "GRAPHIC_WITH_TILES", "TILES_WITH_GRAPHIC", "GRAPHIC_WITH_TEXT_AND_SOFTBUTTONS","TEXT_AND_SOFTBUTTONS_WITH_GRAPHIC", "GRAPHIC_WITH_TEXTBUTTONS", "TEXTBUTTONS_WITH_GRAPHIC", "LARGE_GRAPHIC_WITH_SOFTBUTTONS", "DOUBLE_GRAPHIC_WITH_SOFTBUTTONS", "LARGE_GRAPHIC_ONLY"<br>|-|
+|9   |screenParams        |Common.ScreenParams     |FALSE      |-           |resolution": {<br>    "resolutionWidth": 1163,<br>    "resolutionHeight": 720<br>},<br>"touchEventAvailable": {<br>    "pressAvailable": true,<br>    "multiTouchAvailable": false,<br>    "doublePressAvailable": false|-|
+|10  |numCustomPresetsAvailable |Integer    |FALSE      |minvalue: 1<br>maxvalue: 100| 10      |-|
 <br>
 
 
@@ -60,8 +59,8 @@ The definition of "SoftButtonCapabilities" and the setting example of TOYOTA are
 | No | NAME              | TYPE   | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:               | :-:    | :-:       | :-:        |--------------|------------|
 |1   |shortPressAvailable|Boolean |TRUE       | -          |TRUE         |The button supports a short press.<br>Whenever the button is pressed short, onButtonPressed(SHORT) must be invoked.|
-|2   |longPressAvailable |Boolean |TRUE       | -          |FALSE        |The button supports a LONG press.<br>Whenever the button is pressed long, onButtonPressed(LONG) must be invoked.|
-|3   |upDownAvailable    |Boolean |TRUE       | -          |FALSE        |The button supports "button down" and "button up".<br>Whenever the button is pressed, onButtonEvent(DOWN) must be invoked.<br>Whenever the button is released, onButtonEvent(UP) must be invoked.|
+|2   |longPressAvailable |Boolean |TRUE       | -          |FALSE        |The button supports a LONG press.<br>Whenever the button is pressed long, onButtonPressed( LONG) must be invoked.|
+|3   |upDownAvailable    |Boolean |TRUE       | -          |FALSE        |The button supports "button down" and "button up".<br>Whenever the button is pressed, onButtonEvent( DOWN) must be invoked.<br>Whenever the button is released, onButtonEvent( UP) must be invoked.|
 |4   |imageSupported     |Boolean |TRUE       | -          |TRUE         |Must be true if the button supports referencing a static or dynamic image.|
 |5   |textSupported      |Boolean |FALSE      | -          |N/A          |The button supports the use of text.<br>If not included, the default value should be considered true that the button will support text.|
 
@@ -81,24 +80,24 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 
 | No | NAME               | TYPE     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                | :-:      | :-:       | :-:        |--------------|-----------|
-|1   |sendLocationEnabled |Boolean   |FALSE      | -          |TRUE          |If the module has the ability to add locations to the onboard nav.|
-|2   |getWayPointsEnabled |Boolean   |FALSE      | -          |TRUE          |If the module has the ability to return way points from onboard nav.|
+|1   |sendLocationEnabled |Boolean   |FALSE      | -          |TRUE          |If the module has the ability to add locations to the onboard nav|
+|2   |getWayPointsEnabled |Boolean   |FALSE      | -          |TRUE          |If the module has the ability to return way points from onboard nav|
 <br>
 
 (2) "phoneCapability" in the "SystemCapability" setting is described below.
 
 | No | NAME             | TYPE     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:              | :-:      | :-:       | :-:        |--------------|-----------|
-|1   |dialNumberEnabled |Boolean   |FALSE      | -          |TRUE          |If the module has the ability to perform dial number.|
+|1   |dialNumberEnabled |Boolean   |FALSE      | -          |TRUE          |If the module has the ability to perform dial number|
 <br>
 
 (3) "videoStreamingCapability" in the "SystemCapability" setting is described below.
 
 | No | NAME                      | TYPE                       | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                       | :-:                        | :-:       | :-:        |--------------|-----------|
-|1   |preferredResolution        |Common.ImageResolution      |FALSE      | -          |resolutionWidth : 1163<br>resolutionHeight : 720|The preferred resolution of a video stream for decoding and rendering on HMI.|
+|1   |preferredResolution        |Common.ImageResolution      |FALSE      | -          |resolutionWidth　 ： 1163<br>resolutionHeight　： 720| The preferred resolution of a video stream for decoding and rendering on HMI.|
 |2   |maxBitrate                 |Integer                     |FALSE      |minvalue: 0<br>maxvalue: 2147483647| 10000 |The maximum bitrate of video stream that is supported, in kbps.|
-|3   |supportedFormats           |Common.VideoStreamingFormat |FALSE      |array: true |{ "protocol": "RTP",<br>"codec": "H264" },<br>{ "protocol": "RAW",<br>"codec": "H264" }|Detailed information on each format supported by this system, in its preferred order.|
+|3   |supportedFormats           |Common.VideoStreamingFormat |FALSE      |array: true |{ "protocol: "RTP",<br>"codec": "H264" },<br>{ protocol: "RAW,<br>codec: "H264" }"|Detailed information on each format supported by this system, in its preferred order.|
 |4   |hapticSpatialDataSupported |boolean                     |FALSE      | -          |FALSE         |True if the system can utilize the haptic spatial data from the REFERENCE being streamed.|
 |5   |diagonalScreenSize         |Float                       |FALSE      |minvalue: 0 |N/A           |The diagonal screen size in inches.|
 |6   |pixelPerInch               |Float                       |FALSE      |minvalue: 0 |N/A           |PPI is the diagonal resolution in pixels divided by the diagonal screen size in inches.|
@@ -110,22 +109,22 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 | No | NAME                          | TYPE                                  | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                           | :-:                                   | :-:       | :-:        |--------------|-----------|
-|1   |climateControlCapabilities     |ClimateControlCapabilities             |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-1 "climateControlCapabilities" in section 2.6.|If included, the platform supports RC climate controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
-|2   |radioControlCapabilities       |RadioControlCapabilities               |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-2 "radioControlCapabilities" in section 2.6.|If included, the platform supports RC radio controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
-|3   |buttonCapabilities             |Common.ButtonCapabilities              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100| N/A |If included, the platform supports RC button controls with the included button names.|
+|1   |climateControlCapabilities     |ClimateControlCapabilities             |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-1 "climateControlCapabilities" in section 2.6.|If included, the platform supports RC climate controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported|
+|2   |radioControlCapabilities       |RadioControlCapabilities               |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-2 "radioControlCapabilities" in section 2.6.|If included, the platform supports RC radio controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported|
+|3   |buttonCapabilities             |Common.ButtonCapabilitie               |FALSE      |array: true<br>minsize: 1<br>maxsize: 100| N/A |If included, the platform supports RC button controls with the included button names|
 |4   |seatControlCapabilities        |Common.SeatControlCapabilities         |FALSE      |minsize="1"<br>maxsize="100"<br>array="true"|Refer to (4)-3 "seatControlCapabilities" in section 2.6.|If included, the platform supports seat controls.|
 |5   |audioControlCapabilities       |Common.AudioControlCapabilities        |FALSE      |minsize="1"<br>maxsize="100"<br>array="true" | Refer to (4)-4 "audioControlCapabilities" in section 2.6. |If included, the platform supports audio controls.|
 |6   |hmiSettingsControlCapabilities |Common.HMISettingsControlCapabilities  |FALSE      | -          | Refer to (4)-5 "hmiSettingsControlCapabilities" in section 2.6.| If included, the platform supports hmi setting controls.|
 |7   |lightControlCapabilities       |Common.LightControlCapabilities        |FALSE      | -          | N/A | If included, the platform supports light controls.|
 <br>
 
-(4)-1 The following describes “climateControlCapabilities” in the “RemoteControlCapabilities” setting.
+(4) -1 The following describes “climateControlCapabilities” in the “RemoteControlCapabilities” setting.
 
 | No | NAME                        | TYPE             | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                         | :-:              | :-:       | :-:        |--------------|-----------|
-|1   |moduleName                   |String            |TRUE       |maxlength: 100  | primary_climate |The short friendly name of the climate control module. It should not be used to identify a module by mobile application.|
-|2   |moduleInfo                   |Common.ModuleInfo |FALSE      | -          |N/A           |Information about a RC module, including its id. |
-|3   |fanSpeedAvailable            |Boolean           |FALSE      | -          |TRUE          |Availability of the control of fan speed.<br>True: Available, False: Not Available, Not present: Not Available. |
+|1   |moduleName                   |String            |TRUE       |maxlength: 100  | primary_climate | The short friendly name of the climate control module. It should not be used to identify a module by mobile application.|
+|2   |moduleInfo                   |Common.ModuleInfo |FALSE      | -          |N/A | Information about a RC module, including its id. |
+|3   |fanSpeedAvailable            |Boolean           |FALSE      | -          |TRUE          |Availability of the control of fan speed<br>True: Available, False: Not Available, Not present: Not Available. |
 |4   |currentTemperatureAvailable  |Boolean           |FALSE      | -          |TRUE          |Availability of the reading of current temperature.<br>True: Available, False: Not Available, Not present: Not Available.|
 |5   |desiredTemperatureAvailable  |Boolean           |FALSE      | -          |TRUE          |Availability of the control of desired temperature.<br>True: Available, False: Not Available, Not present: Not Available.|
 |6   |acEnableAvailable            |Boolean           |FALSE      | -          |TRUE          |Availability of the control of turn on/off AC.<br>True: Available, False: Not Available, Not present: Not Available.|
@@ -133,10 +132,10 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |8   |circulateAirEnableAvailable  |Boolean           |FALSE      | -          |FALSE         |Availability of the control of enable/disable circulate Air mode.<br>True: Available, False: Not Available, Not present: Not Available.|
 |9   |autoModeEnableAvailable      |Boolean           |FALSE      | -          |TRUE          |Availability of the control of enable/disable auto mode.<br>True: Available, False: Not Available, Not present: Not Available.|
 |10  |dualModeEnableAvailable      |Boolean           |FALSE      | -          |TRUE          |Availability of the control of enable/disable dual mode.<br>True: Available, False: Not Available, Not present: Not Available.|
-|11  |defrostZoneAvailable         |Boolean           |FALSE      | -          |FALSE         |Availability of the control of defrost zones.<br>True: Available, False: Not Available, Not present: Not Available.|
+|11  |defrostZoneAvailable         |Boolean           |FALSE      | -          |FALSE         |Availability of the control of defrost zones.<br>True: Available, False: Not Available, Not present: Not Available|
 |12  |defrostZone                  |DefrostZone       |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A |A set of all defrost zones that are controllable.|
 |13  |ventilationModeAvailable     |Boolean           |FALSE      | -          |FALSE         |Availability of the control of air ventilation mode.<br>True: Available, False: Not Available, Not present: Not Available.|
-|14  |ventilationMode              |VentilationMode   |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A |A set of all ventilation modes that are controllable.|
+|14  |ventilationMode              |VentilationMode   |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A |A set of all ventilation modes that are controllable|
 |15  |heatedSteeringWheelAvailable |Boolean           |FALSE      | -          |TRUE          |Availability of the control (enable/disable) of heated Steering Wheel.<br>True: Available, False: Not Available, Not present: Not Available.|
 |16  |heatedWindshieldAvailable    |Boolean           |FALSE      | -          |FALSE         |Availability of the control (enable/disable) of heated Windshield.<br>True: Available, False: Not Available, Not present: Not Available.|
 |17  |heatedRearWindowAvailable    |Boolean           |FALSE      | -          |FALSE         |Availability of the control (enable/disable) of heated Rear Window.<br>True: Available, False: Not Available, Not present: Not Available.|
@@ -170,7 +169,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 | No | NAME                                  | TYPE             | MANDATORY | ADDITIONAL     |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                                   | :-:              | :-:       | :-:            |--------------|-----------|
 |1   |moduleName                             |String            |TRUE       |maxlength="100" |driver_seat   |The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
-|2   |moduleInfo                             |Common.ModuleInfo |FALSE      | -              |N/A           |Information about a RC module, including its id.|
+|2   |moduleInfo                             |Common.ModuleInfo |FALSE      | -              |N/A           | Information about a RC module, including its id.|
 |3   |heatingEnabledAvailable                |Boolean           |FALSE      | -              |FALSE         | - |
 |4   |coolingEnabledAvailable                |Boolean           |FALSE      | -              |FALSE         | - |
 |5   |heatingLevelAvailable                  |Boolean           |FALSE      | -              |FALSE         | - |
@@ -179,7 +178,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |8   |verticalPositionAvailable              |Boolean           |FALSE      | -              |FALSE         | - |
 |9   |frontVerticalPositionAvailable         |Boolean           |FALSE      | -              |FALSE         | - |
 |10  |backVerticalPositionAvailable          |Boolean           |FALSE      | -              |FALSE         | - |
-|11  |backTiltAngleAvailable                 |Boolean           |FALSE      | -              |FALSE         | - |
+|11  |backTiltAngleAvailablee                |Boolean           |FALSE      | -              |FALSE         | - |
 |12  |headSupportHorizontalPositionAvailable |Boolean           |FALSE      | -              |FALSE         | - |
 |13  |headSupportVerticalPositionAvailable   |Boolean           |FALSE      | -              |FALSE         | - |
 |14  |massageEnabledAvailable                |Boolean           |FALSE      | -              |FALSE         | - |
@@ -317,9 +316,9 @@ The definition of "HMICapabilities" and the setting example of TOYOTA are descri
 
 | No | NAME          | TYPE   | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:           | :-:    | :-:       | :-:        |--------------|-----------|
-|1   |navigation     |Boolean |FALSE      | -          |N/A           |Availability of build in Nav. True: Available, False: Not Available.|
-|2   |phoneCall      |Boolean |FALSE      | -          |N/A           |Availability of build in phone. True: Available, False: Not Available.|
-|3   |videoStreaming |Boolean |FALSE      | -          |N/A           |Availability of built-in video streaming. True: Available, False: Not Available.|
+|1   |navigation     |Boolean |FALSE      | -          |N/A           |Availability of build in Nav. True: Available, False: Not Available|
+|2   |phoneCall      |Boolean |FALSE      | -          |N/A           |Availability of build in phone. True: Available, False: Not Available|
+|3   |videoStreaming |Boolean |FALSE      | -          |N/A           |Availability of built-in video streaming. True: Available, False: Not Available|
 <br>
 
 ### 2.12. DisplayCapability
@@ -328,7 +327,7 @@ The definition of "DisplayCapability" and the setting example of TOYOTA are desc
 | No | NAME               |  TYPE                        | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                | :-:                          | :-:       | :-:        |--------------|-----------|
 |1   |displayName         |String                        |FALSE      | -          |N/A           |-|
-|2   |windowTypeSupported |Common.WindowTypeCapabilities |FALSE      |array: true<br>minsize: 1|N/A           |Informs the application how many windows the app is allowed to create per type.|
+|2   |windowTypeSupported |Common.WindowTypeCapabilities |FALSE      |array: true<br>minsize: 1|N/A           |Informs the application how many windows the app is allowed to create per type|
 |3   |windowCapabilities  |Common.WindowCapability       |FALSE      |array: true<br>minsize: 1<br>maxsize: 1000|N/A           |Contains a list of capabilities of all windows related to the app.<br>Once the app has registered the capabilities of all windows are provided.<br>GetSystemCapability still allows requesting window capabilities of all windows.|
 
 ### 2.13. WindowTypeCapabilities
@@ -346,15 +345,14 @@ The definition of "WindowCapability" and the setting example of TOYOTA are descr
 | No | NAME                     |  TYPE                        | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                      | :-:                          | :-:       | :-:        |--------------|-----------|
 |1   |windowID                  |Integer                       |FALSE      | -          |N/A           |The specified ID of the window. Can be set to a predefined window, or omitted for the main window on the main display.|
-|2   |textFields                |Common.TextField              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A           |A set of all fields that support text data. See TextField.|
-|3   |imageFields               |Common.ImageField             |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A           |A set of all fields that support images. See ImageField.|
+|2   |textFields                |Common.TextField              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A           |A set of all fields that support text data. See TextField|
+|3   |imageFields               |Common.ImageField             |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A           |A set of all fields that support images. See ImageField|
 |4   |imageTypeSupported        |Common.ImageType              | -         |array: true<br>minsize: 0<br>maxsize: 1000 |N/A           |Provides information about image types supported by the system.|
 |5   |templatesAvailable        |String                        |FALSE      |array: true<br>minsize: 1<br>maxsize: 100<br>maxlength: 100 |N/A           |A set of all window templates available on the head unit.|
 |6   |numCustomPresetsAvailable |Integer                       |FALSE      |minvalue: 1<br>maxvalue: 100 |N/A           |The number of on-window custom presets available (if any); otherwise omitted.|
 |7   |buttonCapabilities        |Common.ButtonCapabilities     |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A           |The number of buttons and the capabilities of each on-window button.|
 |8   |softButtonCapabilities    |Common.SoftButtonCapabilities |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A           |The number of soft buttons available on-window and the capabilities for each button.|
-|9   |menuLayoutsAvailable      |Common.MenuLayout             |FALSE      |array: true<br>minsize: 1<br>maxsize: 1000 |N/A           |An array of available menu layouts. If this parameter is not provided, only the LIST layout is assumed to be available.
-|
+|9   |menuLayoutsAvailable      |Common.MenuLayout             |FALSE      |array: true<br>minsize: 1<br>maxsize: 1000 |N/A           |An array of available menu layouts. If this parameter is not provided, only the LIST layout is assumed to be available|
 <br>
 
 ### 2.15. AppServicesCapabilities
@@ -362,7 +360,7 @@ The definition of "AppServicesCapabilities" and the setting example of TOYOTA ar
 
 | No | NAME       |  TYPE                     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:        | :-:                       | :-:       | :-:        |--------------|-----------|
-|1   |appServices |Common.AppServiceCapability|FALSE      |array: true |N/A           |An array of currently available services. If this is an update to the capability the affected services will include an update reason in that item.|
+|1   |appServices |Common.AppServiceCapability|FALSE      |array: true |N/A           |An array of currently available services. If this is an update to the capability the affected services will include an update reason in that item|
 <br>
 
 ### 2.16. AppServiceCapability
@@ -370,8 +368,8 @@ The definition of "AppServiceCapability" and the setting example of TOYOTA are d
 
 | No | NAME                   |  TYPE                     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                    | :-:                       | :-:       | :-:        |--------------|-----------|
-|1   |updateReason            |Common.ServiceUpdateReason |FALSE      | -          |N/A           |Only included in OnSystemCapabilityUpdated. Update reason for service record.|
-|2   |updatedAppServiceRecord |Common.AppServiceRecord    |TRUE       | -          |N/A           |Service record for a specific app service provider.|
+|1   |updateReason            |Common.ServiceUpdateReason |FALSE      | -          |N/A           |Only included in OnSystemCapabilityUpdated. Update reason for service record |
+|2   |updatedAppServiceRecord |Common.AppServiceRecord    |TRUE       | -          |N/A           |Service record for a specific app service provider|
 <br>
 
 ### 2.17. SeatLocationCapability
@@ -383,4 +381,4 @@ The definition of "SeatLocationCapability" and the setting example of TOYOTA are
 |1   |rows    |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100 |N/A           |Contains information about the locations of each seat.|
 |2   |columns |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100 |N/A           |Contains information about the locations of each seat.|
 |3   |levels  |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100<br>defvalue:1|N/A           |Contains information about the locations of each seat.|
-|4   |seats   |Common.SeatLocation |FALSE      |array: true |N/A           |Contains a list of SeatLocation in the vehicle, the first element is the driver's seat.|
+|4   |seats   |Common.SeatLocation |FALSE      |array: true |N/A           |Contains a list of SeatLocation in the vehicle, the first element is the driver's seat|
