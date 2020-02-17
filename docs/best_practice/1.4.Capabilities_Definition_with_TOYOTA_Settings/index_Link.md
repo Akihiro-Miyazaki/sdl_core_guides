@@ -311,7 +311,7 @@ The definition of "LightCapabilities" and the setting example of TOYOTA are desc
 |3   |densityAvailable       |Boolean          |FALSE      | -          |N/A           |Indicates if the light's density can be set remotely (similar to a dimmer).|
 |4   |rgbColorSpaceAvailable |Boolean          |FALSE      | -          |N/A           |Indicates if the light's color can be set remotely by using the sRGB color space.|
 <br>
-
+[Common.AppServiceCapability](2.16. AppServiceCapability)
 ### 2.11. HMICapabilities
 The definition of "HMICapabilities" and the setting example of TOYOTA are described below.
 
@@ -357,14 +357,16 @@ The definition of "WindowCapability" and the setting example of TOYOTA are descr
 |
 <br>
 
+[Common.AppServiceCapability](#2.16.-appservicecapability)
+
 ### 2.15. AppServicesCapabilities
 The definition of "AppServicesCapabilities" and the setting example of TOYOTA are described below.
 
 | No | NAME       |  TYPE                     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:        | :-:                       | :-:       | :-:        |--------------|-----------|
-|1   |appServices |[Common.AppServiceCapability](# 2.16. AppServiceCapability)|FALSE      |array: true |N/A           |An array of currently available services. If this is an update to the capability the affected services will include an update reason in that item.|
+|1   |appServices |[Common.AppServiceCapability](#2.16.-appservicecapability)|FALSE      |array: true |N/A           |An array of currently available services. If this is an update to the capability the affected services will include an update reason in that item.|
 <br>
-[Common.AppServiceCapability](# 2.16. AppServiceCapability)
+
 
 ### 2.16. AppServiceCapability
 The definition of "AppServiceCapability" and the setting example of TOYOTA are described below.
