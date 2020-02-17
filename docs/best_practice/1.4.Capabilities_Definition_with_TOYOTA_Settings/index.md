@@ -25,7 +25,7 @@ The definition of "DisplayCapabilities" and the setting example of TOYOTA are de
 
 
 ### 2.2. TouchEventCapabilities
-The definition of “TouchEventCapabilities” and the setting example of TOYOTA are described below.In case of TOYOTA setting, TouchEventCapability is set in "touchEventAvailable" in "screenParam" of "2.1 DisplayCapability".
+The definition of "TouchEventCapabilities" and the setting example of TOYOTA are described below.In case of TOYOTA setting, TouchEventCapability is set in "touchEventAvailable" in "screenParam" of "2.1 DisplayCapability".
 
 | No | NAME               | TYPE  | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                | :-:   | :-:       | :-:        |--------------|-----------|
@@ -35,7 +35,7 @@ The definition of “TouchEventCapabilities” and the setting example of TOYOTA
 <br>
 
 ### 2.3. AudioPassThruCapabilities
-The definition of “AudioPassThruCapabilities” and the setting example of TOYOTA are described below.
+The definition of "AudioPassThruCapabilities" and the setting example of TOYOTA are described below.
 
 | No | NAME         | TYPE               | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:          | :-:                | :-:       | :-:        |--------------|-----------|
@@ -45,7 +45,7 @@ The definition of “AudioPassThruCapabilities” and the setting example of TOY
 <br>
 
 ### 2.4. pcmStreamCapabilities
-The definition of “pcmStreamCapabilities” and a setting example of TOYOTA are described below.
+The definition of "pcmStreamCapabilities" and a setting example of TOYOTA are described below.
 
 | No | NAME       | TYPE     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:        | :-:      | :-:       | :-:        |--------------|-----------|
@@ -66,7 +66,7 @@ The definition of "SoftButtonCapabilities" and the setting example of TOYOTA are
 |5   |textSupported      |Boolean |FALSE      | -          |N/A          |The button supports the use of text.<br>If not included, the default value should be considered true that the button will support text.|
 
 ### 2.6. SystemCapabilities
-The definition of “SystemCapabilities” and the setting example of TOYOTA are described below.
+The definition of "SystemCapabilities" and the setting example of TOYOTA are described below.
 The Capability existing in the setting is described in (1) to (4) of this chapter.
 
 | No | NAME                              | TYPE                           | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
@@ -77,7 +77,7 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 |4   |remoteControlCapability (undefined)|undefined                       |undefined  | undefined  |Refer to (4) "remoteControlCapability" in section 2.6. | - |
 <br>
 
-(1) "navigationCapability" in the “SystemCapability” setting is described below.
+(1) "navigationCapability" in the "SystemCapability" setting is described below.
 
 | No | NAME               | TYPE     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                | :-:      | :-:       | :-:        |--------------|-----------|
@@ -105,7 +105,7 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 |7   |scale                      |Float                       |FALSE      |minvalue: 1<br>maxvalue: 10|N/A           |The scaling factor the app should use to change the size of the projecting view.|
 <br>
 
-(4) “remoteControlCapability” in the “SystemCapability” setting is described below.
+(4) "remoteControlCapability" in the "SystemCapability" setting is described below.
 The TOYOTA setting of Capability existing in the setting is described in (4) -1 to (4) -5 of this chapter.
 
 | No | NAME                          | TYPE                                  | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
@@ -113,13 +113,13 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |1   |climateControlCapabilities     |ClimateControlCapabilities             |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-1 "climateControlCapabilities" in section 2.6.|If included, the platform supports RC climate controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
 |2   |radioControlCapabilities       |RadioControlCapabilities               |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-2 "radioControlCapabilities" in section 2.6.|If included, the platform supports RC radio controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
 |3   |buttonCapabilities             |Common.ButtonCapabilities              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100| N/A |If included, the platform supports RC button controls with the included button names.|
-|4   |seatControlCapabilities        |Common.SeatControlCapabilities         |FALSE      |minsize="1"<br>maxsize="100"<br>array="true"|Refer to (4)-3 "seatControlCapabilities" in section 2.6.|If included, the platform supports seat controls.|
-|5   |audioControlCapabilities       |Common.AudioControlCapabilities        |FALSE      |minsize="1"<br>maxsize="100"<br>array="true" | Refer to (4)-4 "audioControlCapabilities" in section 2.6. |If included, the platform supports audio controls.|
+|4   |seatControlCapabilities        |Common.SeatControlCapabilities         |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-3 "seatControlCapabilities" in section 2.6.|If included, the platform supports seat controls.|
+|5   |audioControlCapabilities       |Common.AudioControlCapabilities        |FALSE      |array: true<br>minsize: 1<br>maxsize: 100| Refer to (4)-4 "audioControlCapabilities" in section 2.6. |If included, the platform supports audio controls.|
 |6   |hmiSettingsControlCapabilities |Common.HMISettingsControlCapabilities  |FALSE      | -          | Refer to (4)-5 "hmiSettingsControlCapabilities" in section 2.6.| If included, the platform supports hmi setting controls.|
 |7   |lightControlCapabilities       |Common.LightControlCapabilities        |FALSE      | -          | N/A | If included, the platform supports light controls.|
 <br>
 
-(4)-1 The following describes “climateControlCapabilities” in the “RemoteControlCapabilities” setting.
+(4)-1 The following describes "climateControlCapabilities" in the "RemoteControlCapabilities" setting.
 
 | No | NAME                        | TYPE             | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                         | :-:              | :-:       | :-:        |--------------|-----------|
@@ -144,11 +144,11 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |19  |climateEnableAvailable       |Boolean           |FALSE      | -          |N/A           |Availability of the control of enable/disable climate control.<br>True: Available, False: Not Available, Not present: Not Available.|
 <br>
 
-(4)-2 The “radioControlCapabilities” in the “RemoteControlCapabilities” setting is described below.
+(4)-2 The "radioControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
 | No | NAME                           | TYPE             | MANDATORY | ADDITIONAL    |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                            | :-:              | :-:       | :-:           |--------------|-----------|
-|1   |moduleName                      |String            |TRUE       |maxlength: 100 |radio         |The short friendly name of the climate control module.<br>It should not be used to identify a module by mobile application.|
+|1   |moduleName                      |String            |TRUE       |maxlength: 100 |radio         |The short friendly name of the radio control module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo                      |Common.ModuleInfo |FALSE      | -             |N/A           |Information about a RC module, including its id.|
 |3   |radioEnableAvailable            |Boolean           |FALSE      | -             |FALSE         |Availability of the control of enable/disable radio.<br>True: Available, False: Not Available, Not present: Not Available.|
 |4   |radioBandAvailable              |Boolean           |FALSE      | -             |TRUE          |Availability of the control of radio band.<br>True: Available, False: Not Available, Not present: Not Available.|
@@ -169,7 +169,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 | No | NAME                                  | TYPE             | MANDATORY | ADDITIONAL     |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                                   | :-:              | :-:       | :-:            |--------------|-----------|
-|1   |moduleName                             |String            |TRUE       |maxlength="100" |driver_seat   |The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
+|1   |moduleName                             |String            |TRUE       |maxlength= 100  |driver_seat   |The short friendly name of the seat control module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo                             |Common.ModuleInfo |FALSE      | -              |N/A           |Information about a RC module, including its id.|
 |3   |heatingEnabledAvailable                |Boolean           |FALSE      | -              |FALSE         | - |
 |4   |coolingEnabledAvailable                |Boolean           |FALSE      | -              |FALSE         | - |
@@ -192,20 +192,20 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 | No | NAME                 | TYPE             | MANDATORY | ADDITIONAL     |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                  | :-:              | :-:       | :-:            |--------------|-----------|
-|1   |moduleName            |String            |TRUE       |maxlength="100" |audio         |The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
+|1   |moduleName            |String            |TRUE       |maxlength= 100  |audio         |The short friendly name of the audio control module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo            |Common.ModuleInfo |FALSE      |                |N/A           |Information about a RC module, including its id.|
 |3   |sourceAvailable       |Boolean           |FALSE      |                |FALSE         |Availability of the control of audio source.|
 |4   |keepContextAvailable  |Boolean           |FALSE      |                |FALSE         |Availability of the parameter keepContext.|
 |5   |volumeAvailable       |Boolean           |FALSE      |                |FALSE         |Availability of the control of audio volume.|
 |6   |equalizerAvailable    |Boolean           |FALSE      |                |FALSE         |Availability of the control of Equalizer Settings.|
-|7   |equalizerMaxChannelId |Integer           |FALSE      |minvalue="1"<br> maxvalue="100" | 1 |Must be included if equalizerAvailable=true, and assume all IDs starting from 1 to this value are valid.|
+|7   |equalizerMaxChannelId |Integer           |FALSE      |minvalue= 1<br> maxvalue= 100| 1 |Must be included if equalizerAvailable=true, and assume all IDs starting from 1 to this value are valid.|
 <br>
 
 (4)-5 The "hmiSettingsControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
 | No | NAME                    | TYPE             | MANDATORY | ADDITIONAL      |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                     | :-:              | :-:       | :-:             |--------------|-----------|
-|1   |moduleName               |String            |TRUE       |maxlength="100"  |hmiSettings   |The short friendly name of the hmi setting module.<br>It should not be used to identify a module by mobile application.|
+|1   |moduleName               |String            |TRUE       |maxlength= 100   |hmiSettings   |The short friendly name of the hmi setting module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo               |Common.ModuleInfo |FALSE      |                 |N/A           |Information about a RC module, including its id.|
 |3   |distanceUnitAvailable    |Boolean           |FALSE      |                 |FALSE         |Availability of the control of distance unit.|
 |4   |temperatureUnitAvailable |Boolean           |FALSE      |                 |FALSE         |Availability of the control of temperature unit.|
@@ -296,9 +296,9 @@ The definition of "LightControlCapabilities" and the setting example of TOYOTA a
 
 | No | NAME           | TYPE                    | MANDATORY | ADDITIONAL     |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:            | :-:                     | :-:       | :-:            |--------------|-----------|
-|1   |moduleName      | String                  |TRUE       |maxlength="100" |N/A           | The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
+|1   |moduleName      | String                  |TRUE       |maxlength= 100  |N/A           | The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo      |Common.ModuleInfo        |FALSE      | -              |N/A           | Information about a RC module, including its id.|
-|3   |supportedLights |Common.LightCapabilities |TRUE       |minsize="1"<br>maxsize="100"<br>array="true" |N/A           |An array of available LightCapabilities that are controllable. |
+|3   |supportedLights |Common.LightCapabilities |TRUE       |array= true<br>minsize= 1<br>maxsize= 100|N/A           |An array of available LightCapabilities that are controllable. |
 <br>
 
 ### 2.10. LightCapabilities
@@ -349,7 +349,7 @@ The definition of "WindowCapability" and the setting example of TOYOTA are descr
 |2   |textFields                |Common.TextField              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A           |A set of all fields that support text data. See TextField.|
 |3   |imageFields               |Common.ImageField             |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A           |A set of all fields that support images. See ImageField.|
 |4   |imageTypeSupported        |Common.ImageType              | -         |array: true<br>minsize: 0<br>maxsize: 1000 |N/A           |Provides information about image types supported by the system.|
-|5   |templatesAvailable        |String                        |FALSE      |array: true<br>minsize: 1<br>maxsize: 100<br>maxlength: 100 |N/A           |A set of all window templates available on the head unit.|
+|5   |templatesAvailable        |String                        |FALSE      |array: true<br>minsize: 1<br>maxsize: 100<br>maxlength: 100|N/A           |A set of all window templates available on the head unit.|
 |6   |numCustomPresetsAvailable |Integer                       |FALSE      |minvalue: 1<br>maxvalue: 100 |N/A           |The number of on-window custom presets available (if any); otherwise omitted.|
 |7   |buttonCapabilities        |Common.ButtonCapabilities     |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A           |The number of buttons and the capabilities of each on-window button.|
 |8   |softButtonCapabilities    |Common.SoftButtonCapabilities |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A           |The number of soft buttons available on-window and the capabilities for each button.|
@@ -382,5 +382,5 @@ The definition of "SeatLocationCapability" and the setting example of TOYOTA are
 |:-: | :-:    | :-:                | :-:       | :-:        |--------------|-----------|
 |1   |rows    |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100 |N/A           |Contains information about the locations of each seat.|
 |2   |columns |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100 |N/A           |Contains information about the locations of each seat.|
-|3   |levels  |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100<br>defvalue:1|N/A           |Contains information about the locations of each seat.|
+|3   |levels  |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100<br>defvalue: 1|N/A           |Contains information about the locations of each seat.|
 |4   |seats   |Common.SeatLocation |FALSE      |array: true |N/A           |Contains a list of SeatLocation in the vehicle, the first element is the driver's seat.|
