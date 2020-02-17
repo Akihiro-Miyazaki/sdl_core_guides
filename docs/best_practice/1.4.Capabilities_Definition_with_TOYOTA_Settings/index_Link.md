@@ -110,7 +110,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 | No | NAME                          | TYPE                                  | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                           | :-:                                   | :-:       | :-:        |--------------|-----------|
-|1   |climateControlCapabilities     |ClimateControlCapabilities             |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-1 "climateControlCapabilities" in section 2.6.|If included, the platform supports RC climate controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
+|1   |climateControlCapabilities     |[ClimateControlCapabilities](#4-1-the-following-describes-climatecontrolcapabilities)|FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-1 "climateControlCapabilities" in section 2.6.|If included, the platform supports RC climate controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
 |2   |radioControlCapabilities       |RadioControlCapabilities               |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-2 "radioControlCapabilities" in section 2.6.|If included, the platform supports RC radio controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
 |3   |buttonCapabilities             |Common.ButtonCapabilities              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100| N/A |If included, the platform supports RC button controls with the included button names.|
 |4   |seatControlCapabilities        |Common.SeatControlCapabilities         |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-3 "seatControlCapabilities" in section 2.6.|If included, the platform supports seat controls.|
@@ -298,7 +298,7 @@ The definition of "LightControlCapabilities" and the setting example of TOYOTA a
 |:-: | :-:            | :-:                     | :-:       | :-:            |--------------|-----------|
 |1   |moduleName      | String                  |TRUE       |maxlength= 100  |N/A           | The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo      |Common.ModuleInfo        |FALSE      | -              |N/A           | Information about a RC module, including its id.|
-|3   |supportedLights |Common.LightCapabilities |TRUE       |array= true<br>minsize= 1<br>maxsize= 100|N/A           |An array of available LightCapabilities that are controllable. |
+|3   |supportedLights |[Common.LightCapabilities](#210-lightcapabilities) |TRUE       |array= true<br>minsize= 1<br>maxsize= 100|N/A           |An array of available LightCapabilities that are controllable. |
 <br>
 
 ### 2.10. LightCapabilities
@@ -311,7 +311,7 @@ The definition of "LightCapabilities" and the setting example of TOYOTA are desc
 |3   |densityAvailable       |Boolean          |FALSE      | -          |N/A           |Indicates if the light's density can be set remotely (similar to a dimmer).|
 |4   |rgbColorSpaceAvailable |Boolean          |FALSE      | -          |N/A           |Indicates if the light's color can be set remotely by using the sRGB color space.|
 <br>
-[Common.AppServiceCapability](2.16. AppServiceCapability)
+
 ### 2.11. HMICapabilities
 The definition of "HMICapabilities" and the setting example of TOYOTA are described below.
 
@@ -328,8 +328,8 @@ The definition of "DisplayCapability" and the setting example of TOYOTA are desc
 | No | NAME               |  TYPE                        | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                | :-:                          | :-:       | :-:        |--------------|-----------|
 |1   |displayName         |String                        |FALSE      | -          |N/A           |-|
-|2   |windowTypeSupported |Common.WindowTypeCapabilities |FALSE      |array: true<br>minsize: 1|N/A           |Informs the application how many windows the app is allowed to create per type.|
-|3   |windowCapabilities  |Common.WindowCapability       |FALSE      |array: true<br>minsize: 1<br>maxsize: 1000|N/A           |Contains a list of capabilities of all windows related to the app.<br>Once the app has registered the capabilities of all windows are provided.<br>GetSystemCapability still allows requesting window capabilities of all windows.|
+|2   |windowTypeSupported |[Common.WindowTypeCapabilities](#213-windowtypecapabilities) |FALSE      |array: true<br>minsize: 1|N/A           |Informs the application how many windows the app is allowed to create per type.|
+|3   |windowCapabilities  |[Common.WindowCapability](#214-windowcapability)       |FALSE      |array: true<br>minsize: 1<br>maxsize: 1000|N/A           |Contains a list of capabilities of all windows related to the app.<br>Once the app has registered the capabilities of all windows are provided.<br>GetSystemCapability still allows requesting window capabilities of all windows.|
 
 ### 2.13. WindowTypeCapabilities
 The definition of "WindowTypeCapabilitiess" and the setting example of TOYOTA are described below.
@@ -357,8 +357,6 @@ The definition of "WindowCapability" and the setting example of TOYOTA are descr
 |
 <br>
 
-[Common.AppServiceCapability](#216-appservicecapability)
-
 ### 2.15. AppServicesCapabilities
 The definition of "AppServicesCapabilities" and the setting example of TOYOTA are described below.
 
@@ -366,7 +364,6 @@ The definition of "AppServicesCapabilities" and the setting example of TOYOTA ar
 |:-: | :-:        | :-:                       | :-:       | :-:        |--------------|-----------|
 |1   |appServices |[Common.AppServiceCapability](#216-appservicecapability)|FALSE      |array: true |N/A           |An array of currently available services. If this is an update to the capability the affected services will include an update reason in that item.|
 <br>
-
 
 ### 2.16. AppServiceCapability
 The definition of "AppServiceCapability" and the setting example of TOYOTA are described below.
