@@ -15,7 +15,11 @@ This chapter describes how the HU displays the SDL App Icon on the screen by the
 This chapter describes the caching of SDL App Icon on the SDL menu screen.
 </ol>
 
-### 1.4. Capabilities Definition with TOYOTA Settings
+### [1.4. Capabilities Definition with TOYOTA Settings](./1.4.Capabilities_Definition_with_TOYOTA_Settings/index.md)
+<ol>
+This chapter describes about the capability, a function setting information that is notified from the HMI to the SDL Core.
+The Specification of Capability is defined by the OEMs, however, as a reference information, this chapter discribes Capability setting as TOYOTA specification.
+</ol>
 
 ### 1.5. Definitions when the HU returns RPC Error
 
