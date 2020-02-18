@@ -1,7 +1,7 @@
 # 1.4. Capabilities Definition with TOYOTA Settings
 ## 1. Overview
 This chapter describes about the capability, a function setting information that is notified from the HMI to the SDL Core.
-The Specification of Capability is defined by the OEMs, however, as a reference information, this chapter disclibe Capability setting as TOYOTA specification.
+The Specification of Capability is defined by the OEMs, however, as a reference information, this chapter discribes Capability setting as TOYOTA specification.
 
 ## 2. SDL standard specification definition and TOYOTA setting example
 Below is the definition of the existing SDL standard specifications and the setting example of TOYOTA.
