@@ -71,10 +71,10 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 
 | No | NAME                              | TYPE                           | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                               | :-:                            | :-:       | :-:        |-------------|------------|
-|1   |navigationCapability               |[Common.NavigationCapability](#1-navigationcapability-in-the-systemcapability-setting-is-described-below)|FALSE      | -          |[Refer to (1) "navigationCapability" in section 2.6.](# 1-navigationcapability-in-the-systemcapability-setting-is-described-below)| - |
-|2   |phoneCapability                    |[Common.PhoneCapability](#2-phonecapability-in-the-systemcapability-setting-is-described-below)|FALSE      | -          |[Refer to (2) "phoneCapability" in section 2.6.](# 2-phonecapability-in-the-systemcapability-setting-is-described-below)| - |
-|3   |videoStreamingCapability           |[Common.VideoStreamingCapability](#3-videostreamingcapability-in-the-systemcapability-setting-is-described-below)|FALSE      | -          |[Refer to (3) "videoStreamingCapability" in section 2.6.](# 3-videostreamingcapability-in-the-systemcapability-setting-is-described-below)| - |
-|4   |remoteControlCapability (undefined)|undefined                       |undefined  | undefined  |[Refer to (4) "remoteControlCapability" in section 2.6.](# 4-remotecontrolcapability-in-the-systemcapability-setting-is-described-below) | - |
+|1   |navigationCapability               |[Common.NavigationCapability](#1-navigationcapability-in-the-systemcapability-setting-is-described-below)|FALSE      | -          |[Refer to (1) "navigationCapability" in section 2.6.](#1-navigationcapability-in-the-systemcapability-setting-is-described-below)| - |
+|2   |phoneCapability                    |[Common.PhoneCapability](#2-phonecapability-in-the-systemcapability-setting-is-described-below)|FALSE      | -          |[Refer to (2) "phoneCapability" in section 2.6.](#2-phonecapability-in-the-systemcapability-setting-is-described-below)| - |
+|3   |videoStreamingCapability           |[Common.VideoStreamingCapability](#3-videostreamingcapability-in-the-systemcapability-setting-is-described-below)|FALSE      | -          |[Refer to (3) "videoStreamingCapability" in section 2.6.](#3-videostreamingcapability-in-the-systemcapability-setting-is-described-below)| - |
+|4   |remoteControlCapability (undefined)|undefined                       |undefined  | undefined  |[Refer to (4) "remoteControlCapability" in section 2.6.](#4-remotecontrolcapability-in-the-systemcapability-setting-is-described-below) | - |
 <br>
 
 ###### (1) "navigationCapability" in the "SystemCapability" setting is described below.
