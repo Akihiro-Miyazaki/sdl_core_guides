@@ -71,13 +71,13 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 
 | No | NAME                              | TYPE                           | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                               | :-:                            | :-:       | :-:        |-------------|------------|
-|1   |navigationCapability               |Common.NavigationCapability     |FALSE      | -          |Refer to (1) "navigationCapability" in section 2.6.    | - |
-|2   |phoneCapability                    |Common.PhoneCapability          |FALSE      | -          |Refer to (2) "phoneCapability" in section 2.6.         | - |
-|3   |videoStreamingCapability           |Common.VideoStreamingCapability |FALSE      | -          |Refer to (3) "videoStreamingCapability" in section 2.6.| - |
-|4   |remoteControlCapability (undefined)|undefined                       |undefined  | undefined  |Refer to (4) "remoteControlCapability" in section 2.6. | - |
+|1   |navigationCapability               |[Common.NavigationCapability](# 1-navigationcapability-in-the-systemcapability-setting-is-described-below)|FALSE      | -          |[Refer to (1) "navigationCapability" in section 2.6.](# 1-navigationcapability-in-the-systemcapability-setting-is-described-below)| - |
+|2   |phoneCapability                    |[Common.PhoneCapability](# 2-phonecapability-in-the-systemcapability-setting-is-described-below)|FALSE      | -          |[Refer to (2) "phoneCapability" in section 2.6.](# 2-phonecapability-in-the-systemcapability-setting-is-described-below)| - |
+|3   |videoStreamingCapability           |[Common.VideoStreamingCapability](# 3-videostreamingcapability-in-the-systemcapability-setting-is-described-below)|FALSE      | -          |[Refer to (3) "videoStreamingCapability" in section 2.6.](# 3-videostreamingcapability-in-the-systemcapability-setting-is-described-below)| - |
+|4   |remoteControlCapability (undefined)|undefined                       |undefined  | undefined  |[Refer to (4) "remoteControlCapability" in section 2.6.](# 4-remotecontrolcapability-in-the-systemcapability-setting-is-described-below) | - |
 <br>
 
-(1) "navigationCapability" in the "SystemCapability" setting is described below.
+###### (1) "navigationCapability" in the "SystemCapability" setting is described below.
 
 | No | NAME               | TYPE     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                | :-:      | :-:       | :-:        |--------------|-----------|
@@ -85,14 +85,14 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 |2   |getWayPointsEnabled |Boolean   |FALSE      | -          |TRUE          |If the module has the ability to return way points from onboard nav.|
 <br>
 
-(2) "phoneCapability" in the "SystemCapability" setting is described below.
+###### (2) "phoneCapability" in the "SystemCapability" setting is described below.
 
 | No | NAME             | TYPE     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:              | :-:      | :-:       | :-:        |--------------|-----------|
 |1   |dialNumberEnabled |Boolean   |FALSE      | -          |TRUE          |If the module has the ability to perform dial number.|
 <br>
 
-(3) "videoStreamingCapability" in the "SystemCapability" setting is described below.
+###### (3) "videoStreamingCapability" in the "SystemCapability" setting is described below.
 
 | No | NAME                      | TYPE                       | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                       | :-:                        | :-:       | :-:        |--------------|-----------|
@@ -105,18 +105,18 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 |7   |scale                      |Float                       |FALSE      |minvalue: 1<br>maxvalue: 10|N/A           |The scaling factor the app should use to change the size of the projecting view.|
 <br>
 
-(4) "remoteControlCapability" in the "SystemCapability" setting is described below.
+###### (4) "remoteControlCapability" in the "SystemCapability" setting is described below.
 The TOYOTA setting of Capability existing in the setting is described in (4) -1 to (4) -5 of this chapter.
 
 | No | NAME                          | TYPE                                  | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                           | :-:                                   | :-:       | :-:        |--------------|-----------|
-|1   |climateControlCapabilities     |[ClimateControlCapabilities](#4-1-the-following-describes-climatecontrolcapabilities-in-the-remotecontrolcapabilities-setting)|FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-1 "climateControlCapabilities" in section 2.6.|If included, the platform supports RC climate controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
-|2   |radioControlCapabilities       |RadioControlCapabilities               |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-2 "radioControlCapabilities" in section 2.6.|If included, the platform supports RC radio controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
-|3   |buttonCapabilities             |Common.ButtonCapabilities              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100| N/A |If included, the platform supports RC button controls with the included button names.|
-|4   |seatControlCapabilities        |Common.SeatControlCapabilities         |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|Refer to (4)-3 "seatControlCapabilities" in section 2.6.|If included, the platform supports seat controls.|
-|5   |audioControlCapabilities       |Common.AudioControlCapabilities        |FALSE      |array: true<br>minsize: 1<br>maxsize: 100| Refer to (4)-4 "audioControlCapabilities" in section 2.6. |If included, the platform supports audio controls.|
-|6   |hmiSettingsControlCapabilities |Common.HMISettingsControlCapabilities  |FALSE      | -          | Refer to (4)-5 "hmiSettingsControlCapabilities" in section 2.6.| If included, the platform supports hmi setting controls.|
-|7   |lightControlCapabilities       |Common.LightControlCapabilities        |FALSE      | -          | N/A | If included, the platform supports light controls.|
+|1   |climateControlCapabilities     |[ClimateControlCapabilities](#4-1-the-following-describes-climatecontrolcapabilities-in-the-remotecontrolcapabilities-setting)|FALSE      |array: true<br>minsize: 1<br>maxsize: 100|[Refer to (4)-1 "climateControlCapabilities" in section 2.6.](#4-1-the-following-describes-climatecontrolcapabilities-in-the-remotecontrolcapabilities-setting)|If included, the platform supports RC climate controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
+|2   |radioControlCapabilities       |[RadioControlCapabilities](#4-2-the-radiocontrolcapabilities-in-the-remotecontrolcapabilities-setting-is-described-below)|FALSE      |array: true<br>minsize: 1<br>maxsize: 100|[Refer to (4)-2 "radioControlCapabilities" in section 2.6.](#4-2-the-radiocontrolcapabilities-in-the-remotecontrolcapabilities-setting-is-described-below)|If included, the platform supports RC radio controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
+|3   |buttonCapabilities             |[Common.ButtonCapabilities](#27-buttoncapabilities)|FALSE      |array: true<br>minsize: 1<br>maxsize: 100| N/A |If included, the platform supports RC button controls with the included button names.|
+|4   |seatControlCapabilities        |[Common.SeatControlCapabilities](#4-3-the-seatcontrolcapabilities-in-the-remotecontrolcapabilities-setting-is-described-below)|FALSE      |array: true<br>minsize: 1<br>maxsize: 100|[Refer to (4)-3 "seatControlCapabilities" in section 2.6.](#4-3-the-seatcontrolcapabilities-in-the-remotecontrolcapabilities-setting-is-described-below)|If included, the platform supports seat controls.|
+|5   |audioControlCapabilities       |[Common.AudioControlCapabilities](#4-4-the-audiocontrolcapabilities-in-the-remotecontrolcapabilities-setting-is-described-below)|FALSE      |array: true<br>minsize: 1<br>maxsize: 100|[Refer to (4)-4 "audioControlCapabilities" in section 2.6.](#4-4-the-audiocontrolcapabilities-in-the-remotecontrolcapabilities-setting-is-described-below)|If included, the platform supports audio controls.|
+|6   |hmiSettingsControlCapabilities |[Common.HMISettingsControlCapabilities](#4-5-the-hmisettingscontrolcapabilities-in-the-remotecontrolcapabilities-setting-is-described-below)|FALSE      | -          |[Refer to (4)-5 "hmiSettingsControlCapabilities" in section 2.6.](#4-5-the-hmisettingscontrolcapabilities-in-the-remotecontrolcapabilities-setting-is-described-below)| If included, the platform supports hmi setting controls.|
+|7   |lightControlCapabilities       |[Common.LightControlCapabilities](#29-lightcontrolcapabilities)|FALSE      | -          | N/A | If included, the platform supports light controls.|
 <br>
 
 ###### (4)-1 The following describes "climateControlCapabilities" in the "RemoteControlCapabilities" setting.
@@ -144,7 +144,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |19  |climateEnableAvailable       |Boolean           |FALSE      | -          |N/A           |Availability of the control of enable/disable climate control.<br>True: Available, False: Not Available, Not present: Not Available.|
 <br>
 
-(4)-2 The "radioControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
+###### (4)-2 The "radioControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
 | No | NAME                           | TYPE             | MANDATORY | ADDITIONAL    |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                            | :-:              | :-:       | :-:           |--------------|-----------|
@@ -165,7 +165,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |15  |availableHdChannelsAvailable    |Boolean           |FALSE      | -             |N/A           |Availability of the list of available HD sub-channel indexes.<br>True: Available, False: Not Available, Not present: Not Available.|
 <br>
 
-(4)-3 The "seatControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
+###### (4)-3 The "seatControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
 | No | NAME                                  | TYPE             | MANDATORY | ADDITIONAL     |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                                   | :-:              | :-:       | :-:            |--------------|-----------|
@@ -188,7 +188,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |17  |memoryAvailable                        |Boolean           |FALSE      | -              |FALSE         | - |
 <br>
 
-(4)-4 The "audioControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
+###### (4)-4 The "audioControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
 | No | NAME                 | TYPE             | MANDATORY | ADDITIONAL     |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                  | :-:              | :-:       | :-:            |--------------|-----------|
@@ -201,7 +201,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |7   |equalizerMaxChannelId |Integer           |FALSE      |minvalue= 1<br> maxvalue= 100| 1 |Must be included if equalizerAvailable=true, and assume all IDs starting from 1 to this value are valid.|
 <br>
 
-(4)-5 The "hmiSettingsControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
+###### (4)-5 The "hmiSettingsControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
 | No | NAME                    | TYPE             | MANDATORY | ADDITIONAL      |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                     | :-:              | :-:       | :-:             |--------------|-----------|
