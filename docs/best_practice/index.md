@@ -79,9 +79,11 @@ This chapter describes about WiFi connection.
 <ol>
 This chapter describes the interruption of SDL App.
 Listed below are three cases considered as kinds of interruption.
-- Interruption from SDL App while SDL App is running
-- Interruption from SDL App while Native is running
+<ol>
+- Interruption from SDL App while SDL App is running<br>
+- Interruption from SDL App while Native is running<br>
 - Interruption from Native while SDL App is running
+</ol>
 </ol>
 
 ### [6. Behavior of each HMI Status](./6.Behavior_of_each_HMI_Status/index.md).
