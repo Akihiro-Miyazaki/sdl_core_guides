@@ -1,6 +1,7 @@
 # 1.4. Capabilities Definition with TOYOTA Settings
 ## 1. Overview
-This chapter describes about the capability, a function setting information that is notified from the HMI to the SDL Core.The Specification of Capability is defined by the OEMs,  however, as a reference information, this chapter disclibe Capability setting as TOYOTA specification.
+This chapter describes about the capability, a function setting information that is notified from the HMI to the SDL Core.
+The Specification of Capability is defined by the OEMs, however, as a reference information, this chapter disclibe Capability setting as TOYOTA specification.
 
 ## 2. SDL standard specification definition and TOYOTA setting example
 Below is the definition of the existing SDL standard specifications and the setting example of TOYOTA.
@@ -25,7 +26,8 @@ The definition of "DisplayCapabilities" and the setting example of TOYOTA are de
 
 
 ### 2.2. TouchEventCapabilities
-The definition of "TouchEventCapabilities" and the setting example of TOYOTA are described below.In case of TOYOTA setting, TouchEventCapability is set in "touchEventAvailable" in "screenParam" of "2.1 DisplayCapability".
+The definition of "TouchEventCapabilities" and the setting example of TOYOTA are described below.
+In case of TOYOTA setting, TouchEventCapability is set in "touchEventAvailable" in "screenParam" of "2.1 DisplayCapability".
 
 | No | NAME               | TYPE  | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                | :-:   | :-:       | :-:        |--------------|-----------|
