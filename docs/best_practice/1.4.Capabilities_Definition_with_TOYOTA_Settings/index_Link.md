@@ -77,7 +77,7 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 |4   |remoteControlCapability (undefined)|undefined                       |undefined  | undefined  |[Refer to (4) "remoteControlCapability" in section 2.6.](#4-remotecontrolcapability-in-the-systemcapability-setting-is-described-below) | - |
 <br>
 
-###### (1) "navigationCapability" in the "SystemCapability" setting is described below.
+##### (1) "navigationCapability" in the "SystemCapability" setting is described below.
 
 | No | NAME               | TYPE     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                | :-:      | :-:       | :-:        |--------------|-----------|
@@ -85,14 +85,14 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 |2   |getWayPointsEnabled |Boolean   |FALSE      | -          |TRUE          |If the module has the ability to return way points from onboard nav.|
 <br>
 
-###### (2) "phoneCapability" in the "SystemCapability" setting is described below.
+##### (2) "phoneCapability" in the "SystemCapability" setting is described below.
 
 | No | NAME             | TYPE     | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:              | :-:      | :-:       | :-:        |--------------|-----------|
 |1   |dialNumberEnabled |Boolean   |FALSE      | -          |TRUE          |If the module has the ability to perform dial number.|
 <br>
 
-###### (3) "videoStreamingCapability" in the "SystemCapability" setting is described below.
+##### (3) "videoStreamingCapability" in the "SystemCapability" setting is described below.
 
 | No | NAME                      | TYPE                       | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                       | :-:                        | :-:       | :-:        |--------------|-----------|
@@ -105,7 +105,7 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 |7   |scale                      |Float                       |FALSE      |minvalue: 1<br>maxvalue: 10|N/A           |The scaling factor the app should use to change the size of the projecting view.|
 <br>
 
-###### (4) "remoteControlCapability" in the "SystemCapability" setting is described below.
+##### (4) "remoteControlCapability" in the "SystemCapability" setting is described below.
 The TOYOTA setting of Capability existing in the setting is described in (4) -1 to (4) -5 of this chapter.
 
 | No | NAME                          | TYPE                                  | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
