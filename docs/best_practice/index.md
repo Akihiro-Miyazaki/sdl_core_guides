@@ -1,4 +1,4 @@
-# Contests of Best Practice documents
+# Index of Best Practice documents
 
 ### [1.1. Establish Session](./1.1.Establish_Session/index.md)
 <ol>
@@ -55,27 +55,27 @@ In this chapter, all mentioned above will be treated synonymously as the Hard SW
 This chapter describes the behavior of the SDL App after ACC OFF/ON.
 </ol>
 
-### [2.6. Change Screen to SDL App from Other Smartphone Linkage Functions](./2.6.Change_Screen_to_SDL_App_from_Other_Smartphone_Linkage_Functions/index.md).
+### [2.6. Change Screen to SDL App from Other Smartphone Linkage Functions](./2.6.Change_Screen_to_SDL_App_from_Other_Smartphone_Linkage_Functions/index.md)
 <ol>
 This chapter describes the method to switch between the SDL App and other smartphone linkage functions(CarPlay (CP)/ Android Auto(AA)).
 </ol>
 
-### [3. Switching SDL Apps](./3.Switching_SDL_Apps/index.md).
+### [3. Switching SDL Apps](./3.Switching_SDL_Apps/index.md)
 <ol>
 This chapter describes the sequence of switching SDL Apps.
 </ol>
 
-### [4.1. Switching Communication Paths](./4.1.Switching_Communication_Paths/index.md).
+### [4.1. Switching Communication Paths](./4.1.Switching_Communication_Paths/index.md)
 <ol>
 This chapter describes the rule of priority if the system connects the multiple connection methods at the concurrent on the same device, and the status notification of when the system switches the communication paths.
 </ol>
 
-### [4.2. WiFi Connection](./4.2.WiFi_Connection/index.md).
+### [4.2. WiFi Connection](./4.2.WiFi_Connection/index.md)
 <ol>
 This chapter describes about WiFi connection.
 </ol>
 
-### [5. SDL App Interruption](./5.SDL_App_Interruption/index.md).
+### [5. SDL App Interruption](./5.SDL_App_Interruption/index.md)
 <ol>
 This chapter describes the interruption of SDL App.
 Listed below are three cases considered as kinds of interruption.
@@ -86,10 +86,32 @@ Listed below are three cases considered as kinds of interruption.
 </ol>
 </ol>
 
-### [6. Behavior of each HMI Status](./6.Behavior_of_each_HMI_Status/index.md).
+### [6. Behavior of each HMI Status](./6.Behavior_of_each_HMI_Status/index.md)
 <ol>
 This chapter provides information about the definition of the HMI Status (Level) and the behavior of SDL Apps by HMI status.
 The HU controls the status of display and playback audio by notifying the HMI Level to the mobile.
 </ol>
 
 ### [Appendix. Terminologies and Definitions](./Appendix.Terminologies_and_Definitions/index.md)
+
+
+| Index | Description |
+|:---|:---|
+|### [1.1. Establish Session](./1.1.Establish_Session/index.md)||
+|### [1.3. SDL App Icon Caching](./1.3.SDL_App_Icon_Caching/index.md)||
+|### [1.4. Capabilities Definition with TOYOTA Settings](./1.4.Capabilities_Definition_with_TOYOTA_Settings/index.md)||
+|### 1.5. Definitions when the HU returns RPC Error||
+|### [1.6. Behavior when the HU returns RPC Error](./1.6.Behavior_when_the_HU_returns_RPC_Error/index.md)||
+|### [2.1. Press the App icon on the SDL menu screen](./2.1.Press_the_App_Icon_on_the_SDL_menu_screen/index.md)||
+|### [2.2. Launch by Voice Recognition](./2.2.Launch_by_Voice_Recognition/index.md)||
+|### [2.3. Launch by choosing Audio source on the Audio screen](./2.3.Launch_by_choosing_the_Audio_source_on_the_Audio_screen/index.md)||
+|### [2.4. Launch by Hard SW](./2.4.Launch_by_Hard_SW/index.md)||
+|### [2.5. Behavior after ACC OFFON(Resume of Last Launched SDL App)](./2.5.Behavior_after_ACC_OFFON(Resume_of_Last_Launched_SDL_App))||
+|### [2.6. Change Screen to SDL App from Other Smartphone Linkage Functions](./2.6.Change_Screen_to_SDL_App_from_Other_Smartphone_Linkage_Functions/index.md)||
+|### [3. Switching SDL Apps](./3.Switching_SDL_Apps/index.md)||
+|### [4.1. Switching Communication Paths](./4.1.Switching_Communication_Paths/index.md)||
+|### [4.2. WiFi Connection](./4.2.WiFi_Connection/index.md)||
+|### [5. SDL App Interruption](./5.SDL_App_Interruption/index.md)||
+|### [6. Behavior of each HMI Status](./6.Behavior_of_each_HMI_Status/index.md)||
+|### [Appendix. Terminologies and Definitions](./Appendix.Terminologies_and_Definitions/index.md)||
+
