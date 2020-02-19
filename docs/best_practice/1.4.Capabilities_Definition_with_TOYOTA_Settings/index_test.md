@@ -9,7 +9,7 @@ Below is the definition of the existing SDL standard specifications and the sett
 ### 2.1. DisplayCapabilities
 The definition of "DisplayCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME               | TYPE                   | MANDATORY | ADDITIONAL |TOYOTA Setting|w(300px):DESCRIPTION|
+| No | NAME               | TYPE                   | MANDATORY | ADDITIONAL |TOYOTA Setting|<div width="120">DESCRIPTION</div>|
 |:-: | :-:                | :-:                    | :-:       | :-:        |--------------|-----------|
 |1   |displayType         |Common.DisplayType      |TRUE       |-           |SDL_GENERIC   |-|
 |2   |displayName         |String                  |TRUE       |-           |GENERIC_DISPLAY|The name of the display the app is connected to.|
