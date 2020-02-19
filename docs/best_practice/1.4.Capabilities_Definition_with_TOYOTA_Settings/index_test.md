@@ -59,13 +59,13 @@ The definition of "pcmStreamCapabilities" and a setting example of TOYOTA are de
 ### 2.5. SoftButtonCapabilities
 The definition of "SoftButtonCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME              | TYPE   | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
+| No | NAME              | TYPE   | MANDATORY | ADDITIONAL |TOYOTA Setting|<div width="120">DESCRIPTION</div>|
 |:-: | :-:               | :-:    | :-:       | :-:        |--------------|------------|
-|1   |shortPressAvailable|Boolean |TRUE       | -          |TRUE         |The button supports a short press.<br>Whenever the button is pressed short, onButtonPressed(SHORT) must be invoked.|
-|2   |longPressAvailable |Boolean |TRUE       | -          |FALSE        |The button supports a LONG press.<br>Whenever the button is pressed long, onButtonPressed(LONG) must be invoked.|
-|3   |upDownAvailable    |Boolean |TRUE       | -          |FALSE        |The button supports "button down" and "button up".<br>Whenever the button is pressed, onButtonEvent(DOWN) must be invoked.<br>Whenever the button is released, onButtonEvent(UP) must be invoked.|
-|4   |imageSupported     |Boolean |TRUE       | -          |TRUE         |Must be true if the button supports referencing a static or dynamic image.|
-|5   |textSupported      |Boolean |FALSE      | -          |N/A          |The button supports the use of text.<br>If not included, the default value should be considered true that the button will support text.|
+|1   |shortPressAvailable|Boolean |TRUE       | -          |TRUE          |The button supports a short press.<br>Whenever the button is pressed short, onButtonPressed(SHORT) must be invoked.|
+|2   |longPressAvailable |Boolean |TRUE       | -          |FALSE         |The button supports a LONG press.<br>Whenever the button is pressed long, onButtonPressed(LONG) must be invoked.|
+|3   |upDownAvailable    |Boolean |TRUE       | -          |FALSE         |The button supports "button down" and "button up".<br>Whenever the button is pressed, onButtonEvent(DOWN) must be invoked.<br>Whenever the button is released, onButtonEvent(UP) must be invoked.|
+|4   |imageSupported     |Boolean |TRUE       | -          |TRUE          |Must be true if the button supports referencing a static or dynamic image.|
+|5   |textSupported      |Boolean |FALSE      | -          |N/A           |The button supports the use of text.<br>If not included, the default value should be considered true that the button will support text.|
 
 ### 2.6. SystemCapabilities
 The definition of "SystemCapabilities" and the setting example of TOYOTA are described below.
