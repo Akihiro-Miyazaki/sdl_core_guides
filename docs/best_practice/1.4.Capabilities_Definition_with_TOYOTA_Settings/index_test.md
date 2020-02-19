@@ -59,7 +59,7 @@ The definition of "pcmStreamCapabilities" and a setting example of TOYOTA are de
 ### 2.5. SoftButtonCapabilities
 The definition of "SoftButtonCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME              | TYPE   | MANDATORY | ADDITIONAL |TOYOTA Setting|<div width="120">DESCRIPTION</div>|
+| No | NAME              | TYPE   | MANDATORY | ADDITIONAL |TOYOTA Setting|<div width="2000">DESCRIPTION</div>|
 |:-: | :-:               | :-:    | :-:       | :-:        |--------------|------------|
 |1   |shortPressAvailable|Boolean |TRUE       | -          |TRUE          |The button supports a short press.<br>Whenever the button is pressed short, onButtonPressed(SHORT) must be invoked.|
 |2   |longPressAvailable |Boolean |TRUE       | -          |FALSE         |The button supports a LONG press.<br>Whenever the button is pressed long, onButtonPressed(LONG) must be invoked.|
