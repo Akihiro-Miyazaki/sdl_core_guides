@@ -232,7 +232,7 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
     <td>TRUE</td>
     <td>-</td>
     <td align="left" rowspan="4">
-       {"name":&nbsp;"PRESET_0",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name":&nbsp;"PRESET_0",&nbsp;&nbsp;"shortPressAvailable":&nbsp;true,&nbsp;"longPressAvailable":&nbsp;true,&nbsp;"upDownAvailable":&nbsp;false},<br>
        {"name":&nbsp;"PRESET_1",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
        {"name":&nbsp;"PRESET_2",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
        {"name":&nbsp;"PRESET_3",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
