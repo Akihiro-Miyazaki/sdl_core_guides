@@ -39,7 +39,7 @@ In case of TOYOTA setting, TouchEventCapability is set in "touchEventAvailable" 
 ### 2.3. AudioPassThruCapabilities
 The definition of "AudioPassThruCapabilities" and the setting example of TOYOTA are described below.
 
-| No | Name         | Type               | Mandatory | Additional | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp; | Description |
+| No | Name         | Type               | Mandatory | Additional | &nbsp; TOYOTA Setting &nbsp; | Description |
 |:-: | :-:          | :-:                | :-:       | :-:        |----------------|-------------|
 |1   |samplingRate  |Common.SamplingRate |TRUE       |-           |16KHZ           | - |
 |2   |bitsPerSample |Common.BitsPerSample|TRUE       |-           |RATE_16_BIT     | - |
@@ -71,7 +71,7 @@ The definition of "SoftButtonCapabilities" and the setting example of TOYOTA are
 The definition of "SystemCapabilities" and the setting example of TOYOTA are described below.
 The Capability existing in the setting is described in (1) to (4) of this chapter.
 
-| No | Name                              | Type                           | Mandatory | Additional | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
+| No | Name                              | Type                           | Mandatory | Additional | &nbsp; TOYOTA Setting &nbsp; | Description |
 |:-: | :-:                               | :-:                            | :-:       | :-:        |----------------|-------------|
 |1   |navigationCapability               |[Common.NavigationCapability](#1-navigationcapability-in-the-systemcapability-setting-is-described-below)        |FALSE      | -          |[Refer to (1) "navigationCapability" in section 2.6.](#1-navigationcapability-in-the-systemcapability-setting-is-described-below)        | - |
 |2   |phoneCapability                    |[Common.PhoneCapability](#2-phonecapability-in-the-systemcapability-setting-is-described-below)                  |FALSE      | -          |[Refer to (2) "phoneCapability" in section 2.6.](#2-phonecapability-in-the-systemcapability-setting-is-described-below)                  | - |
@@ -224,7 +224,7 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
     <th> Type </th>
     <th> Mandatory </th>
     <th> Additional </th>
-    <th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+    <th> &nbsp; TOYOTA Setting &nbsp; </th>
     <th> Description </th>
   </tr>
   <tr align="center">
@@ -234,19 +234,19 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
     <td>TRUE</td>
     <td>-</td>
     <td align="left" rowspan="4">
-       {"name": "PRESET_0",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_1",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_2",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_3",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_4",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_5",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_6",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_7",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_8",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_9",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PLAY_PAUSE",            "shortPressAvailable": true,  "longPressAvailable" :true,  "upDownAvailable": false},<br>
-       {"name": "SEEKLEFT",&nbsp;&nbsp;  "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "SEEKRIGHT"&nbsp;        "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false}
+       {"name": "PRESET_0",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_1",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_2",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_3",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_4",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_5",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_6",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_7",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_8",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_9",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PLAY_PAUSE",           "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "SEEKLEFT",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "SEEKRIGHT"&nbsp;       "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false}
     </td>
     <td align="left">-</td>
   </tr>
@@ -369,7 +369,7 @@ The definition of "AppServicesCapabilities" and the setting example of TOYOTA ar
 ### 2.16. AppServiceCapability
 The definition of "AppServiceCapability" and the setting example of TOYOTA are described below.
 
-| No | Name                   | Type                      | Mandatory | Additional | TOYOTA Setting | Description |
+| No | Name                   | Type                      | Mandatory | Additional | &nbsp; TOYOTA Setting &nbsp; | Description |
 |:-: | :-:                    | :-:                       | :-:       | :-:        |----------------|-------------|
 |1   |updateReason            |Common.ServiceUpdateReason |FALSE      | -          |N/A             |Only included in OnSystemCapabilityUpdated. Update reason for service record.|
 |2   |updatedAppServiceRecord |Common.AppServiceRecord    |TRUE       | -          |N/A             |Service record for a specific app service provider.|
@@ -379,7 +379,7 @@ The definition of "AppServiceCapability" and the setting example of TOYOTA are d
 The definition of "SeatLocationCapability" and the setting example of TOYOTA are described below.
 
 
-| No | Name   | Type               | Mandatory | Additional | TOYOTA Setting | Description |
+| No | Name   | Type               | Mandatory | Additional | &nbsp; TOYOTA Setting &nbsp; | Description |
 |:-: | :-:    | :-:                | :-:       | :-:        |----------------|-------------|
 |1   |rows    |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100               |N/A           |Contains information about the locations of each seat.|
 |2   |columns |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100               |N/A           |Contains information about the locations of each seat.|
