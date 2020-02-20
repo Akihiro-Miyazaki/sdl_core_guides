@@ -9,7 +9,7 @@ Below is the definition of the existing SDL standard specifications and the sett
 ### 2.1. DisplayCapabilities
 The definition of "DisplayCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME               | TYPE                   | MANDATORY | &nbsp;&nbsp;&nbsp; ADDITIONAL &nbsp;&nbsp;&nbsp; | TOYOTA Setting | DESCRIPTION |
+| No | Name               | Type                   | Mandatory | &nbsp;&nbsp;&nbsp; Additional &nbsp;&nbsp;&nbsp; | TOYOTA Setting | Description |
 |:-: | :-:                | :-:                    | :-:       | :-:        |----------------|-------------|
 |1   |displayType         |Common.DisplayType      |TRUE       |-                                                          |SDL_GENERIC                                                                         | - |
 |2   |displayName         |String                  |TRUE       |-                                                          |GENERIC_DISPLAY                                                                     |The name of the display the app is connected to.|
@@ -29,7 +29,7 @@ The definition of "DisplayCapabilities" and the setting example of TOYOTA are de
 The definition of "TouchEventCapabilities" and the setting example of TOYOTA are described below.
 In case of TOYOTA setting, TouchEventCapability is set in "touchEventAvailable" in "screenParam" of "2.1 DisplayCapability".
 
-| No | NAME               | TYPE  | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name               | Type  | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                | :-:   | :-:       | :-:        |----------------|-------------|
 |1   |pressAvailable      |Boolean|TRUE       |-           |TRUE            | - |
 |2   |multiTouchAvailable |Boolean|TRUE       |-           |FALSE           | - |
@@ -39,7 +39,7 @@ In case of TOYOTA setting, TouchEventCapability is set in "touchEventAvailable" 
 ### 2.3. AudioPassThruCapabilities
 The definition of "AudioPassThruCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME         | TYPE               | MANDATORY | ADDITIONAL | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp; | DESCRIPTION |
+| No | Name         | Type               | Mandatory | Additional | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp; | Description |
 |:-: | :-:          | :-:                | :-:       | :-:        |----------------|-------------|
 |1   |samplingRate  |Common.SamplingRate |TRUE       |-           |16KHZ           | - |
 |2   |bitsPerSample |Common.BitsPerSample|TRUE       |-           |RATE_16_BIT     | - |
@@ -49,7 +49,7 @@ The definition of "AudioPassThruCapabilities" and the setting example of TOYOTA 
 ### 2.4. pcmStreamCapabilities
 The definition of "pcmStreamCapabilities" and a setting example of TOYOTA are described below.
 
-| No | NAME       | TYPE     | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name       | Type     | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:        | :-:      | :-:       | :-:        |----------------|-------------|
 |1   |undefined   |undefined |undefined  |undefined   |"samplingRate": "16KHZ",<br>"bitsPerSample": "RATE_16_BIT",<br>"audioType": "PCM" | - |
 
@@ -59,7 +59,7 @@ The definition of "pcmStreamCapabilities" and a setting example of TOYOTA are de
 ### 2.5. SoftButtonCapabilities
 The definition of "SoftButtonCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME              | TYPE   | MANDATORY | ADDITIONAL | TOYOTA Setting | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DESCRIPTION &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| No | Name              | Type   | Mandatory | Additional | TOYOTA Setting | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |:-: | :-:               | :-:    | :-:       | :-:        |----------------|------------|
 |1   |shortPressAvailable|Boolean |TRUE       | -          |TRUE            |The button supports a short press.<br>Whenever the button is pressed short, onButtonPressed(SHORT) must be invoked.|
 |2   |longPressAvailable |Boolean |TRUE       | -          |FALSE           |The button supports a LONG press.<br>Whenever the button is pressed long, onButtonPressed(LONG) must be invoked.|
@@ -71,7 +71,7 @@ The definition of "SoftButtonCapabilities" and the setting example of TOYOTA are
 The definition of "SystemCapabilities" and the setting example of TOYOTA are described below.
 The Capability existing in the setting is described in (1) to (4) of this chapter.
 
-| No | NAME                              | TYPE                           | MANDATORY | ADDITIONAL | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | DESCRIPTION |
+| No | Name                              | Type                           | Mandatory | Additional | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 |:-: | :-:                               | :-:                            | :-:       | :-:        |----------------|-------------|
 |1   |navigationCapability               |[Common.NavigationCapability](#1-navigationcapability-in-the-systemcapability-setting-is-described-below)        |FALSE      | -          |[Refer to (1) "navigationCapability" in section 2.6.](#1-navigationcapability-in-the-systemcapability-setting-is-described-below)        | - |
 |2   |phoneCapability                    |[Common.PhoneCapability](#2-phonecapability-in-the-systemcapability-setting-is-described-below)                  |FALSE      | -          |[Refer to (2) "phoneCapability" in section 2.6.](#2-phonecapability-in-the-systemcapability-setting-is-described-below)                  | - |
@@ -81,7 +81,7 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 
 ##### (1) "navigationCapability" in the "SystemCapability" setting is described below.
 
-| No | NAME               | TYPE     | MANDATORY | ADDITIONAL | TOYOTA Setting | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DESCRIPTION &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| No | Name               | Type     | Mandatory | Additional | TOYOTA Setting | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |:-: | :-:                | :-:      | :-:       | :-:        |----------------|-------------|
 |1   |sendLocationEnabled |Boolean   |FALSE      | -          |TRUE            |If the module has the ability to add locations to the onboard nav.|
 |2   |getWayPointsEnabled |Boolean   |FALSE      | -          |TRUE            |If the module has the ability to return way points from onboard nav.|
@@ -89,14 +89,14 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 
 ##### (2) "phoneCapability" in the "SystemCapability" setting is described below.
 
-| No | NAME             | TYPE     | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name             | Type     | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:              | :-:      | :-:       | :-:        |----------------|-------------|
 |1   |dialNumberEnabled |Boolean   |FALSE      | -          |TRUE            |If the module has the ability to perform dial number.|
 <br>
 
 ##### (3) "videoStreamingCapability" in the "SystemCapability" setting is described below.
 
-| No | NAME                      | TYPE                       | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name                      | Type                       | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                       | :-:                        | :-:       | :-:        |----------------|-------------|
 |1   |preferredResolution        |Common.ImageResolution      |FALSE      | -          |resolutionWidth : 1163<br>resolutionHeight : 720                                       |The preferred resolution of a video stream for decoding and rendering on HMI.|
 |2   |maxBitrate                 |Integer                     |FALSE      |minvalue: 0<br>maxvalue: 2147483647| 10000 |The maximum bitrate of video stream that is supported, in kbps.|
@@ -110,7 +110,7 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 ##### (4) "remoteControlCapability" in the "SystemCapability" setting is described below.
 The TOYOTA setting of Capability existing in the setting is described in (4) -1 to (4) -5 of this chapter.
 
-| No | NAME                          | TYPE                                  | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name                          | Type                                  | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                           | :-:                                   | :-:       | :-:        |----------------|-------------|
 |1   |climateControlCapabilities     |[ClimateControlCapabilities](#4-1-the-following-describes-climatecontrolcapabilities-in-the-remotecontrolcapabilities-setting)              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|[Refer to (4)-1 "climateControlCapabilities" in section 2.6.](#4-1-the-following-describes-climatecontrolcapabilities-in-the-remotecontrolcapabilities-setting)       |If included, the platform supports RC climate controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
 |2   |radioControlCapabilities       |[RadioControlCapabilities](#4-2-the-radiocontrolcapabilities-in-the-remotecontrolcapabilities-setting-is-described-below)                   |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|[Refer to (4)-2 "radioControlCapabilities" in section 2.6.](#4-2-the-radiocontrolcapabilities-in-the-remotecontrolcapabilities-setting-is-described-below)            |If included, the platform supports RC radio controls. For this baseline version, maxsize=1. i.e. only one climate control module is supported.|
@@ -123,7 +123,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 ###### (4)-1 The following describes "climateControlCapabilities" in the "RemoteControlCapabilities" setting.
 
-| No | NAME                        | TYPE             | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name                        | Type             | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                         | :-:              | :-:       | :-:        |----------------|-------------|
 |1   |moduleName                   |String            |TRUE       |maxlength: 100                            | primary_climate |The short friendly name of the climate control module. It should not be used to identify a module by mobile application.|
 |2   |moduleInfo                   |Common.ModuleInfo |FALSE      | -                                        |N/A              |Information about a RC module, including its id. |
@@ -148,7 +148,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 ###### (4)-2 The "radioControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
-| No | NAME                           | TYPE             | MANDATORY | ADDITIONAL    | TOYOTA Setting | DESCRIPTION |
+| No | Name                           | Type             | Mandatory | Additional    | TOYOTA Setting | Description |
 |:-: | :-:                            | :-:              | :-:       | :-:           |----------------|-------------|
 |1   |moduleName                      |String            |TRUE       |maxlength: 100 |radio         |The short friendly name of the radio control module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo                      |Common.ModuleInfo |FALSE      | -             |N/A           |Information about a RC module, including its id.|
@@ -169,7 +169,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 ###### (4)-3 The "seatControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
-| No | NAME                                  | TYPE             | MANDATORY | ADDITIONAL     | TOYOTA Setting | DESCRIPTION |
+| No | Name                                  | Type             | Mandatory | Additional     | TOYOTA Setting | Description |
 |:-: | :-:                                   | :-:              | :-:       | :-:            |----------------|-------------|
 |1   |moduleName                             |String            |TRUE       |maxlength= 100  |driver_seat     |The short friendly name of the seat control module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo                             |Common.ModuleInfo |FALSE      | -              |N/A             |Information about a RC module, including its id.|
@@ -192,7 +192,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 ###### (4)-4 The "audioControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
-| No | NAME                 | TYPE             | MANDATORY | ADDITIONAL     | TOYOTA Setting | DESCRIPTION |
+| No | Name                 | Type             | Mandatory | Additional     | TOYOTA Setting | Description |
 |:-: | :-:                  | :-:              | :-:       | :-:            |----------------|-------------|
 |1   |moduleName            |String            |TRUE       |maxlength= 100  |audio           |The short friendly name of the audio control module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo            |Common.ModuleInfo |FALSE      |                |N/A             |Information about a RC module, including its id.|
@@ -205,7 +205,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 ###### (4)-5 The "hmiSettingsControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
-| No | NAME                    | TYPE             | MANDATORY | ADDITIONAL      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DESCRIPTION &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| No | Name                    | Type             | Mandatory | Additional      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |:-: | :-:                     | :-:              | :-:       | :-:             |--------------|-----------|
 |1   |moduleName               |String            |TRUE       |maxlength= 100   |hmiSettings   |The short friendly name of the hmi setting module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo               |Common.ModuleInfo |FALSE      |                 |N/A           |Information about a RC module, including its id.|
@@ -220,12 +220,12 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
 <table>
   <tr>
     <th> No </th>
-    <th> NAME </th>
-    <th> TYPE </th>
-    <th> MANDATORY </th>
-    <th> ADDITIONAL </th>
+    <th> Name </th>
+    <th> Type </th>
+    <th> Mandatory </th>
+    <th> Additional </th>
     <th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-    <th> DESCRIPTION </th>
+    <th> Description </th>
   </tr>
   <tr align="center">
     <td>1</td>
@@ -288,7 +288,7 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
 ### 2.8. PresetBankCapabilities
 The definition of "PresetBankCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME                    | TYPE   | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name                    | Type   | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                     | :-:    | :-:       | :-:        |----------------|-------------|
 |1   |onScreenPresetsAvailable |Boolean |TRUE       | -          |TRUE            | - |
 <br>
@@ -296,7 +296,7 @@ The definition of "PresetBankCapabilities" and the setting example of TOYOTA are
 ### 2.9. LightControlCapabilities
 The definition of "LightControlCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME           | TYPE                    | MANDATORY | ADDITIONAL     | TOYOTA Setting | DESCRIPTION |
+| No | Name           | Type                    | Mandatory | Additional     | TOYOTA Setting | Description |
 |:-: | :-:            | :-:                     | :-:       | :-:            |----------------|-------------|
 |1   |moduleName      | String                                            |TRUE       |maxlength= 100                           |N/A           | The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo      |Common.ModuleInfo                                  |FALSE      | -                                       |N/A           | Information about a RC module, including its id.|
@@ -306,7 +306,7 @@ The definition of "LightControlCapabilities" and the setting example of TOYOTA a
 ### 2.10. LightCapabilities
 The definition of "LightCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME                  | TYPE            | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name                  | Type            | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                   | :-:             | :-:       | :-:        |----------------|-------------|
 |1   |name                   |Common.LightName |TRUE       | -          |N/A             | - |
 |2   |statusAvailable        |Boolean          |FALSE      | -          |N/A             |Indicates if the status (ON/OFF) can be set remotely. App shall not use read-only values (RAMP_UP/RAMP_DOWN/UNKNOWN/INVALID) in a setInteriorVehicleData request.|
@@ -317,7 +317,7 @@ The definition of "LightCapabilities" and the setting example of TOYOTA are desc
 ### 2.11. HMICapabilities
 The definition of "HMICapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME          | TYPE   | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name          | Type   | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:           | :-:    | :-:       | :-:        |----------------|-------------|
 |1   |navigation     |Boolean |FALSE      | -          |N/A             |Availability of build in Nav. True: Available, False: Not Available.|
 |2   |phoneCall      |Boolean |FALSE      | -          |N/A             |Availability of build in phone. True: Available, False: Not Available.|
@@ -327,7 +327,7 @@ The definition of "HMICapabilities" and the setting example of TOYOTA are descri
 ### 2.12. DisplayCapability
 The definition of "DisplayCapability" and the setting example of TOYOTA are described below.
 
-| No | NAME               |  TYPE                        | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name               | Type                         | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                | :-:                          | :-:       | :-:        |----------------|-------------|
 |1   |displayName         |String                                                       |FALSE      | -                                        |N/A           |-|
 |2   |windowTypeSupported |[Common.WindowTypeCapabilities](#213-windowtypecapabilities) |FALSE      |array: true<br>minsize: 1                 |N/A           |Informs the application how many windows the app is allowed to create per type.|
@@ -336,7 +336,7 @@ The definition of "DisplayCapability" and the setting example of TOYOTA are desc
 ### 2.13. WindowTypeCapabilities
 The definition of "WindowTypeCapabilitiess" and the setting example of TOYOTA are described below.
 
-| No | NAME                  |  TYPE            | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name                  | Type             | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                   | :-:              | :-:       | :-:        |----------------|-------------|
 |1   |type                   |Common.WindowType |TRUE       | -          |N/A             | - |
 |2   |maximumNumberOfWindows |Integer           |TRUE       | -          |N/A             | - |
@@ -345,7 +345,7 @@ The definition of "WindowTypeCapabilitiess" and the setting example of TOYOTA ar
 ### 2.14. WindowCapability
 The definition of "WindowCapability" and the setting example of TOYOTA are described below.
 
-| No | NAME                     |  TYPE                        | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name                     | Type                         | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                      | :-:                          | :-:       | :-:        |----------------|-------------|
 |1   |windowID                  |Integer                       |FALSE      | -                                                         |N/A           |The specified ID of the window. Can be set to a predefined window, or omitted for the main window on the main display.|
 |2   |textFields                |Common.TextField              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100                  |N/A           |A set of all fields that support text data. See TextField.|
@@ -361,7 +361,7 @@ The definition of "WindowCapability" and the setting example of TOYOTA are descr
 ### 2.15. AppServicesCapabilities
 The definition of "AppServicesCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME       |  TYPE                     | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name       | Type                      | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:        | :-:                       | :-:       | :-:        |----------------|-------------|
 |1   |appServices |[Common.AppServiceCapability](#216-appservicecapability)|FALSE      |array: true |N/A           |An array of currently available services. If this is an update to the capability the affected services will include an update reason in that item.|
 <br>
@@ -369,7 +369,7 @@ The definition of "AppServicesCapabilities" and the setting example of TOYOTA ar
 ### 2.16. AppServiceCapability
 The definition of "AppServiceCapability" and the setting example of TOYOTA are described below.
 
-| No | NAME                   |  TYPE                     | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name                   | Type                      | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                    | :-:                       | :-:       | :-:        |----------------|-------------|
 |1   |updateReason            |Common.ServiceUpdateReason |FALSE      | -          |N/A             |Only included in OnSystemCapabilityUpdated. Update reason for service record.|
 |2   |updatedAppServiceRecord |Common.AppServiceRecord    |TRUE       | -          |N/A             |Service record for a specific app service provider.|
@@ -379,7 +379,7 @@ The definition of "AppServiceCapability" and the setting example of TOYOTA are d
 The definition of "SeatLocationCapability" and the setting example of TOYOTA are described below.
 
 
-| No | NAME   |  TYPE              | MANDATORY | ADDITIONAL | TOYOTA Setting | DESCRIPTION |
+| No | Name   | Type               | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:    | :-:                | :-:       | :-:        |----------------|-------------|
 |1   |rows    |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100               |N/A           |Contains information about the locations of each seat.|
 |2   |columns |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100               |N/A           |Contains information about the locations of each seat.|
