@@ -244,7 +244,7 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
        {"name":&nbsp;"PRESET_9",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"shortPressAvailable":&nbsp;true,&nbsp;"longPressAvailable":&nbsp;true,&nbsp;"upDownAvailable":&nbsp;false},<br>
        {"name":&nbsp;"PLAY_PAUSE",          "shortPressAvailable":&nbsp;true,&nbsp;"longPressAvailable":&nbsp;true,&nbsp;"upDownAvailable":&nbsp;false},<br>
        {"name":&nbsp;"SEEKLEFT",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"shortPressAvailable":&nbsp;true,&nbsp;"longPressAvailable":&nbsp;true,&nbsp;"upDownAvailable":&nbsp;false},<br>
-       {"name":&nbsp;"SEEKRIGHT"&nbsp;&nbsp;"shortPressAvailable":&nbsp;true,&nbsp;"longPressAvailable":&nbsp;true,&nbsp;"upDownAvailable":&nbsp;false}
+       {"name":&nbsp;"SEEKRIGHT"&nbsp;&nbsp;&nbsp;&nbsp;"shortPressAvailable":&nbsp;true,&nbsp;"longPressAvailable":&nbsp;true,&nbsp;"upDownAvailable":&nbsp;false}
     </td>
     <td align="left">-</td>
   </tr>
