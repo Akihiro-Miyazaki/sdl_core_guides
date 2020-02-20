@@ -9,21 +9,19 @@ Below is the definition of the existing SDL standard specifications and the sett
 ### 2.1. DisplayCapabilities
 The definition of "DisplayCapabilities" and the setting example of TOYOTA are described below.
 
-| No | Name               | Type                   | Mandatory | &nbsp;&nbsp;&nbsp; Additional &nbsp;&nbsp;&nbsp; | TOYOTA Setting | Description |
+| No | Name               | Type                   | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                | :-:                    | :-:       | :-:        |----------------|-------------|
-|1   |displayType         |Common.DisplayType      |TRUE       |-                                                          |SDL_GENERIC                                                                         | - |
-|2   |displayName         |String                  |TRUE       |-                                                          |GENERIC_DISPLAY                                                                     |The name of the display the app is connected to.|
+|1   |displayType         |Common.DisplayType      |TRUE       |-           |SDL_GENERIC     | - |
+|2   |displayName         |String                  |TRUE       |-           |GENERIC_DISPLAY |The name of the display the app is connected to.|
 |3   |textFields          |Common.TextField        |TRUE       |array: true<br>minsize: 0<br>maxsize: 100                  |{"name": "mainField1",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField2",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField3",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField4",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "statusBar",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mediaClock",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mediaTrack",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText1",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText2",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText3",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "scrollableMessageBody",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "initialInteractionText",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText1",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText2",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "ETA",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "totalDistance",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "audioPassThruDisplayText1", "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "audioPassThruDisplayText2", "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "sliderHeader",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "sliderFooter",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "notificationText",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "menuName",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "secondaryText",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "tertiaryText",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "timeToDestination",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "turnText",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "menuTitle",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "phoneNumber",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "addressLines",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "locationDescription",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "locationName",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1}| - |
 |4   |imageFields         |Common.ImageField       |FALSE      |array: true<br>minsize: 1<br>maxsize: 100                  |{"name": "softButtonImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: { "resolutionWidth": 56, "resolutionHeight": 56 }},<br>{"name": "choiceImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "choiceSecondaryImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "menuIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "cmdIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "appIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: { "resolutionWidth": 70, "resolutionHeight": 70 }},<br>{"name": "graphic",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: { "resolutionWidth": 373, "resolutionHeight": 373 }},<br>{"name": "secondaryGraphic",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: { "resolutionWidth": 373, "resolutionHeight": 373 }}| - |
 |5   |mediaClockFormats   |Common.MediaClockFormat |TRUE       |array: true<br>minsize: 0<br>maxsize: 100                  |"CLOCK1", "CLOCK2", "CLOCK3", "CLOCKTEXT1", "CLOCKTEXT2", "CLOCKTEXT3", "CLOCKTEXT4"| - | 
 |6   |imageCapabilities   |Common.ImageType        |FALSE      |array: true<br>minsize: 0<br>maxsize: 2                    |DYNAMIC                                                                             | - |
-|7   |graphicSupported    |Boolean                 |TRUE       |-                                                          |TRUE                                                                                | - |
+|7   |graphicSupported    |Boolean                 |TRUE       |-           |TRUE            | - |
 |8   |templatesAvailable  |String                  |TRUE       |array: true<br>minsize: 0<br>maxsize: 100<br>maxlength: 100|"DEFAULT", "MEDIA", "NON-MEDIA", "ONSCREEN_PRESETS", "GRAPHIC_WITH_TEXT", "TEXT_WITH_GRAPHIC", "TILES_ONLY", "TEXTBUTTONS_ONLY", "GRAPHIC_WITH_TILES", "TILES_WITH_GRAPHIC", "GRAPHIC_WITH_TEXT_AND_SOFTBUTTONS","TEXT_AND_SOFTBUTTONS_WITH_GRAPHIC", "GRAPHIC_WITH_TEXTBUTTONS", "TEXTBUTTONS_WITH_GRAPHIC", "LARGE_GRAPHIC_WITH_SOFTBUTTONS", "DOUBLE_GRAPHIC_WITH_SOFTBUTTONS", "LARGE_GRAPHIC_ONLY"| - |
-|9   |screenParams        |Common.ScreenParams     |FALSE      |-                                                          |"resolution": {<br>    "resolutionWidth": 1163,<br>    "resolutionHeight": 720<br>},<br>"touchEventAvailable": {<br>    "pressAvailable": true,<br>    "multiTouchAvailable": false,<br>    "doublePressAvailable": false<br>}| - |
-|10  |numCustomPresetsAvailable |Integer           |FALSE      |minvalue: 1<br>maxvalue: 100                               | 10                                                                                 | - |
+|9   |screenParams        |Common.ScreenParams     |FALSE      |-           |"resolution": {<br>    "resolutionWidth": 1163,<br>    "resolutionHeight": 720<br>},<br>"touchEventAvailable": {<br>    "pressAvailable": true,<br>    "multiTouchAvailable": false,<br>    "doublePressAvailable": false<br>}| - |
+|10  |numCustomPresetsAvailable |Integer           |FALSE      |minvalue: 1<br>maxvalue: 100 | 10 | - |
 <br>
-
-
 
 ### 2.2. TouchEventCapabilities
 The definition of "TouchEventCapabilities" and the setting example of TOYOTA are described below.
@@ -39,7 +37,7 @@ In case of TOYOTA setting, TouchEventCapability is set in "touchEventAvailable" 
 ### 2.3. AudioPassThruCapabilities
 The definition of "AudioPassThruCapabilities" and the setting example of TOYOTA are described below.
 
-| No | Name         | Type               | Mandatory | Additional | &nbsp; TOYOTA Setting &nbsp; | Description |
+| No | Name         | Type               | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:          | :-:                | :-:       | :-:        |----------------|-------------|
 |1   |samplingRate  |Common.SamplingRate |TRUE       |-           |16KHZ           | - |
 |2   |bitsPerSample |Common.BitsPerSample|TRUE       |-           |RATE_16_BIT     | - |
@@ -59,7 +57,7 @@ The definition of "pcmStreamCapabilities" and a setting example of TOYOTA are de
 ### 2.5. SoftButtonCapabilities
 The definition of "SoftButtonCapabilities" and the setting example of TOYOTA are described below.
 
-| No | Name              | Type   | Mandatory | Additional | TOYOTA Setting | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| No | Name              | Type   | Mandatory | Additional | TOYOTA Setting |Description |
 |:-: | :-:               | :-:    | :-:       | :-:        |----------------|------------|
 |1   |shortPressAvailable|Boolean |TRUE       | -          |TRUE            |The button supports a short press.<br>Whenever the button is pressed short, onButtonPressed(SHORT) must be invoked.|
 |2   |longPressAvailable |Boolean |TRUE       | -          |FALSE           |The button supports a LONG press.<br>Whenever the button is pressed long, onButtonPressed(LONG) must be invoked.|
@@ -71,7 +69,7 @@ The definition of "SoftButtonCapabilities" and the setting example of TOYOTA are
 The definition of "SystemCapabilities" and the setting example of TOYOTA are described below.
 The Capability existing in the setting is described in (1) to (4) of this chapter.
 
-| No | Name                              | Type                           | Mandatory | Additional | &nbsp; TOYOTA Setting &nbsp; | Description |
+| No | Name                              | Type                           | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                               | :-:                            | :-:       | :-:        |----------------|-------------|
 |1   |navigationCapability               |[Common.NavigationCapability](#1-navigationcapability-in-the-systemcapability-setting-is-described-below)        |FALSE      | -          |[Refer to (1) "navigationCapability" in section 2.6.](#1-navigationcapability-in-the-systemcapability-setting-is-described-below)        | - |
 |2   |phoneCapability                    |[Common.PhoneCapability](#2-phonecapability-in-the-systemcapability-setting-is-described-below)                  |FALSE      | -          |[Refer to (2) "phoneCapability" in section 2.6.](#2-phonecapability-in-the-systemcapability-setting-is-described-below)                  | - |
@@ -81,7 +79,7 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 
 ##### (1) "navigationCapability" in the "SystemCapability" setting is described below.
 
-| No | Name               | Type     | Mandatory | Additional | TOYOTA Setting | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| No | Name               | Type     | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                | :-:      | :-:       | :-:        |----------------|-------------|
 |1   |sendLocationEnabled |Boolean   |FALSE      | -          |TRUE            |If the module has the ability to add locations to the onboard nav.|
 |2   |getWayPointsEnabled |Boolean   |FALSE      | -          |TRUE            |If the module has the ability to return way points from onboard nav.|
@@ -98,7 +96,7 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 
 | No | Name                      | Type                       | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                       | :-:                        | :-:       | :-:        |----------------|-------------|
-|1   |preferredResolution        |Common.ImageResolution      |FALSE      | -          |resolutionWidth : 1163<br>resolutionHeight : 720                                       |The preferred resolution of a video stream for decoding and rendering on HMI.|
+|1   |preferredResolution        |Common.ImageResolution      |FALSE      | -          |resolutionWidth : 1163<br>resolutionHeight : 720 |The preferred resolution of a video stream for decoding and rendering on HMI.|
 |2   |maxBitrate                 |Integer                     |FALSE      |minvalue: 0<br>maxvalue: 2147483647| 10000 |The maximum bitrate of video stream that is supported, in kbps.|
 |3   |supportedFormats           |Common.VideoStreamingFormat |FALSE      |array: true |{ "protocol": "RTP",<br>"codec": "H264" },<br>{ "protocol": "RAW",<br>"codec": "H264" }|Detailed information on each format supported by this system, in its preferred order.|
 |4   |hapticSpatialDataSupported |boolean                     |FALSE      | -          |FALSE           |True if the system can utilize the haptic spatial data from the REFERENCE being streamed.|
@@ -125,46 +123,46 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 | No | Name                        | Type             | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                         | :-:              | :-:       | :-:        |----------------|-------------|
-|1   |moduleName                   |String            |TRUE       |maxlength: 100                            | primary_climate |The short friendly name of the climate control module. It should not be used to identify a module by mobile application.|
-|2   |moduleInfo                   |Common.ModuleInfo |FALSE      | -                                        |N/A              |Information about a RC module, including its id. |
-|3   |fanSpeedAvailable            |Boolean           |FALSE      | -                                        |TRUE             |Availability of the control of fan speed.<br>True: Available, False: Not Available, Not present: Not Available. |
-|4   |currentTemperatureAvailable  |Boolean           |FALSE      | -                                        |TRUE             |Availability of the reading of current temperature.<br>True: Available, False: Not Available, Not present: Not Available.|
-|5   |desiredTemperatureAvailable  |Boolean           |FALSE      | -                                        |TRUE             |Availability of the control of desired temperature.<br>True: Available, False: Not Available, Not present: Not Available.|
-|6   |acEnableAvailable            |Boolean           |FALSE      | -                                        |TRUE             |Availability of the control of turn on/off AC.<br>True: Available, False: Not Available, Not present: Not Available.|
-|7   |acMaxEnableAvailable         |Boolean           |FALSE      | -                                        |TRUE             |Availability of the control of enable/disable air conditioning is ON on the maximum level.<br>True: Available, False: Not Available, Not present: Not Available.|
-|8   |circulateAirEnableAvailable  |Boolean           |FALSE      | -                                        |FALSE            |Availability of the control of enable/disable circulate Air mode.<br>True: Available, False: Not Available, Not present: Not Available.|
-|9   |autoModeEnableAvailable      |Boolean           |FALSE      | -                                        |TRUE             |Availability of the control of enable/disable auto mode.<br>True: Available, False: Not Available, Not present: Not Available.|
-|10  |dualModeEnableAvailable      |Boolean           |FALSE      | -                                        |TRUE             |Availability of the control of enable/disable dual mode.<br>True: Available, False: Not Available, Not present: Not Available.|
-|11  |defrostZoneAvailable         |Boolean           |FALSE      | -                                        |FALSE            |Availability of the control of defrost zones.<br>True: Available, False: Not Available, Not present: Not Available.|
-|12  |defrostZone                  |DefrostZone       |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A              |A set of all defrost zones that are controllable.|
-|13  |ventilationModeAvailable     |Boolean           |FALSE      | -                                        |FALSE            |Availability of the control of air ventilation mode.<br>True: Available, False: Not Available, Not present: Not Available.|
-|14  |ventilationMode              |VentilationMode   |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A              |A set of all ventilation modes that are controllable.|
-|15  |heatedSteeringWheelAvailable |Boolean           |FALSE      | -                                        |TRUE             |Availability of the control (enable/disable) of heated Steering Wheel.<br>True: Available, False: Not Available, Not present: Not Available.|
-|16  |heatedWindshieldAvailable    |Boolean           |FALSE      | -                                        |FALSE            |Availability of the control (enable/disable) of heated Windshield.<br>True: Available, False: Not Available, Not present: Not Available.|
-|17  |heatedRearWindowAvailable    |Boolean           |FALSE      | -                                        |FALSE            |Availability of the control (enable/disable) of heated Rear Window.<br>True: Available, False: Not Available, Not present: Not Available.|
-|18  |heatedMirrorsAvailable       |Boolean           |FALSE      | -                                        |FALSE            |Availability of the control (enable/disable) of heated Mirrors.<br>True: Available, False: Not Available, Not present: Not Available.|
-|19  |climateEnableAvailable       |Boolean           |FALSE      | -                                        |N/A              |Availability of the control of enable/disable climate control.<br>True: Available, False: Not Available, Not present: Not Available.|
+|1   |moduleName                   |String            |TRUE       |maxlength: 100 | primary_climate |The short friendly name of the climate control module. It should not be used to identify a module by mobile application.|
+|2   |moduleInfo                   |Common.ModuleInfo |FALSE      | -          |N/A             |Information about a RC module, including its id. |
+|3   |fanSpeedAvailable            |Boolean           |FALSE      | -          |TRUE            |Availability of the control of fan speed.<br>True: Available, False: Not Available, Not present: Not Available. |
+|4   |currentTemperatureAvailable  |Boolean           |FALSE      | -          |TRUE            |Availability of the reading of current temperature.<br>True: Available, False: Not Available, Not present: Not Available.|
+|5   |desiredTemperatureAvailable  |Boolean           |FALSE      | -          |TRUE            |Availability of the control of desired temperature.<br>True: Available, False: Not Available, Not present: Not Available.|
+|6   |acEnableAvailable            |Boolean           |FALSE      | -          |TRUE            |Availability of the control of turn on/off AC.<br>True: Available, False: Not Available, Not present: Not Available.|
+|7   |acMaxEnableAvailable         |Boolean           |FALSE      | -          |TRUE            |Availability of the control of enable/disable air conditioning is ON on the maximum level.<br>True: Available, False: Not Available, Not present: Not Available.|
+|8   |circulateAirEnableAvailable  |Boolean           |FALSE      | -          |FALSE           |Availability of the control of enable/disable circulate Air mode.<br>True: Available, False: Not Available, Not present: Not Available.|
+|9   |autoModeEnableAvailable      |Boolean           |FALSE      | -          |TRUE            |Availability of the control of enable/disable auto mode.<br>True: Available, False: Not Available, Not present: Not Available.|
+|10  |dualModeEnableAvailable      |Boolean           |FALSE      | -          |TRUE            |Availability of the control of enable/disable dual mode.<br>True: Available, False: Not Available, Not present: Not Available.|
+|11  |defrostZoneAvailable         |Boolean           |FALSE      | -          |FALSE           |Availability of the control of defrost zones.<br>True: Available, False: Not Available, Not present: Not Available.|
+|12  |defrostZone                  |DefrostZone       |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A |A set of all defrost zones that are controllable.|
+|13  |ventilationModeAvailable     |Boolean           |FALSE      | -          |FALSE           |Availability of the control of air ventilation mode.<br>True: Available, False: Not Available, Not present: Not Available.|
+|14  |ventilationMode              |VentilationMode   |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A |A set of all ventilation modes that are controllable.|
+|15  |heatedSteeringWheelAvailable |Boolean           |FALSE      | -          |TRUE            |Availability of the control (enable/disable) of heated Steering Wheel.<br>True: Available, False: Not Available, Not present: Not Available.|
+|16  |heatedWindshieldAvailable    |Boolean           |FALSE      | -          |FALSE           |Availability of the control (enable/disable) of heated Windshield.<br>True: Available, False: Not Available, Not present: Not Available.|
+|17  |heatedRearWindowAvailable    |Boolean           |FALSE      | -          |FALSE           |Availability of the control (enable/disable) of heated Rear Window.<br>True: Available, False: Not Available, Not present: Not Available.|
+|18  |heatedMirrorsAvailable       |Boolean           |FALSE      | -          |FALSE           |Availability of the control (enable/disable) of heated Mirrors.<br>True: Available, False: Not Available, Not present: Not Available.|
+|19  |climateEnableAvailable       |Boolean           |FALSE      | -          |N/A             |Availability of the control of enable/disable climate control.<br>True: Available, False: Not Available, Not present: Not Available.|
 <br>
 
 ###### (4)-2 The "radioControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
 | No | Name                           | Type             | Mandatory | Additional    | TOYOTA Setting | Description |
 |:-: | :-:                            | :-:              | :-:       | :-:           |----------------|-------------|
-|1   |moduleName                      |String            |TRUE       |maxlength: 100 |radio         |The short friendly name of the radio control module.<br>It should not be used to identify a module by mobile application.|
-|2   |moduleInfo                      |Common.ModuleInfo |FALSE      | -             |N/A           |Information about a RC module, including its id.|
-|3   |radioEnableAvailable            |Boolean           |FALSE      | -             |FALSE         |Availability of the control of enable/disable radio.<br>True: Available, False: Not Available, Not present: Not Available.|
-|4   |radioBandAvailable              |Boolean           |FALSE      | -             |TRUE          |Availability of the control of radio band.<br>True: Available, False: Not Available, Not present: Not Available.|
-|5   |radioFrequencyAvailable         |Boolean           |FALSE      | -             |TRUE          |Availability of the control of radio frequency.<br>True: Available, False: Not Available, Not present: Not Available.|
-|6   |hdChannelAvailable              |Boolean           |FALSE      | -             |FALSE         |Availability of the control of HD radio channel.<br>True: Available, False: Not Available, Not present: Not Available|
-|7   |rdsDataAvailable                |Boolean           |FALSE      | -             |TRUE          |Availability of the getting Radio Data System (RDS) data.<br>True: Available, False: Not Available, Not present: Not Available.|
-|8   |availableHDsAvailable           |Boolean           |FALSE      | -             |FALSE         |Availability of the getting the number of available HD channels.<br>True: Available, False: Not Available, Not present: Not Available.|
-|9   |stateAvailable                  |Boolean           |FALSE      | -             |FALSE         |Availability of the getting the Radio state.<br>True: Available, False: Not Available, Not present: Not Available.|
-|10  |signalStrengthAvailable         |Boolean           |FALSE      | -             |FALSE         |Availability of the getting the signal strength.<br>True: Available, False: Not Available, Not present: Not Available.|
-|11  |signalChangeThresholdAvailable  |Boolean           |FALSE      | -             |FALSE         |Availability of the getting the signal Change Threshold.<br>True: Available, False: Not Available, Not present: Not Available.|
-|12  |sisDataAvailable                |Boolean           |FALSE      | -             |FALSE         |Availability of the getting HD radio Station Information Service (SIS) data.<br>True: Available, False: Not Available, Not present: Not Available.|
-|13  |hdRadioEnableAvailable          |Boolean           |FALSE      | -             |FALSE         |Availability of the control of enable/disable HD radio.<br>True: Available, False: Not Available, Not present: Not Available.|
-|14  |siriusxmRadioAvailable          |Boolean           |FALSE      | -             |FALSE         |Availability of sirius XM radio.<br>True: Available, False: Not Available, Not present: Not Available.|
-|15  |availableHdChannelsAvailable    |Boolean           |FALSE      | -             |N/A           |Availability of the list of available HD sub-channel indexes.<br>True: Available, False: Not Available, Not present: Not Available.|
+|1   |moduleName                      |String            |TRUE       |maxlength: 100 |radio           |The short friendly name of the radio control module.<br>It should not be used to identify a module by mobile application.|
+|2   |moduleInfo                      |Common.ModuleInfo |FALSE      | -             |N/A             |Information about a RC module, including its id.|
+|3   |radioEnableAvailable            |Boolean           |FALSE      | -             |FALSE           |Availability of the control of enable/disable radio.<br>True: Available, False: Not Available, Not present: Not Available.|
+|4   |radioBandAvailable              |Boolean           |FALSE      | -             |TRUE            |Availability of the control of radio band.<br>True: Available, False: Not Available, Not present: Not Available.|
+|5   |radioFrequencyAvailable         |Boolean           |FALSE      | -             |TRUE            |Availability of the control of radio frequency.<br>True: Available, False: Not Available, Not present: Not Available.|
+|6   |hdChannelAvailable              |Boolean           |FALSE      | -             |FALSE           |Availability of the control of HD radio channel.<br>True: Available, False: Not Available, Not present: Not Available|
+|7   |rdsDataAvailable                |Boolean           |FALSE      | -             |TRUE            |Availability of the getting Radio Data System (RDS) data.<br>True: Available, False: Not Available, Not present: Not Available.|
+|8   |availableHDsAvailable           |Boolean           |FALSE      | -             |FALSE           |Availability of the getting the number of available HD channels.<br>True: Available, False: Not Available, Not present: Not Available.|
+|9   |stateAvailable                  |Boolean           |FALSE      | -             |FALSE           |Availability of the getting the Radio state.<br>True: Available, False: Not Available, Not present: Not Available.|
+|10  |signalStrengthAvailable         |Boolean           |FALSE      | -             |FALSE           |Availability of the getting the signal strength.<br>True: Available, False: Not Available, Not present: Not Available.|
+|11  |signalChangeThresholdAvailable  |Boolean           |FALSE      | -             |FALSE           |Availability of the getting the signal Change Threshold.<br>True: Available, False: Not Available, Not present: Not Available.|
+|12  |sisDataAvailable                |Boolean           |FALSE      | -             |FALSE           |Availability of the getting HD radio Station Information Service (SIS) data.<br>True: Available, False: Not Available, Not present: Not Available.|
+|13  |hdRadioEnableAvailable          |Boolean           |FALSE      | -             |FALSE           |Availability of the control of enable/disable HD radio.<br>True: Available, False: Not Available, Not present: Not Available.|
+|14  |siriusxmRadioAvailable          |Boolean           |FALSE      | -             |FALSE           |Availability of sirius XM radio.<br>True: Available, False: Not Available, Not present: Not Available.|
+|15  |availableHdChannelsAvailable    |Boolean           |FALSE      | -             |N/A             |Availability of the list of available HD sub-channel indexes.<br>True: Available, False: Not Available, Not present: Not Available.|
 <br>
 
 ###### (4)-3 The "seatControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
@@ -205,13 +203,13 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 
 ###### (4)-5 The "hmiSettingsControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
 
-| No | Name                    | Type             | Mandatory | Additional      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOYOTA Setting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-|:-: | :-:                     | :-:              | :-:       | :-:             |--------------|-----------|
-|1   |moduleName               |String            |TRUE       |maxlength= 100   |hmiSettings   |The short friendly name of the hmi setting module.<br>It should not be used to identify a module by mobile application.|
-|2   |moduleInfo               |Common.ModuleInfo |FALSE      |                 |N/A           |Information about a RC module, including its id.|
-|3   |distanceUnitAvailable    |Boolean           |FALSE      |                 |FALSE         |Availability of the control of distance unit.|
-|4   |temperatureUnitAvailable |Boolean           |FALSE      |                 |FALSE         |Availability of the control of temperature unit.|
-|5   |displayModeUnitAvailable |Boolean           |FALSE      |                 |FALSE         |Availability of the control of HMI display mode.|
+| No | Name                    | Type             | Mandatory | Additional      | TOYOTA Setting | Description |
+|:-: | :-:                     | :-:              | :-:       | :-:             |----------------|-------------|
+|1   |moduleName               |String            |TRUE       |maxlength= 100   |hmiSettings     |The short friendly name of the hmi setting module.<br>It should not be used to identify a module by mobile application.|
+|2   |moduleInfo               |Common.ModuleInfo |FALSE      |                 |N/A             |Information about a RC module, including its id.|
+|3   |distanceUnitAvailable    |Boolean           |FALSE      |                 |FALSE           |Availability of the control of distance unit.|
+|4   |temperatureUnitAvailable |Boolean           |FALSE      |                 |FALSE           |Availability of the control of temperature unit.|
+|5   |displayModeUnitAvailable |Boolean           |FALSE      |                 |FALSE           |Availability of the control of HMI display mode.|
 <br>
 
 ### 2.7. ButtonCapabilities
@@ -224,7 +222,7 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
     <th> Type </th>
     <th> Mandatory </th>
     <th> Additional </th>
-    <th> &nbsp; TOYOTA Setting &nbsp; </th>
+    <th> TOYOTA Setting </th>
     <th> Description </th>
   </tr>
   <tr align="center">
@@ -234,19 +232,19 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
     <td>TRUE</td>
     <td>-</td>
     <td align="left" rowspan="4">
-       {"name": "PRESET_0",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "PRESET_1",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "PRESET_2",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "PRESET_3",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "PRESET_4",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "PRESET_5",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "PRESET_6",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "PRESET_7",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "PRESET_8",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "PRESET_9",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "PLAY_PAUSE",           "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "SEEKLEFT",&nbsp;&nbsp; "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
-       {"name": "SEEKRIGHT"&nbsp;       "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false}
+       {"name": "PRESET_0",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_1",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_2",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_3",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_4",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_5",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_6",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_7",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_8",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PRESET_9",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "PLAY_PAUSE",          "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "SEEKLEFT",&nbsp;&nbsp;"shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false},<br>
+       {"name": "SEEKRIGHT"&nbsp;      "shortPressAvailable": true, "longPressAvailable": true, "upDownAvailable": false}
     </td>
     <td align="left">-</td>
   </tr>
@@ -298,9 +296,9 @@ The definition of "LightControlCapabilities" and the setting example of TOYOTA a
 
 | No | Name           | Type                    | Mandatory | Additional     | TOYOTA Setting | Description |
 |:-: | :-:            | :-:                     | :-:       | :-:            |----------------|-------------|
-|1   |moduleName      | String                                            |TRUE       |maxlength= 100                           |N/A           | The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
-|2   |moduleInfo      |Common.ModuleInfo                                  |FALSE      | -                                       |N/A           | Information about a RC module, including its id.|
-|3   |supportedLights |[Common.LightCapabilities](#210-lightcapabilities) |TRUE       |array= true<br>minsize= 1<br>maxsize= 100|N/A           |An array of available LightCapabilities that are controllable. |
+|1   |moduleName      | String                  |TRUE       |maxlength= 100  |N/A             | The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
+|2   |moduleInfo      |Common.ModuleInfo        |FALSE      | -              |N/A             | Information about a RC module, including its id.|
+|3   |supportedLights |[Common.LightCapabilities](#210-lightcapabilities) |TRUE |array= true<br>minsize= 1<br>maxsize= 100|N/A |An array of available LightCapabilities that are controllable. |
 <br>
 
 ### 2.10. LightCapabilities
@@ -329,9 +327,9 @@ The definition of "DisplayCapability" and the setting example of TOYOTA are desc
 
 | No | Name               | Type                         | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                | :-:                          | :-:       | :-:        |----------------|-------------|
-|1   |displayName         |String                                                       |FALSE      | -                                        |N/A           |-|
-|2   |windowTypeSupported |[Common.WindowTypeCapabilities](#213-windowtypecapabilities) |FALSE      |array: true<br>minsize: 1                 |N/A           |Informs the application how many windows the app is allowed to create per type.|
-|3   |windowCapabilities  |[Common.WindowCapability](#214-windowcapability)             |FALSE      |array: true<br>minsize: 1<br>maxsize: 1000|N/A           |Contains a list of capabilities of all windows related to the app.<br>Once the app has registered the capabilities of all windows are provided.<br>GetSystemCapability still allows requesting window capabilities of all windows.|
+|1   |displayName         |String                        |FALSE      | -          |N/A             |-|
+|2   |windowTypeSupported |[Common.WindowTypeCapabilities](#213-windowtypecapabilities) |FALSE |array: true<br>minsize: 1 |N/A |Informs the application how many windows the app is allowed to create per type.|
+|3   |windowCapabilities  |[Common.WindowCapability](#214-windowcapability)             |FALSE |array: true<br>minsize: 1<br>maxsize: 1000|N/A |Contains a list of capabilities of all windows related to the app.<br>Once the app has registered the capabilities of all windows are provided.<br>GetSystemCapability still allows requesting window capabilities of all windows.|
 
 ### 2.13. WindowTypeCapabilities
 The definition of "WindowTypeCapabilitiess" and the setting example of TOYOTA are described below.
@@ -347,15 +345,15 @@ The definition of "WindowCapability" and the setting example of TOYOTA are descr
 
 | No | Name                     | Type                         | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                      | :-:                          | :-:       | :-:        |----------------|-------------|
-|1   |windowID                  |Integer                       |FALSE      | -                                                         |N/A           |The specified ID of the window. Can be set to a predefined window, or omitted for the main window on the main display.|
-|2   |textFields                |Common.TextField              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100                  |N/A           |A set of all fields that support text data. See TextField.|
-|3   |imageFields               |Common.ImageField             |FALSE      |array: true<br>minsize: 1<br>maxsize: 100                  |N/A           |A set of all fields that support images. See ImageField.|
-|4   |imageTypeSupported        |Common.ImageType              | -         |array: true<br>minsize: 0<br>maxsize: 1000                 |N/A           |Provides information about image types supported by the system.|
-|5   |templatesAvailable        |String                        |FALSE      |array: true<br>minsize: 1<br>maxsize: 100<br>maxlength: 100|N/A           |A set of all window templates available on the head unit.|
-|6   |numCustomPresetsAvailable |Integer                       |FALSE      |minvalue: 1<br>maxvalue: 100                               |N/A           |The number of on-window custom presets available (if any); otherwise omitted.|
-|7   |buttonCapabilities        |Common.ButtonCapabilities     |FALSE      |array: true<br>minsize: 1<br>maxsize: 100                  |N/A           |The number of buttons and the capabilities of each on-window button.|
-|8   |softButtonCapabilities    |Common.SoftButtonCapabilities |FALSE      |array: true<br>minsize: 1<br>maxsize: 100                  |N/A           |The number of soft buttons available on-window and the capabilities for each button.|
-|9   |menuLayoutsAvailable      |Common.MenuLayout             |FALSE      |array: true<br>minsize: 1<br>maxsize: 1000                 |N/A           |An array of available menu layouts. If this parameter is not provided, only the LIST layout is assumed to be available.|
+|1   |windowID                  |Integer                       |FALSE      | -          |N/A             |The specified ID of the window. Can be set to a predefined window, or omitted for the main window on the main display.|
+|2   |textFields                |Common.TextField              |FALSE      |array: true<br>minsize: 1<br>maxsize: 100                  |N/A |A set of all fields that support text data. See TextField.|
+|3   |imageFields               |Common.ImageField             |FALSE      |array: true<br>minsize: 1<br>maxsize: 100                  |N/A |A set of all fields that support images. See ImageField.|
+|4   |imageTypeSupported        |Common.ImageType              | -         |array: true<br>minsize: 0<br>maxsize: 1000                 |N/A |Provides information about image types supported by the system.|
+|5   |templatesAvailable        |String                        |FALSE      |array: true<br>minsize: 1<br>maxsize: 100<br>maxlength: 100|N/A |A set of all window templates available on the head unit.|
+|6   |numCustomPresetsAvailable |Integer                       |FALSE      |minvalue: 1<br>maxvalue: 100                               |N/A |The number of on-window custom presets available (if any); otherwise omitted.|
+|7   |buttonCapabilities        |Common.ButtonCapabilities     |FALSE      |array: true<br>minsize: 1<br>maxsize: 100                  |N/A |The number of buttons and the capabilities of each on-window button.|
+|8   |softButtonCapabilities    |Common.SoftButtonCapabilities |FALSE      |array: true<br>minsize: 1<br>maxsize: 100                  |N/A |The number of soft buttons available on-window and the capabilities for each button.|
+|9   |menuLayoutsAvailable      |Common.MenuLayout             |FALSE      |array: true<br>minsize: 1<br>maxsize: 1000                 |N/A |An array of available menu layouts. If this parameter is not provided, only the LIST layout is assumed to be available.|
 <br>
 
 ### 2.15. AppServicesCapabilities
@@ -363,13 +361,13 @@ The definition of "AppServicesCapabilities" and the setting example of TOYOTA ar
 
 | No | Name       | Type                      | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:        | :-:                       | :-:       | :-:        |----------------|-------------|
-|1   |appServices |[Common.AppServiceCapability](#216-appservicecapability)|FALSE      |array: true |N/A           |An array of currently available services. If this is an update to the capability the affected services will include an update reason in that item.|
+|1   |appServices |[Common.AppServiceCapability](#216-appservicecapability)|FALSE |array: true |N/A |An array of currently available services. If this is an update to the capability the affected services will include an update reason in that item.|
 <br>
 
 ### 2.16. AppServiceCapability
 The definition of "AppServiceCapability" and the setting example of TOYOTA are described below.
 
-| No | Name                   | Type                      | Mandatory | Additional | &nbsp; TOYOTA Setting &nbsp; | Description |
+| No | Name                   | Type                      | Mandatory | Additional | TOYOTA Setting | Description |
 |:-: | :-:                    | :-:                       | :-:       | :-:        |----------------|-------------|
 |1   |updateReason            |Common.ServiceUpdateReason |FALSE      | -          |N/A             |Only included in OnSystemCapabilityUpdated. Update reason for service record.|
 |2   |updatedAppServiceRecord |Common.AppServiceRecord    |TRUE       | -          |N/A             |Service record for a specific app service provider.|
@@ -379,9 +377,9 @@ The definition of "AppServiceCapability" and the setting example of TOYOTA are d
 The definition of "SeatLocationCapability" and the setting example of TOYOTA are described below.
 
 
-| No | Name   | Type               | Mandatory | Additional | &nbsp; TOYOTA Setting &nbsp; | Description |
-|:-: | :-:    | :-:                | :-:       | :-:        |----------------|-------------|
-|1   |rows    |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100               |N/A           |Contains information about the locations of each seat.|
-|2   |columns |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100               |N/A           |Contains information about the locations of each seat.|
-|3   |levels  |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100<br>defvalue: 1|N/A           |Contains information about the locations of each seat.|
-|4   |seats   |Common.SeatLocation |FALSE      |array: true                                |N/A           |Contains a list of SeatLocation in the vehicle, the first element is the driver's seat.|
+| No | Name   | Type               | Mandatory | Additional |  TOYOTA Setting | Description |
+|:-: | :-:    | :-:                | :-:       | :-:        |-----------------|-------------|
+|1   |rows    |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100 |N/A |Contains information about the locations of each seat.|
+|2   |columns |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100 |N/A |Contains information about the locations of each seat.|
+|3   |levels  |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100<br>defvalue: 1 |N/A |Contains information about the locations of each seat.|
+|4   |seats   |Common.SeatLocation |FALSE      |array: true |N/A              |Contains a list of SeatLocation in the vehicle, the first element is the driver's seat.|
