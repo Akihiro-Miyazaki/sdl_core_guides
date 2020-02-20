@@ -278,7 +278,7 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
     <td>FALSE</td>
     <td> - </td>
     <td align="left"> N/A </td>
-    <td align="left">Information about a RC module, including its id.</td>
+    <td align="left">Information&nbsp;about&nbsp;a&nbsp;RC&nbsp;module, including its id.</td>
   </tr>
 </table>
 <br>
