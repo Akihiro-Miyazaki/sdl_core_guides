@@ -317,7 +317,7 @@ The definition of "HMICapabilities" and the setting example of TOYOTA are descri
 
 | No | Name          | Type   | Mandatory | Additional | TOYOTA&nbsp;Setting | Description |
 |:-: | :-:           | :-:    | :-:       | :-:        |---------------------|-------------|
-|1   |navigation     |Boolean |FALSE      | -          |N/A                  |Availability of build in Nav. <br>True:&nbsp;Available,&nbsp;False:&nbsp;Not&nbsp;Available.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+|1   |navigation     |Boolean |FALSE      | -          |N/A                  |Availability of build in Nav. <br>True:&nbsp;Available,&nbsp;False:&nbsp;Not&nbsp;Available.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |2   |phoneCall      |Boolean |FALSE      | -          |N/A                  |Availability of build in phone. <br>True: Available, False: Not Available.|
 |3   |videoStreaming |Boolean |FALSE      | -          |N/A                  |Availability&nbsp;of&nbsp;built-in&nbsp;video&nbsp;streaming. <br>True: Available, False: Not Available.|
 <br>
