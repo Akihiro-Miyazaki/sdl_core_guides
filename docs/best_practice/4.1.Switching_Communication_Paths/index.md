@@ -59,7 +59,7 @@ Table 1 shows the specifications on how SDL connection path is switched when new
 
 <ol>
 *1 : If the HMI recognized that current BT and new USB are connected to same device, <ol>SDL transport should be switched to USB.</ol>
-*2 : The SDL App that uses VPM detects for WiFi transport when it is launched. <ol>If the WiFi transport that is connected to same device as BT connection is found, the SDL App will start VPM via WiFi.</ol> 
+*2 : The SDL App that uses VPM detects WiFi transport when it is launched. <ol>If the WiFi transport that is connected to same device as BT connection is found, the SDL App will start VPM via WiFi.</ol> 
 *3 : The USB connection path is prioritized, even if both paths are connected to the same device.<br>
 *4 : If the SDL App recognized that current BT and new USB are connected to same device, <ol>SDL transport should be switched to USB.</ol>
 </ol>
