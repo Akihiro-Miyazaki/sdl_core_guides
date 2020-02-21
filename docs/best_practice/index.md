@@ -66,10 +66,7 @@ This chapter describes the method to switch between the SDL App and other smartp
 This chapter describes the sequence of switching SDL Apps.
 </ol>
 
-### [4.1. Switching Communication Paths](./4.1.Switching_Communication_Paths/index.md)
-<ol>
-This chapter describes the priority rule and status notification to switch connections in case of the system connects a device via multiple paths.
-</ol>
+### 4.1. Switching Communication Paths
 
 ### [4.2. WiFi Connection](./4.2.WiFi_Connection/index.md)
 <ol>
