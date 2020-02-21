@@ -59,9 +59,9 @@ The definition of "SoftButtonCapabilities" and the setting example of TOYOTA are
 
 | No | Name              | Type   | Mandatory | Additional | TOYOTA&nbsp;Setting |Description |
 |:-: | :-:               | :-:    | :-:       | :-:        |---------------------|------------|
-|1   |shortPressAvailable|Boolean |TRUE       | -          |TRUE                 |The button supports a short press.<br>Whenever the button is pressed short, onButtonPressed(SHORT) must be invoked.|
+|1   |shortPressAvailable|Boolean |TRUE       | -          |TRUE                 |The button supports a short press.<br>Whenever&nbsp;the&nbsp;button&nbsp;is&nbsp;pressed&nbsp;short,&nbsp;onButtonPressed(SHORT)&nbsp;must&nbsp;be&nbsp;invoked.|
 |2   |longPressAvailable |Boolean |TRUE       | -          |FALSE                |The button supports a LONG press.<br>Whenever the button is pressed long, onButtonPressed(LONG) must be invoked.|
-|3   |upDownAvailable    |Boolean |TRUE       | -          |FALSE                |The button supports "button down" and "button up".<br>Whenever&nbsp;the&nbsp;button&nbsp;is&nbsp;pressed,&nbsp;onButtonEvent(DOWN)&nbsp;must&nbsp;be&nbsp;invoked.<br>Whenever the button is released, onButtonEvent(UP) must be invoked.|
+|3   |upDownAvailable    |Boolean |TRUE       | -          |FALSE                |The button supports "button down" and "button up".<br>Whenever the button is pressed, onButtonEvent(DOWN) must be invoked.<br>Whenever the button is released, onButtonEvent(UP) must be invoked.|
 |4   |imageSupported     |Boolean |TRUE       | -          |TRUE                 |Must be true if the button supports referencing a static or dynamic image.|
 |5   |textSupported      |Boolean |FALSE      | -          |N/A                  |The button supports the use of text.<br>If not included, the default value should be considered true that the button will support text.|
 
@@ -97,8 +97,8 @@ The Capability existing in the setting is described in (1) to (4) of this chapte
 | No | Name                      | Type                       | Mandatory | Additional | TOYOTA&nbsp;Setting | Description |
 |:-: | :-:                       | :-:                        | :-:       | :-:        |---------------------|-------------|
 |1   |preferredResolution        |Common.ImageResolution      |FALSE      | -          |resolutionWidth&nbsp;:&nbsp;1163<br>resolutionHeight : 720 |The preferred resolution of a video stream for decoding and rendering on HMI.|
-|2   |maxBitrate                 |Integer                     |FALSE      |minvalue: 0<br>maxvalue:&nbsp;2147483647| 10000 |The maximum bitrate of video stream that is supported, in kbps.|
-|3   |supportedFormats           |Common.VideoStreamingFormat |FALSE      |array: true |{ "protocol": "RTP",<br>"codec": "H264" },<br>{ "protocol": "RAW",<br>"codec": "H264" }|Detailed&nbsp;information&nbsp;on&nbsp;each&nbsp;format&nbsp;supported&nbsp;by&nbsp;this&nbsp;system, in its preferred order.|
+|2   |maxBitrate                 |Integer                     |FALSE      |minvalue: 0<br>maxvalue:&nbsp;2147483647| 10000 |The&nbsp;maximum&nbsp;bitrate&nbsp;of&nbsp;video&nbsp;stream&nbsp;that&nbsp;is&nbsp;supported,&nbsp;in&nbsp;kbps.|
+|3   |supportedFormats           |Common.VideoStreamingFormat |FALSE      |array: true |{ "protocol": "RTP",<br>"codec": "H264" },<br>{ "protocol": "RAW",<br>"codec": "H264" }|Detailed information on each format supported by this system, in its preferred order.|
 |4   |hapticSpatialDataSupported |boolean                     |FALSE      | -          |FALSE                |True if the system can utilize the haptic spatial data from the REFERENCE being streamed.|
 |5   |diagonalScreenSize         |Float                       |FALSE      |minvalue: 0 |N/A                  |The diagonal screen size in inches.|
 |6   |pixelPerInch               |Float                       |FALSE      |minvalue: 0 |N/A                  |PPI is the diagonal resolution in pixels divided by the diagonal screen size in inches.|
@@ -137,7 +137,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |12  |defrostZone                  |DefrostZone       |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A |A set of all defrost zones that are controllable.|
 |13  |ventilationModeAvailable     |Boolean           |FALSE      | -          |FALSE                |Availability of the control of air ventilation mode.<br>True: Available, False: Not Available, Not present: Not Available.|
 |14  |ventilationMode              |VentilationMode   |FALSE      |array: true<br>minsize: 1<br>maxsize: 100 |N/A |A set of all ventilation modes that are controllable.|
-|15  |heatedSteeringWheelAvailable |Boolean           |FALSE      | -          |TRUE                 |Availability of the control (enable/disable) of heated Steering Wheel.<br>True: Available, False: Not Available, Not present: Not Available.|
+|15  |heatedSteeringWheelAvailable |Boolean           |FALSE      | -          |TRUE                 |Availability&nbsp;of&nbsp;the&nbsp;control&nbsp;(enable/disable)&nbsp;of&nbsp;heated&nbsp;Steering&nbsp;Wheel.<br>True: Available, False: Not Available, Not present: Not Available.|
 |16  |heatedWindshieldAvailable    |Boolean           |FALSE      | -          |FALSE                |Availability of the control (enable/disable) of heated Windshield.<br>True: Available, False: Not Available, Not present: Not Available.|
 |17  |heatedRearWindowAvailable    |Boolean           |FALSE      | -          |FALSE                |Availability of the control (enable/disable) of heated Rear Window.<br>True: Available, False: Not Available, Not present: Not Available.|
 |18  |heatedMirrorsAvailable       |Boolean           |FALSE      | -          |FALSE                |Availability of the control (enable/disable) of heated Mirrors.<br>True: Available, False: Not Available, Not present: Not Available.|
@@ -159,7 +159,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |9   |stateAvailable                  |Boolean           |FALSE      | -             |FALSE                |Availability of the getting the Radio state.<br>True: Available, False: Not Available, Not present: Not Available.|
 |10  |signalStrengthAvailable         |Boolean           |FALSE      | -             |FALSE                |Availability of the getting the signal strength.<br>True: Available, False: Not Available, Not present: Not Available.|
 |11  |signalChangeThresholdAvailable  |Boolean           |FALSE      | -             |FALSE                |Availability of the getting the signal Change Threshold.<br>True: Available, False: Not Available, Not present: Not Available.|
-|12  |sisDataAvailable                |Boolean           |FALSE      | -             |FALSE                |Availability of the getting HD radio Station Information Service (SIS) data.<br>True: Available, False: Not Available, Not present: Not Available.|
+|12  |sisDataAvailable                |Boolean           |FALSE      | -             |FALSE                |Availability&nbsp;of&nbsp;the&nbsp;getting&nbsp;HD&nbsp;radio&nbsp;Station&nbsp;Information&nbsp;Service&nbsp;(SIS)&nbsp;data.<br>True: Available, False: Not Available, Not present: Not Available.|
 |13  |hdRadioEnableAvailable          |Boolean           |FALSE      | -             |FALSE                |Availability of the control of enable/disable HD radio.<br>True: Available, False: Not Available, Not present: Not Available.|
 |14  |siriusxmRadioAvailable          |Boolean           |FALSE      | -             |FALSE                |Availability of sirius XM radio.<br>True: Available, False: Not Available, Not present: Not Available.|
 |15  |availableHdChannelsAvailable    |Boolean           |FALSE      | -             |N/A                  |Availability of the list of available HD sub-channel indexes.<br>True: Available, False: Not Available, Not present: Not Available.|
@@ -198,7 +198,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |4   |keepContextAvailable  |Boolean           |FALSE      |                |FALSE                |Availability of the parameter keepContext.|
 |5   |volumeAvailable       |Boolean           |FALSE      |                |FALSE                |Availability of the control of audio volume.|
 |6   |equalizerAvailable    |Boolean           |FALSE      |                |FALSE                |Availability of the control of Equalizer Settings.|
-|7   |equalizerMaxChannelId |Integer           |FALSE      |minvalue= 1<br> maxvalue: 100 | 1     |Must be included if equalizerAvailable=true, and assume all IDs starting from 1 to this value are valid.|
+|7   |equalizerMaxChannelId |Integer           |FALSE      |minvalue: 1<br> maxvalue: 100 | 1     |Must be included if equalizerAvailable=true, and assume all IDs starting from 1 to this value are valid.|
 <br>
 
 ###### (4)-5 The "hmiSettingsControlCapabilities" in the "RemoteControlCapabilities" setting is described below.
@@ -317,9 +317,9 @@ The definition of "HMICapabilities" and the setting example of TOYOTA are descri
 
 | No | Name          | Type   | Mandatory | Additional | TOYOTA&nbsp;Setting | Description |
 |:-: | :-:           | :-:    | :-:       | :-:        |---------------------|-------------|
-|1   |navigation     |Boolean |FALSE      | -          |N/A                  |Availability of build in Nav. True:&nbsp;Available,&nbsp;False:&nbsp;Not&nbsp;Available.|
-|2   |phoneCall      |Boolean |FALSE      | -          |N/A                  |Availability of build in phone. True: Available, False: Not Available.|
-|3   |videoStreaming |Boolean |FALSE      | -          |N/A                  |Availability of built-in video streaming. True: Available, False: Not Available.|
+|1   |navigation     |Boolean |FALSE      | -          |N/A                  |Availability of build in Nav. <br>True:&nbsp;Available,&nbsp;False:&nbsp;Not&nbsp;Available.|
+|2   |phoneCall      |Boolean |FALSE      | -          |N/A                  |Availability of build in phone. <br>True: Available, False: Not Available.|
+|3   |videoStreaming |Boolean |FALSE      | -          |N/A                  |Availability&nbsp;of&nbsp;built-in&nbsp;video&nbsp;streaming. <br>True: Available, False: Not Available.|
 <br>
 
 ### 2.12. DisplayCapability
@@ -329,7 +329,7 @@ The definition of "DisplayCapability" and the setting example of TOYOTA are desc
 |:-: | :-:                | :-:                          | :-:       | :-:        |---------------------|-------------|
 |1   |displayName         |String                        |FALSE      | -          |N/A                  | - |
 |2   |windowTypeSupported |[Common.WindowTypeCapabilities](#213-windowtypecapabilities) |FALSE |array: true<br>minsize: 1 |N/A                 |Informs&nbsp;the&nbsp;application&nbsp;how&nbsp;many&nbsp;windows&nbsp;the&nbsp;app&nbsp;is allowed to create per type.|
-|3   |windowCapabilities  |[Common.WindowCapability](#214-windowcapability)             |FALSE |array: true<br>minsize: 1<br>maxsize:&nbsp;1000|N/A |Contains a list of capabilities of all windows related to the app.<br>Once the app has registered the capabilities of all windows are provided.<br>GetSystemCapability still allows requesting window capabilities of all windows.|
+|3   |windowCapabilities  |[Common.WindowCapability](#214-windowcapability)             |FALSE |array: true<br>minsize: 1<br>maxsize:&nbsp;1000|N/A |Contains&nbsp;a&nbsp;list&nbsp;of&nbsp;capabilities&nbsp;of&nbsp;all&nbsp;windows&nbsp;related&nbsp;to&nbsp;the&nbsp;app.<br>Once the app has registered the capabilities of all windows are provided.<br>GetSystemCapability still allows requesting window capabilities of all windows.|
 
 ### 2.13. WindowTypeCapabilities
 The definition of "WindowTypeCapabilitiess" and the setting example of TOYOTA are described below.
