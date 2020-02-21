@@ -12,7 +12,7 @@ Hence, the purpose of this document is to standardize such cases/issues using th
 ## 3. Function Details
 ### 3.1. Specification for Switching Communication Paths
 These are the basic rules for specification of switching communication paths:
-- The priority of communication methods: USB > BT
+- The priority of communication methods: USB > BT<br>
 Note that WiFi cannot communicate alone by itself, therefore WiFi is excepted from the priority.
 - If the SDL connects multiple terminals (mobiles), then the device that is already connected to the SDL is prioritized.
 
@@ -27,7 +27,7 @@ Table 1 shows the specifications on how SDL connection path is switched when new
   </tr>
   <tr>
     <th align="center"> BT </th>
-    <th align="center"> USB </th>
+    <th align="center"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
     <th align="center"> WiFi </th>
   </tr>
   <tr>
@@ -58,10 +58,10 @@ Table 1 shows the specifications on how SDL connection path is switched when new
 </table>
 
 <ol>
-*1 : If the HMI recognized that current BT and new USB are connected to same device, SDL transport should be switched to USB.<br>
+*1 : If the HMI recognized that current BT and new USB are connected to same device, <ol>SDL transport should be switched to USB.</ol>
 *2 : Åyï€óØÅz<br> 
 *3 : The USB connection path is prioritized, even if both paths are connected to the same device.<br>
-*4 : If the SDL App recognized that current BT and new USB are connected to same device, SDL transport should be switched to USB.
+*4 : If the SDL App recognized that current BT and new USB are connected to same device, <ol>SDL transport should be switched to USB.</ol>
 </ol>
 
 ### 3.2. Logic for switching communication paths in iOS
@@ -75,9 +75,10 @@ The process of switching communication path from BT to USB
 - Copy the current BT status to the USB device
 </ol>
 </ol>
-3. If the timer for switching transport expires, the HMI clears the list of SDL Apps which are waiting for the re-registering. Then, the SDL Core calls "Unregistered()" on the SDL Apps which are not registered within the switching time. Afterwards, the result is notified to the HMI from the SDL Core.
-If the HMI has received the RegisterApp notification and SDL App is included in the list of re-registering before the process for switching transport times out, the HMI returns to the previous HMI Level of that SDL App.
+3. If the timer for switching transport expires, the HMI clears the list of SDL Apps which are waiting for <ol>the re-registering. Then, the SDL Core calls "Unregistered()" on the SDL Apps which are not registered within the switching time. Afterwards, the result is notified to the HMI from the SDL Core.</ol>
+<ol>If the HMI has received the RegisterApp notification and SDL App is included in the list of re-registering before the process for switching transport times out, the HMI returns to the previous HMI Level of that SDL App.
 And then, the HMI notifies to the mobile that the SDL App was launched succesfully.
+</ol>
 </ol>
 
 ## 4. Differences from SDL standard specification
