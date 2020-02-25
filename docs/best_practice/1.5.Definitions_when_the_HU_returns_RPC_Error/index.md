@@ -12,7 +12,7 @@ Hence, the purpose of this document is to standardize such issue using the resul
 ### 3.1. Lack of definition in the RPC parameter
 Below is RPC parameter description in MOBILE_API.xml that are added/modified.
 
-(1) HMILevel (Type : enum)
+(1) HMILevel (Type : enum)<br>
 The enum value is defined because it was not included in the current definition.
 
 ```xml
@@ -20,21 +20,28 @@ The enum value is defined because it was not included in the current definition.
      <description>Enumeration that describes current levels of HMI.</description>
 
      <element name="FULL" internal_name="HMI_FULL">
-+　　　   <description> The application has full use of the SDL HMI. The app can output via TTS, display, or streaming audio and receive notifications via VR, Menu, and button presses. </description>
++        <description>
++            The application has full use of the SDL HMI. The app can output via TTS, display, or streaming audio and receive notifications via VR, Menu, and button presses.
++        </description>
      </element>
 
      <element name="LIMITED" internal_name="HMI_LIMITED" >
-+       <description>
-+           This HMI Level is only defined for a media application using an HMI with an 8 inch touchscreen(Navi) system.
-+           The application can display text by "Show" and receives button presses from media-oriented buttons(SEEKRIGHT, SEEKLEFT, TUNEUP, TUNEDOWN, PRESET_0-9). </description>
++        <description>
++            This HMI Level is only defined for a media application using an HMI with an 8 inch touchscreen(Navi) system.
++            The application can display text by "Show" and receives button presses from media-oriented buttons(SEEKRIGHT, SEEKLEFT, TUNEUP, TUNEDOWN, PRESET_0-9).
++        </description>
      </element>
 
      <element name="BACKGROUND" internal_name="HMI_BACKGROUND" >
-+        <description> The application cannot interact with user via TTS, VR, Display or Button Presses. </description>
++        <description>
++            The application cannot interact with user via TTS, VR, Display or Button Presses.
++        </description>
      </element>
 
      <element name="NONE" internal_name="HMI_NONE" >
-+        <description> The application has been discovered by SDL, but the app cannot send any requests or receive any notifications. </description>
++        <description>
++            The application has been discovered by SDL, but the app cannot send any requests or receive any notifications.
++        </description>
      </element>
 
  </enum>
@@ -52,7 +59,9 @@ mainfield3 and mainField4 are added because they are also affected by the parame
      <param name="alignment" type="Common.TextAlignment" mandatory="false">
 -        <description>Specifies how mainField1 and mainField2 texts should be aligned on the display.</description>
 -        <description>If omitted, texts must be centered</description>
-+        <description> Specifies how mainField1, mainField2, mainField3 and mainField4 texts should be aligned on  display. If omitted, texts will be centered. </description>
++        <description>
++            Specifies how mainField1, mainField2, mainField3 and mainField4 texts should be aligned on  display. If omitted, texts will be centered.
++        </description>
      </param>
       ...
  </function>
@@ -67,7 +76,9 @@ If the parameter is omitted custom preset does not change, same as other Show pa
      <param name="customPresets" type="String" maxlength="500" minsize="0" maxsize="10" array="true" mandatory="false">
          <description> App labeled on-screen presets (i.e. GEN3 media presets or dynamic search suggestions).</description>
 -        <description>If omitted on supported displays, the presets will be shown as not defined.</description>
-+        <description> If omitted on supported displays, the presets will not change. </description>
++        <description>
++            If omitted on supported displays, the presets will not change.
++        </description>
      </param>
       ...
  </function>
@@ -81,9 +92,11 @@ The default value is added because it was not described in the "interactionLayou
      ...
      <param name="interactionLayout" type="Common.LayoutMode" mandatory="false">
 -        <description>See LayoutMode.</description>
-+        <description> See LayoutMode. If omitted on supported displays, the value is set to "ICON_ONLY". </description>
++        <description>
++            See LayoutMode. If omitted on supported displays, the value is set to "ICON_ONLY".
++        </description>
      </param>
-      ...
+     ...
 </function>
 ```
 
@@ -92,7 +105,7 @@ Below are RPCs that returns an "error: Invalid Data" if the length of the string
 The definition of minlength is added because it was not included in the current definition.
 
 #### 1. RPC Invalid data error notification items (HMI_API .xml)
-(1) Choice (Type : suruct)
+(1) Choice (Type : struct)
 
 ```xml
  <struct name="Choice">
@@ -101,7 +114,7 @@ The definition of minlength is added because it was not included in the current 
 +    <param name="menuName" type="String" minlength="1" maxlength="500" mandatory="false">
          <description> The name of the choice </description>
      </param>
-      ...
+     ...
 
 -    <param name="secondaryText" maxlength="500" type="String" mandatory="false">
 +    <param name="secondaryText" minlength="1" maxlength="500" type="String" mandatory="false">
@@ -116,7 +129,7 @@ The definition of minlength is added because it was not included in the current 
  </struct>
 ```
 
-(2) VrHelpItem (Type : suruct)
+(2) VrHelpItem (Type : struct)
 
 ```xml
  <struct name="VrHelpItem">
@@ -609,27 +622,27 @@ The definition of minlength is added because it was not included in the current 
      ...
 -    <param name="appName" type="String" maxlength="100" mandatory="true" since="1.0">
 +    <param name="appName" type="String" minlength="1" maxlength="100" mandatory="true" since="1.0">
-         ...
+     ...
      </param>
      ...
 -    <param name="ngnMediaScreenAppName" type="String" maxlength="100" mandatory="false" since="1.0">
 +    <param name="ngnMediaScreenAppName" type="String" minlength="1" maxlength="100" mandatory="false" since="1.0">
-         ...
+     ...
      </param>
 
 -    <param name="vrSynonyms" type="String" maxlength="40" minsize="1" maxsize="100" array="true" mandatory="false" since="1.0">
 +    <param name="vrSynonyms" type="String" minlength="1" maxlength="40" minsize="1" maxsize="100" array="true" mandatory="false" since="1.0">
-         ...
+     ...
      </param>
      ...
 -    <param name="hashID" type="String" maxlength="100" mandatory="false" since="3.0">
 +    <param name="hashID" type="String" minlength="1" maxlength="100" mandatory="false" since="3.0">
-         ...
+     ...
      </param>
      ...
 -    <param name="appID" type="String" maxlength="100" mandatory="true" since="2.0">
 +    <param name="appID" type="String" minlength="1" maxlength="100" mandatory="true" since="2.0">
-         ...
+     ...
      </param>
 -    <param name="fullAppID" type="String" maxlength="100" mandatory="false" since="5.0">
 +    <param name="fullAppID" type="String" minlength="1" maxlength="100" mandatory="false" since="5.0">
@@ -891,7 +904,7 @@ The definition of minlength is added because it was not included in the current 
  <function name="SystemRequest" functionID="SystemRequestID" messagetype="request" since="3.0">
      ...
 -    <param name="requestSubType" type="String" maxlength="255" mandatory="false" since="5.0">
-+    <param name="requestSubType" type="String" minlength="1" maxlength="255" mandatory="false" since="5.0">     
++    <param name="requestSubType" type="String" minlength="1" maxlength="255" mandatory="false" since="5.0">
          <description>
              This parameter is filled for supporting OEM proprietary data exchanges.
          </description>
@@ -1000,7 +1013,7 @@ The definition of minlength is added because it was not included in the current 
  <function name="ReleaseInteriorVehicleDataModule" functionID="ReleaseInteriorVehicleDataModuleID" messagetype="request" since="6.0">
      ...
 -    <param name="moduleId" type="String" maxlength="100" mandatory="false" since="5.1">
-+    <param name="moduleId" type="String" minlength="1" maxlength="100" mandatory="false" since="5.1"> 
++    <param name="moduleId" type="String" minlength="1" maxlength="100" mandatory="false" since="5.1">
          <description>Id of a module, published by System Capability. </description>
      </param>
  </function>
@@ -1012,7 +1025,7 @@ The definition of minlength is added because it was not included in the current 
  <function name="GetCloudAppProperties" functionID="GetCloudAppPropertiesID" messagetype="request" since="5.1">
      <description>
          RPC used to get the current properties of a cloud application
-     </description> 
+     </description>
 -    <param name="appID" type="String" maxlength="100" mandatory="true"></param>
 +    <param name="appID" type="String" minlength="1" maxlength="100" mandatory="true"></param> 
  </function>
