@@ -54,7 +54,7 @@ mainfield3 and mainField4 are added because they are also affected by the parame
 
 ```xml
  <function name="Show" messagetype="request">
-      ...
+     ...
      <param name="alignment" type="Common.TextAlignment" mandatory="false">
 -        <description>Specifies how mainField1 and mainField2 texts should be aligned on the display.</description>
 -        <description>If omitted, texts must be centered</description>
