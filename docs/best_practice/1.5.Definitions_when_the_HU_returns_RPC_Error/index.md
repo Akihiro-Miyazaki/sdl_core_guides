@@ -43,7 +43,6 @@ The enum value is defined because it was not included in the current definition.
 +            The application has been discovered by SDL, but the app cannot send any requests or receive any notifications.
 +        </description>
      </element>
-
  </enum>
 ```
 
@@ -63,7 +62,7 @@ mainfield3 and mainField4 are added because they are also affected by the parame
 +            Specifies how mainField1, mainField2, mainField3 and mainField4 texts should be aligned on display. If omitted, texts will be centered.
 +        </description>
      </param>
-      ...
+     ...
  </function>
 ```
 
@@ -80,7 +79,7 @@ If the parameter is omitted custom preset does not change, same as other Show pa
 +            If omitted on supported displays, the presets will not change.
 +        </description>
      </param>
-      ...
+     ...
  </function>
 ```
 
@@ -115,7 +114,6 @@ The definition of minlength is added because it was not included in the current 
          <description> The name of the choice </description>
      </param>
      ...
-
 -    <param name="secondaryText" maxlength="500" type="String" mandatory="false">
 +    <param name="secondaryText" minlength="1" maxlength="500" type="String" mandatory="false">
          <description> Optional secondary text to display; e.g. address of POI in a search result entry</description>
