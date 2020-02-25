@@ -55,7 +55,7 @@ Some systems do not have the Hard SW, and set it as the Software SW in a fixed a
 In this chapter, all mentioned above will be treated synonymously as the Hard SW.
 </ol>
 
-### [2.5. Behavior after ACC OFFON(Resume of Last Launched SDL App)](./2.5.Behavior_after_ACC_OFFON(Resume_of_Last_Launched_SDL_App))
+### [2.5. Behavior after ACC OFFON(Resume of Last Launched SDL App)](./2.5.Behavior_after_ACC_OFFON(Resume_of_Last_Launched_SDL_App)/index.md)
 <ol>
 This chapter describes the behavior of the SDL App after ACC OFF/ON.
 </ol>
