@@ -267,6 +267,7 @@ The definition of minlength is added because it was not included in the current 
 +    <param name="sliderHeader" type="String" minlength="1" maxlength="500" mandatory="true">
          <description>Text header to be displayed.</description>
      </param>
+
 -    <param name="sliderFooter" type="String" maxlength="500"  minsize="1" maxsize="26" array="true" mandatory="false">
 +    <param name="sliderFooter" type="String" minlength="1" maxlength="500" minsize="1" maxsize="26" array="true" mandatory="false">
          <description>Text footer to be displayed (meant to display min/max threshold descriptors).</description>
@@ -288,14 +289,17 @@ The definition of minlength is added because it was not included in the current 
 +    <param name="locationName" type="String" minlength="1" maxlength="500" mandatory="false">
          <description>     Name / title of intended location   </description>
      </param>
+
 -    <param name="locationDescription" type="String" maxlength="500" mandatory="false">
 +    <param name="locationDescription" type="String" minlength="1" maxlength="500" mandatory="false">
          <description>        Description intended location / establishment (if applicable)   </description>
      </param>
+
 -    <param name="addressLines" type="String" maxlength="500" minsize="0" maxsize="4" array="true" mandatory="false">
 +    <param name="addressLines" type="String" minlength="1" maxlength="500" minsize="0" maxsize="4" array="true" mandatory="false">
          <description>     Location address (if applicable)   </description>
      </param>
+
 -    <param name="phoneNumber" type="String" maxlength="500" mandatory="false">
 +    <param name="phoneNumber" type="String" minlength="1" maxlength="500" mandatory="false">
          <description>     Phone number of intended location / establishment (if applicable)   </description>
@@ -563,7 +567,7 @@ The definition of minlength is added because it was not included in the current 
  </struct>
 ```
 
-(9) LocationDetails: (Type : struct)
+(9) LocationDetails (Type : struct)
 
 ```xml
  <struct name="LocationDetails" since="4.1">
@@ -572,14 +576,17 @@ The definition of minlength is added because it was not included in the current 
 +    <param name="locationName" type="String" minlength="1" maxlength="500" mandatory="false">
          <description>Name of location.</description>
      </param>
+
 -    <param name="addressLines" type="String" maxlength="500" minsize="0" maxsize="4" array="true" mandatory="false">
 +    <param name="addressLines" type="String" minlength="1" maxlength="500" minsize="0" maxsize="4" array="true" mandatory="false">
          <description>Location address for display purposes only</description>
      </param>
+
 -    <param name="locationDescription" type="String" maxlength="500" mandatory="false">
 +    <param name="locationDescription" type="String" minlength="1" maxlength="500" mandatory="false">
          <description>Description intended location / establishment (if applicable)</description>
      </param>
+
 -    <param name="phoneNumber" type="String" maxlength="500" mandatory="false">
 +    <param name="phoneNumber" type="String" minlength="1" maxlength="500" mandatory="false">
          <description>Phone number of location / establishment.</description>
@@ -823,6 +830,7 @@ The definition of minlength is added because it was not included in the current 
 +    <param name="ngnMediaScreenAppName" type="String" minlength="1" maxlength="100" mandatory="false" since="3.0">
          <description>Request new app short name registration</description>
      </param>
+
 -    <param name="vrSynonyms" type="String" maxlength="40" minsize="1" maxsize="100" array="true" mandatory="false" since="3.0">
 +    <param name="vrSynonyms" type="String" minlength="1" maxlength="40" minsize="1" maxsize="100" array="true" mandatory="false" since="3.0">
          <description>Request new VR synonyms registration</description>
@@ -908,6 +916,7 @@ The definition of minlength is added because it was not included in the current 
              This parameter is filled for supporting OEM proprietary data exchanges.
          </description>
      </param>
+
 -    <param name="fileName" type="String" maxlength="255" mandatory="false">
 +    <param name="fileName" type="String" minlength="1" maxlength="255" mandatory="false">
          <description>
@@ -930,18 +939,21 @@ The definition of minlength is added because it was not included in the current 
              Name / title of intended location
          </description>
      </param>
+
 -    <param name="locationDescription" type="String" maxlength="500" mandatory="false">
 +    <param name="locationDescription" type="String" minlength="1" maxlength="500" mandatory="false">
          <description>
              Description intended location / establishment (if applicable)
          </description>
      </param>
+
 -    <param name="addressLines" type="String" maxlength="500" minsize="0" maxsize="4" array="true" mandatory="false">
 +    <param name="addressLines" type="String" minlength="1" maxlength="500" minsize="0" maxsize="4" array="true" mandatory="false">
          <description>
              Location address (if applicable)
          </description>
      </param>
+
 -    <param name="phoneNumber" type="String" maxlength="500" mandatory="false">
 +    <param name="phoneNumber" type="String" minlength="1" maxlength="500" mandatory="false">
          <description>
@@ -957,6 +969,7 @@ The definition of minlength is added because it was not included in the current 
 ```xml
  <function name="DialNumber" functionID="DialNumberID" messagetype="request" since="3.0">
      <description>Dials a phone number and switches to phone application.</description>
+
 -    <param name="number" type="String" maxlength="40" mandatory="true">
 +    <param name="number" type="String" minlength="1" maxlength="40" mandatory="true">
          <description>
@@ -1025,6 +1038,7 @@ The definition of minlength is added because it was not included in the current 
      <description>
          RPC used to get the current properties of a cloud application
      </description>
+
 -    <param name="appID" type="String" maxlength="100" mandatory="true"></param>
 +    <param name="appID" type="String" minlength="1" maxlength="100" mandatory="true"></param> 
  </function>
