@@ -60,7 +60,7 @@ mainfield3 and mainField4 are added because they are also affected by the parame
 -        <description>Specifies how mainField1 and mainField2 texts should be aligned on the display.</description>
 -        <description>If omitted, texts must be centered</description>
 +        <description>
-+            Specifies how mainField1, mainField2, mainField3 and mainField4 texts should be aligned on  display. If omitted, texts will be centered.
++            Specifies how mainField1, mainField2, mainField3 and mainField4 texts should be aligned on display. If omitted, texts will be centered.
 +        </description>
      </param>
       ...
@@ -442,17 +442,17 @@ The definition of minlength is added because it was not included in the current 
      ...
 -    <param name="menuName" type="String" maxlength="500"  mandatory="true"/>
 +    <param name="menuName" type="String" minlength="1" maxlength="500"  mandatory="true"/>
-     <param name="vrCommands" type="String" minsize="1" maxsize="100" maxlength="99" array="true" mandatory="false" since="5.0">
-         <history>
--            <param name="vrCommands" type="String" minsize="1" maxsize="100" maxlength="99" array="true" mandatory="true" since="1.0" until="5.0"/>
-+            <param name="vrCommands" type="String" minsize="1" maxsize="100" minlength="1" maxlength="99" array="true" mandatory="false" since="5.0">
-         </history>
+
+-    <param name="vrCommands" type="String" minsize="1" maxsize="100" maxlength="99" array="true" mandatory="false" since="5.0">
++    <param name="vrCommands" type="String" minsize="1" maxsize="100" minlength="1" maxlength="99" array="true" mandatory="false" since="5.0">
+     ...
      </param>
      ...
 -    <param name="secondaryText" maxlength="500" type="String" mandatory="false" since="3.0">
 +    <param name="secondaryText" minlength="1" maxlength="500" type="String" mandatory="false" since="3.0">
          <description>Optional secondary text to display; e.g. address of POI in a search result entry</description>
      </param>
+
 -    <param name="tertiaryText" maxlength="500" type="String" mandatory="false" since="3.0">
 +    <param name="tertiaryText" minlength="1" maxlength="500" type="String" mandatory="false" since="3.0">
          <description>Optional tertiary text to display; e.g. distance to POI for a search result entry</description>
@@ -547,13 +547,12 @@ The definition of minlength is added because it was not included in the current 
          <description>All omitted characters will be greyed out (disabled) on the keyboard.</description>
          <description>If omitted, the entire keyboard will be enabled.</description>
      </param>
+
 -    <param name="autoCompleteText" type="String" maxlength="1000" mandatory="false" deprecated="true" since="6.0">
 +    <param name="autoCompleteText" type="String" minlength="1" maxlength="1000" mandatory="false" deprecated="true" since="6.0">
-         <description>Deprecated, use autoCompleteList instead.</description>
-         <history>
-             <param name="autoCompleteText" type="String" maxlength="1000" mandatory="false" since="3.0" until="6.0" />
-         </history>
+     ...
      </param>
+
 -    <param name="autoCompleteList" type="String" maxlength="1000" minsize="0" maxsize="100" array="true" mandatory="false" since="6.0">
 +    <param name="autoCompleteList" type="String" minlength="1" maxlength="1000"  minsize="0" maxsize="100" array="true" mandatory="false" since="6.0"> 
          <description>
@@ -657,8 +656,8 @@ The definition of minlength is added because it was not included in the current 
 ```xml
  <function name="CreateWindow" functionID="CreateWindowID" messagetype="request" since="6.0">
      ...
-+    <param name="windowName" type="String" maxlength="100" mandatory="true">
--    <param name="windowName" type="String" minlength="1" maxlength="100" mandatory="true">
+-    <param name="windowName" type="String" maxlength="100" mandatory="true">
++    <param name="windowName" type="String" minlength="1" maxlength="100" mandatory="true">
          <description>
              The window name to be used by the HMI. The name of the pre-created default window will match the app name.
              Multiple apps can share the same window name except for the default main window.
@@ -810,7 +809,7 @@ The definition of minlength is added because it was not included in the current 
  </function>
 ```
 
-(22) ChangeRegistration:   (Type : request)
+(22) ChangeRegistration (Type : request)
 
 ```xml
  <function name="ChangeRegistration" functionID="ChangeRegistrationID" messagetype="request" since="2.0">
@@ -1032,4 +1031,4 @@ The definition of minlength is added because it was not included in the current 
 ```
 
 ## 4. Differences from SDL standard specification
-The definitions of the RPC parameters that are modified/complemented in Function Details differ from the existing SDL official documents.
+The definitions of the RPC parameters that are modified/complemented in Function Details differ from the existing SDL standard specification.
