@@ -527,7 +527,7 @@ The definition of minlength is added because it was not included in the current 
  </struct>
 ```
 
-(7) SeatMemoryAction   (Type : struct)
+(7) SeatMemoryAction (Type : struct)
 
 ```xml
  <struct name="SeatMemoryAction" since="5.0">
@@ -593,7 +593,7 @@ The definition of minlength is added because it was not included in the current 
  </struct>
 ```
 
-(10) EqualizerSettings  (Type : struct)
+(10) EqualizerSettings (Type : struct)
 
 ```xml
  <struct name="EqualizerSettings" since="5.0">
@@ -648,6 +648,7 @@ The definition of minlength is added because it was not included in the current 
 +    <param name="appID" type="String" minlength="1" maxlength="100" mandatory="true" since="2.0">
      ...
      </param>
+
 -    <param name="fullAppID" type="String" maxlength="100" mandatory="false" since="5.0">
 +    <param name="fullAppID" type="String" minlength="1" maxlength="100" mandatory="false" since="5.0">
          <description>ID used to validate app with policy table entries</description>
@@ -866,7 +867,6 @@ The definition of minlength is added because it was not included in the current 
 
 ```xml
  <function name="DeleteFile" functionID="DeleteFileID" messagetype="request" since="3.0">
-     <description>
      ...
 -    <param name="syncFileName" type="String" maxlength="500" mandatory="true">
 +    <param name="syncFileName" type="String" minlength="1" maxlength="500" mandatory="true">
@@ -891,7 +891,7 @@ The definition of minlength is added because it was not included in the current 
 
 ```xml
  <function name="SetDisplayLayout" functionID="SetDisplayLayoutID" messagetype="request" deprecated="true" since="6.0">
-     ....
+     ...
 -    <param name="displayLayout" type="String" maxlength="500" mandatory="true">
 +    <param name="displayLayout" type="String" minlength="1" maxlength="500" mandatory="true">
          <description>
