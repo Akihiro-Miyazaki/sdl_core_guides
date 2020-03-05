@@ -276,8 +276,6 @@ Also, Table3 below shows the various status transition and the expected behavior
     <td align="center"> OnAppDeactivated </td>
     <td align="center"> No Parameter </td>
     <td align="center"> No Parameter </td>
-    <td align="center"> No Parameter </td>
-    <td align="center"> No Parameter </td>
     <td align="center"> PROJECTION &<br>isMedia = false </td>
     <td align="center"> FULL </td>
     <td align="center"> NOT_AUDIBLE </td>
