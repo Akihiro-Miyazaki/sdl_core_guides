@@ -249,7 +249,7 @@ Also, Table3 below shows the various status transition and the expected behavior
     <td align="center"> No Parameter </td>
     <td align="center"> No Parameter </td>
     <td align="center"> ALL </td>
-    <td align="center"> No&nbsp;status&nbsp;before&nbsp;Register </td>
+    <td align="center"> No status<br>before&nbsp;Register </td>
     <td align="center"> No status<br>before&nbsp;Register </td>
     <td align="center"> No status<br>before&nbsp;Register </td>
     <td align="center"> NONE </td>
@@ -341,7 +341,7 @@ Also, Table3 below shows the various status transition and the expected behavior
   </tr>
   <tr>
     <td align="center"> 21 </td>
-    <td align="center"> SDL.ActivateApp(MediaApp1)<br>->SDL.ActivateApp(VideoApp2)<br>->SDL.ActivateApp(MediaApp3) </td>
+    <td align="center"> SDL.ActivateApp(MediaApp1)<br> ->SDL.ActivateApp(VideoApp2)<br> ->SDL.ActivateApp(MediaApp3) </td>
     <td align="center"> No Parameter </td>
     <td align="center"> No Parameter </td>
     <td align="center"> MediaApp1,<br>VideoApp2,<br>MediaApp3 </td>
