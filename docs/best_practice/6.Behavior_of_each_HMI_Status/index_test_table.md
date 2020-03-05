@@ -250,8 +250,8 @@ Also, Table3 below shows the various status transition and the expected behavior
     <td align="center"> No Parameter </td>
     <td align="center"> ALL </td>
     <td align="center"> No&nbsp;status&nbsp;before&nbsp;Register </td>
-    <td align="center"> No status<br>before Register </td>
-    <td align="center"> No status<br>before Register </td>
+    <td align="center"> No status<br>before&nbsp;Register </td>
+    <td align="center"> No status<br>before&nbsp;Register </td>
     <td align="center"> NONE </td>
     <td align="center"> NOT_AUDIBLE </td>
     <td align="center"> NOT_STREAMABLE </td>
@@ -347,7 +347,7 @@ Also, Table3 below shows the various status transition and the expected behavior
     <td align="center"> MediaApp1,<br>VideoApp2,<br>MediaApp3 </td>
     <td align="center"> MediaApp1_LIMITE </td>
     <td align="center"> VideoApp1_<br>AUDIBLE </td>
-    <td align="center"> MediaApp1_<br<NOT_STREAMABLE </td>
+    <td align="center"> MediaApp1_<br>NOT_STREAMABLE </td>
     <td align="center"> MediaApp1_BACKGROUND </td>
     <td align="center"> MediaApp1_<br>NOT_AUDIBLE </td>
     <td align="center"> MediaApp1_<br>NOT_STREAMABLE </td>
