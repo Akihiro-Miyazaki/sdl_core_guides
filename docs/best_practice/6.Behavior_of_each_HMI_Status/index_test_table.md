@@ -17,6 +17,7 @@ Therefore, the definition of behavior and state of transition of each HMI level 
 **Table1.** Definition of each HMI Level
 
 |<div align="center"> HMI Level </div>|<div align="center"> Definition </div>|
+
 |:---:|:---|
 | FULL | The SDL App state is "FULL".<br>An SDL App with this state is displayed on full screen.<br>The SDL App can also operate interactively with other HMI modules(such as UI, VR, TT, Audio system, etc). |
 | LIMITED | The SDL App state is "LIMITED".<br>A part of the function or display is limited (Currently, the "Limited" state is only applied to Navigation and Media Apps, for example, SDL App which AppHMIType is "NAVIGATION", "PROJECTION" and "MEDIA". |
@@ -26,6 +27,7 @@ Therefore, the definition of behavior and state of transition of each HMI level 
 **Table2.** Status Transition Rule of HMI Level
 
 |<div align="center"> Status Transition Rule </div>|
+
 |:---|
 | If the SDL App HMI Level is FULL", the behavior of other SDL Apps is as follows:<ol>- All SDL Apps except SDL Media/Video App will be BACKGROUND.<br>- All SDL Media/Video Apps(such as NAVIGATION, VC, MEDIA and PROJECTION) will be LIMITED.<br>- SDL Apps which AppHMIType are same will be BACKGROUND.</ol> |
 | If the SDL App HMI Level is "LIMITED", the behavior of other SDL Apps is as follows:<ol>- All SDL Apps except SDL Media/Video Apps will keep the current status.<br>- SDL Apps which AppHMIType are different will keep the current status.<br>- SDL Apps which AppHMIType are same will be BACKGROUND.</ol> |
