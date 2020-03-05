@@ -327,7 +327,7 @@ Also, Table3 below shows the various status transition and the expected behavior
   </tr>
   <tr>
     <td align="center"> 20 </td>
-    <td align="center"> SDL.ActivateApp(VideoApp1)<br>->SDL.ActivateApp(MediaApp2)<br>->SDL.ActivateApp(VideoApp3) </td>
+    <td align="left"> SDL.ActivateApp(VideoApp1)&nbsp;&nbsp;&nbsp;<br>->SDL.ActivateApp(MediaApp2)<br>->SDL.ActivateApp(VideoApp3) </td>
     <td align="center"> No Parameter </td>
     <td align="center"> No Parameter </td>
     <td align="center"> VideoApp1,<br>MeidaApp2,<br>VideoApp3 </td>
@@ -341,7 +341,7 @@ Also, Table3 below shows the various status transition and the expected behavior
   </tr>
   <tr>
     <td align="center"> 21 </td>
-    <td align="center"> SDL.ActivateApp(MediaApp1)<br> ->SDL.ActivateApp(VideoApp2)<br> ->SDL.ActivateApp(MediaApp3) </td>
+    <td align="left"> SDL.ActivateApp(MediaApp1)<br>->SDL.ActivateApp(VideoApp2)<br>->SDL.ActivateApp(MediaApp3) </td>
     <td align="center"> No Parameter </td>
     <td align="center"> No Parameter </td>
     <td align="center"> MediaApp1,<br>VideoApp2,<br>MediaApp3 </td>
