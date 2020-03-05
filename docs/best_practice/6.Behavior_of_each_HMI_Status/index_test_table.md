@@ -241,7 +241,7 @@ Also, Table3 below shows the various status transition and the expected behavior
     <td align="center"> STREAMABLE/<br>NOT_STREAMABLE </td>
     <td align="center"> FULL </td>
     <td align="center" colspan="2"> Audio and Video Status<br>(Set by specific App type) </td>
-    <td align="left"> Audio&nbsp;voice&nbsp;and&nbsp;Video&nbsp;streaming&nbsp;are&nbsp;depended&nbsp;on&nbsp;AppHMIType&nbsp;parameter<br> - Media App status : AUDIBLE, NOTSTREAMABLE<br> - NAVIGATION App status : AUDIBLE, STREAMABLE </td>
+    <td align="left"> Audio&nbsp;voice&nbsp;and&nbsp;Video&nbsp;streaming&nbsp;are&nbsp;depended&nbsp;on&nbsp;AppHMIType&nbsp;parameter<br> - Media App status : AUDIBLE, NOT_STREAMABLE<br> - NAVIGATION App status : AUDIBLE, STREAMABLE </td>
   </tr>
   <tr>
     <td align="center"> 14 </td>
@@ -301,7 +301,7 @@ Also, Table3 below shows the various status transition and the expected behavior
   </tr>
   <tr>
     <td align="center"> 18 </td>
-    <td align="center"> SDL.ActivateApp(app1)<br>->SDL.ActivateApp.(app2) </td>
+    <td align="center"> SDL.ActivateApp(app1)<br>->SDL.ActivateApp(app2) </td>
     <td align="center"> No Parameter </td>
     <td align="center"> No Parameter </td>
     <td align="center"> App1&nbsp;and&nbsp;App2&nbsp;are<br>same type </td>
@@ -310,11 +310,11 @@ Also, Table3 below shows the various status transition and the expected behavior
     <td align="center"> STREAMABLE </td>
     <td align="center"> App1_BACKGROUND </td>
     <td align="center" colspan="2"> Audio and Video Status<br>(Set by specific App type) </td>
-    <td align="left"> Audio voice and Video streaming are depended on AppHMIType parameter<br> - Media App status : AUDIBLE, NOTSTREAMABLE<br> - NAVIGATION App status : AUDIBLE, STREAMABLE </td>
+    <td align="left"> Audio voice and Video streaming are depended on AppHMIType parameter<br> - Media App status : AUDIBLE, NOT_STREAMABLE<br> - NAVIGATION App status : AUDIBLE, STREAMABLE </td>
   </tr>
   <tr>
     <td align="center"> 19 </td>
-    <td align="center"> SDL.ActivateApp(app1)<br>->SDL.ActivateApp.(app2) </td>
+    <td align="center"> SDL.ActivateApp(app1)<br>->SDL.ActivateApp(app2) </td>
     <td align="center"> No Parameter </td>
     <td align="center"> No Parameter </td>
     <td align="center"> App1 and App2 are<br>different type </td>
@@ -323,7 +323,7 @@ Also, Table3 below shows the various status transition and the expected behavior
     <td align="center"> STREAMABLE </td>
     <td align="center"> App1_LIMITED </td>
     <td align="center" colspan="2"> Audio and Video Status<br>(Set by specific App type) </td>
-    <td align="left"> Audio voice and Video streaming are depended on AppHMIType parameter<br> - Media App status : AUDIBLE, NOTSTREAMABLE<br> - NAVIGATION App status : AUDIBLE, STREAMABLE </td>
+    <td align="left"> Audio voice and Video streaming are depended on AppHMIType parameter<br> - Media App status : AUDIBLE, NOT_STREAMABLE<br> - NAVIGATION App status : AUDIBLE, STREAMABLE </td>
   </tr>
   <tr>
     <td align="center"> 20 </td>
@@ -331,7 +331,7 @@ Also, Table3 below shows the various status transition and the expected behavior
     <td align="center"> No Parameter </td>
     <td align="center"> No Parameter </td>
     <td align="center"> VideoApp1,<br>MeidaApp2,<br>VideoApp3 </td>
-    <td align="center"> VideoApp1_LIMITE </td>
+    <td align="center"> VideoApp1_LIMITED </td>
     <td align="center"> VideoApp1_<br>AUDIBLE </td>
     <td align="center"> VideoApp1_<br>STREAMABLE </td>
     <td align="center"> VideoApp1_BACKGROUND </td>
@@ -345,8 +345,8 @@ Also, Table3 below shows the various status transition and the expected behavior
     <td align="center"> No Parameter </td>
     <td align="center"> No Parameter </td>
     <td align="center"> MediaApp1,<br>VideoApp2,<br>MediaApp3 </td>
-    <td align="center"> MediaApp1_LIMITE </td>
-    <td align="center"> VideoApp1_<br>AUDIBLE </td>
+    <td align="center"> MediaApp1_LIMITED </td>
+    <td align="center"> MediaApp1_<br>AUDIBLE </td>
     <td align="center"> MediaApp1_<br>NOT_STREAMABLE </td>
     <td align="center"> MediaApp1_BACKGROUND </td>
     <td align="center"> MediaApp1_<br>NOT_AUDIBLE </td>
