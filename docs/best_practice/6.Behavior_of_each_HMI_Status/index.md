@@ -63,21 +63,21 @@ The following tables below show the rules of status change, when the user switch
   <tr>
     <td align="left" rowspan="3"><b> 1st <br>launched </b></td>
     <td align="center"><b> NAVIGATION </b></td>
-    <td align="left"> 1stNAVIGATION:NS<br>2ndNAVIGATION:S </td>
-    <td align="left"> 1stNAVIGATION:NS<br>2ndPROJECTION:S </td>
-    <td align="left"> 1stNAVIGATION:S<br>2ndOther:NS </td>
+    <td align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;NS<br>2nd NAVIGATION : S </td>
+    <td align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;NS<br>2nd PROJECTION : S </td>
+    <td align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;S<br>2nd Other :NS </td>
   </tr>
   <tr>
     <td align="center"><b> PROJECTION </b></td>
-    <td align="left"> 1stPROJECTION:NS<br>2ndNAVIGATION:S </td>
-    <td align="left"> 1stPROJECTION:NS<br>2ndPROJECTION:S </td>
-    <td align="left"> 1stPROJECTION:S<br>2ndOther:NS </td>
+    <td align="left"> 1st PROJECTION : NS<br>2nd NAVIGATION : S </td>
+    <td align="left"> 1st PROJECTION : NS<br>2nd PROJECTION : S </td>
+    <td align="left"> 1st PROJECTION : S<br>2nd Other : NS </td>
   </tr>
   <tr>
     <td align="center"><b> Other </b></td>
-    <td align="left"> 1stOther:NS<br>2ndNAVIGATION:S </td>
-    <td align="left"> 1stOther:NS<br>2ndPROJECTION:S </td>
-    <td align="left"> 1stOther:NS<br>2ndOther:S </td>
+    <td align="left"> 1st Other : NS<br>2nd NAVIGATION : S </td>
+    <td align="left"> 1st Other : NS<br>2nd PROJECTION : S </td>
+    <td align="left"> 1st Other : NS<br>2nd Other : S </td>
   </tr>
 </table>
 * S : STREAMABLE, NS : NOT_STREAMABLE<br><br>
@@ -98,31 +98,31 @@ The following tables below show the rules of status change, when the user switch
   <tr>
     <td align="left" rowspan="4"><b> 1st <br>launched </b></td>
     <td align="center"><b> NAVIGATION </b></td>
-    <td align="left"> 1stNAVIGATION:NA<br>2ndNAVIGATION:A </td>
-    <td align="left"> 1stNAVIGATION:A<br>2ndPROJECTION:NA </td>
-    <td align="left"> 1stNAVIGATION:A<br>2ndIsMediaApp:NA </td>
-    <td align="left"> 1stNAVIGATION:A<br>2ndOther:NA </td>
+    <td align="left"> 1st NAVIGATION : NA<br>2nd NAVIGATION : A </td>
+    <td align="left"> 1st NAVIGATION : A<br>2nd&nbsp;PROJECTION&nbsp;:&nbsp;NA </td>
+    <td align="left"> 1st NAVIGATION : A<br>2nd&nbsp;IsMediaApp&nbsp;:&nbsp;NA </td>
+    <td align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;A<br>2nd Other : NA </td>
   </tr>
   <tr>
     <td align="center"><b> PROJECTION </b></td>
-    <td align="left"> 1stPROJECTION:A<br>2ndNAVIGATION:NA </td>
-    <td align="left"> 1stPROJECTION:NA<br>2ndPROJECTION:A </td>
-    <td align="left"> 1stPROJECTION:A<br>2ndIsMediaApp:NA </td>
-    <td align="left"> 1stPROJECTION:A<br>2ndOther:NA </td>
+    <td align="left"> 1st PROJECTION : A<br>2nd&nbsp;NAVIGATION&nbsp;:&nbsp;NA </td>
+    <td align="left"> 1st PROJECTION : NA<br>2nd PROJECTION : A </td>
+    <td align="left"> 1st PROJECTION : A<br>2nd IsMediaApp : NA </td>
+    <td align="left"> 1st PROJECTION : A<br>2nd Other : NA </td>
   </tr>
   <tr>
     <td align="center"><b> IsMediaApp </b></td>
-    <td align="left"> 1stIsMediaApp:A<br>2ndNAVIGATION:NA </td>
-    <td align="left"> 1stIsMediaApp:A<br>2ndPROJECTION:NA </td>
-    <td align="left"> 1stIsMediaApp:NA<br>2ndIsMediaApp:A </td>
-    <td align="left"> 1stIsMediaApp:A<br>2ndOther:NA </td>
+    <td align="left"> 1st IsMediaApp : A<br>2nd NAVIGATION : NA </td>
+    <td align="left"> 1st IsMediaApp : A<br>2nd PROJECTION : NA </td>
+    <td align="left"> 1st IsMediaApp : NA<br>2nd IsMediaApp : A </td>
+    <td align="left"> 1st IsMediaApp : A<br>2nd Other : NA </td>
   </tr>
   <tr>
     <td align="center"><b> Other </b></td>
-    <td align="left"> 1stOther:NA<br>2ndNAVIGATION:A </td>
-    <td align="left"> 1stOther:NA<br>2ndPROJECTION:A </td>
-    <td align="left"> 1stOther:NA<br>2ndIsMediaApp:A </td>
-    <td align="left"> 1stOther:NA<br>2ndOther:A </td>
+    <td align="left"> 1st Other : NA<br>2nd NAVIGATION : A </td>
+    <td align="left"> 1st Other : NA<br>2nd PROJECTION : A </td>
+    <td align="left"> 1st Other : NA<br>2nd IsMediaApp : A </td>
+    <td align="left"> 1st Other : NA<br>2nd Other : A </td>
   </tr>
 </table>
 * A : AUDIBLE, NA : NOT_AUDIBLE

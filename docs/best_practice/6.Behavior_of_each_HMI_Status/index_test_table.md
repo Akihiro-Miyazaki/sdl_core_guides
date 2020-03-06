@@ -309,8 +309,9 @@ Also, Table3 below shows the various status transition and the expected behavior
     <td align="center"> AUDIBLE </td>
     <td align="center"> STREAMABLE </td>
     <td align="center"> App1_BACKGROUND </td>
-    <td align="center" colspan="2"> Audio and Video Status<br>(Set by specific App type) </td>
-    <td align="left"> Audio voice and Video streaming are depended on AppHMIType parameter<br> - Media App status : AUDIBLE, NOT_STREAMABLE<br> - NAVIGATION App status : AUDIBLE, STREAMABLE </td>
+    <td align="center"> NOT_AUDIBLE </td>
+    <td align="center"> NOT_STREAMABLE </td>
+    <td align="center"> Audio voice and Video streaming are stopped </td>
   </tr>
   <tr>
     <td align="center"> 19 </td>
