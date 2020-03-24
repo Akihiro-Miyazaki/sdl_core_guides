@@ -8,4 +8,6 @@ Table of Contents:
 - [Audio and Video Streaming Setup](../audio-and-video-streaming-setup/)
 - [Multiple Transports Configuration](../multiple-transports-configuration/)
 - [App Service Provider Guide](../app-service-provider-guide/)
+- [Toyota's Best Practice Documents](../best_practice)
 - [Frequently Asked Questions](../faq)
+
