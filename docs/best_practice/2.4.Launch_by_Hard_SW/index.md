@@ -32,12 +32,12 @@ This chapter will provide information regarding the Hard SW to call the SDL Navi
 
 When the Hard SW, the HU will launch either the SDL Navigation App or the Native Navigation in accordance with the following status listed below:
 
-  (1) If the Native Navigation exists, display the Native Navigation screen.<br>
-  (2) If the Native Navigation does NOT exist, but the SDL Navigation App exists, launch the SDL Navigation App and display the SDL Navigation App screen. If there are the multiple SDL Navigation App, the following below occurs :<br>
-      1) If there is an existing SDL Navigation App launched, display the launched SDL Navigation App.<br>
-      2) If there is no running SDL Navigation App, launch and display the SDL Navigation App in the first order as the AppHMIType is "NAVIGATION" in sort(However, there is no problem if the OEM specifies it by themselves).
-      3) If there is already a launched SDL Navigation App displayed, keep all status.<br>
-  (3) If both the Native Navigation and the SDL Navgiation App do NOT exist, keep the state before the Hard SW is pressed. In addition, if the Software SW is used as a hard SW, there is no problem even if the OEMs specify not to display the Hard SW.
+  1. If the Native Navigation exists, display the Native Navigation screen.<br>
+  2. If the Native Navigation does NOT exist, but the SDL Navigation App exists, launch the SDL Navigation App and display the SDL Navigation App screen. If there are the multiple SDL Navigation App, the following below occurs :<br>
+      (1) If there is an existing SDL Navigation App launched, display the launched SDL Navigation App.<br>
+      (2) If there is no running SDL Navigation App, launch and display the SDL Navigation App in the first order as the AppHMIType is "NAVIGATION" in sort(However, there is no problem if the OEM specifies it by themselves).
+      (3) If there is already a launched SDL Navigation App displayed, keep all status.<br>
+  3. If both the Native Navigation and the SDL Navgiation App do NOT exist, keep the state before the Hard SW is pressed. In addition, if the Software SW is used as a hard SW, there is no problem even if the OEMs specify not to display the Hard SW.
 
 ### 3.3. Pressing the ModeSW on the steering wheel
 When a user pressses the ModeSW on the steering wheel, the HU can launch and change the SDL Media App due to change in the Audio source.
@@ -66,7 +66,7 @@ Therefore, all of the contents describe in "3. Function Details" differ from the
 ## 5. Sequence Diagrams
 Figure1 describes the following sequence:<br>
 
-  (1) The launch of SDL App after pressing SW
+  (1) The launch of SDL App after pressing SW<br>
   (2) The change of SDL Apps
 
 |||

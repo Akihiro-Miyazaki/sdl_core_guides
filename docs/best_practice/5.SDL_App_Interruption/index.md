@@ -35,12 +35,12 @@ In the TOYOTA specification, the HU closes the displayed ScrollableMessage scree
 |||
 
 ### 5.2.  Interruption from SDL App while Native is running
-<b>5.2.1. When the interruption of SDL App screen occurs while Native screen is being displayed</b>
+<b>5.2.1. When the interruption of SDL App screen occurs while Native screen is being displayed</b><br>
 In this case, you can refer to case of `Alert` in the SDL standard specification in the URL below:
 <br>
 <https://www.smartdevicelink.com/en/guides/hmi/ui/alert/>
 
-<b>5.2.2. When the SDL app requests for (a) TTS playback while the Native voice is playing</b>
+<b>5.2.2. When the SDL app requests for (a) TTS playback while the Native voice is playing</b><br>
 When the SDL App requests for (a) TTS playback while the Native voice is playing, the SDL App notifies that request to the Native.
 Then, the Native decides whether it can play the TTS (or not) on the Native side, and notifies the result to the SDL App.
 
@@ -50,7 +50,7 @@ Then, the Native decides whether it can play the TTS (or not) on the Native side
 |||
 
 ### 5.3. Interruption from Native while SDL App is running
-<b>5.3.1. When interruption of Native screen occurs while SDL App screen is being displayed</b>
+<b>5.3.1. When interruption of Native screen occurs while SDL App screen is being displayed</b><br>
 For the following cases, please refer to the SDL standard specification in the URL provided below:
 <br>
 Case of `OnEventChange` :
@@ -59,7 +59,7 @@ Case of `OnEventChange` :
 Case of `OnAppDeactivated` :
 <https://www.smartdevicelink.com/en/guides/hmi/basiccommunication/onappdeactivated/>
 
-<b>5.3.2. When interruption of Native SubAudio(TTS or voice guide) occurs while SDL App TTS is playing</b>
+<b>5.3.2. When interruption of Native SubAudio(TTS or voice guide) occurs while SDL App TTS is playing</b><br>
 The Native decides whether (a) playback (on the Native side) is possible or not, and notifies the result to the SDL App.
 
 |||
@@ -67,7 +67,7 @@ The Native decides whether (a) playback (on the Native side) is possible or not,
 ![figure3.native_subaudio_interruption.png](./assets/figure3.native_subaudio_interruption.png)
 |||
 
-<b>5.3.3. When interruption of Native voice(TTS or voice guide, etc.) occurs while SDL AudioStreaming is running</b>
+<b>5.3.3. When interruption of Native voice(TTS or voice guide, etc.) occurs while SDL AudioStreaming is running</b><br>
 The Native decides whether (a) playback (on the Native side) is possible or not, and it notifies the result to the SDL App.
 
 |||
