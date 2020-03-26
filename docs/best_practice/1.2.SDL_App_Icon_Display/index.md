@@ -62,7 +62,7 @@ The items (1)-(3) listed below differ from the existing SDL Standard Specificati
 (1) The parameters which defines the sort by priority<br><br>
  - Priority of the AppHMIType<br>
  - The order list in the PolicyTable (corresponding to Policy server )<br><br>
-Both are defined by OEM's own specification.<br>
+Both are defined by OEM's own specification.<br><br>
 (2) The display status of SDL App Icon<br>
 Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.<br>
 However, the change of display SDL App Icon such as Tonedown display is not explicitly defined in the SDL Standard Specification.<br>
