@@ -59,9 +59,9 @@ The HMI will keep the SDL App name, until it is updated again by the SDL App.
 ## 4. Differences from the SDL standard specification
 The items (1)-(3) listed below differ from the existing SDL Standard Specification.
 
-(1) The parameters which defines the sort by priority<br>
+(1) The parameters which defines the sort by priority<br><br>
  - Priority of the AppHMIType<br>
- - The order list in the PolicyTable (corresponding to Policy server )<br>
+ - The order list in the PolicyTable (corresponding to Policy server )<br><br>
 Both are defined by OEM's own specification.<br>
 (2) The display status of SDL App Icon<br>
 Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.<br>
