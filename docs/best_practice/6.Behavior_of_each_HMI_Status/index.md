@@ -18,18 +18,18 @@ Therefore, the definition of behavior and state of transition of each HMI level 
 
 |<div align="center"> HMI Level </div>|<div align="center"> Definition </div>|
 |:---:|:---|
-|<div align="center">  FULL </div>| The SDL App state is "FULL".<br>An SDL App with this state is displayed on full screen.<br>The SDL App can also operate interactively with other HMI modules(such as UI, VR, TT, Audio system, etc). |
-|<div align="center">  LIMITED </div>| The SDL App state is "LIMITED".<br>A part of the function or display is limited (Currently, the "Limited" state is only applied to Navigation and Media Apps, for example, SDL App which AppHMIType is "NAVIGATION", "PROJECTION" and "MEDIA". |
-|<div align="center">  BACKGROUND </div>| The SDL App state is "BACKGROUND".<br>The user has launched the SDL App once, but it is not currently displayed.<br>SDL App in this state can send a part of RPC to the HMI that follows the Policy Table rule. |
-|<div align="center">  NONE </div>| The SDL App state is "NONE".<br>The user has not launched the SDL App before, or the user has quit the SDL App.<br>SDL App in this state cannot communicate with the HMI. |
+|<div align="center"> FULL </div>|<div align="left"> The SDL App state is "FULL".<br>An SDL App with this state is displayed on full screen.<br>The SDL App can also operate interactively with other HMI modules(such as UI, VR, TT, Audio system, etc). </div>|
+|<div align="center"> LIMITED </div>|<div align="left">  The SDL App state is "LIMITED".<br>A part of the function or display is limited (Currently, the "Limited" state is only applied to Navigation and Media Apps, for example, SDL App which AppHMIType is "NAVIGATION", "PROJECTION" and "MEDIA". </div>|
+|<div align="center"> BACKGROUND </div>|<div align="left"> The SDL App state is "BACKGROUND".<br>The user has launched the SDL App once, but it is not currently displayed.<br>SDL App in this state can send a part of RPC to the HMI that follows the Policy Table rule. </div>|
+|<div align="center"> NONE </div>|<div align="left"> The SDL App state is "NONE".<br>The user has not launched the SDL App before, or the user has quit the SDL App.<br>SDL App in this state cannot communicate with the HMI. </div>|
 
 **Table2.** Status Transition Rule of HMI Level
 
 |<div align="center"> Status Transition Rule </div>|
 |:---|
-| If the SDL App HMI Level is FULL", the behavior of other SDL Apps is as follows:<br><br> - All SDL Apps except SDL Media/Video App will be BACKGROUND.<br> - All SDL Media/Video Apps(such as NAVIGATION, VC, MEDIA and PROJECTION) will be LIMITED.<br> - SDL Apps which AppHMIType are same will be BACKGROUND.<br> |
-| If the SDL App HMI Level is "LIMITED", the behavior of other SDL Apps is as follows:<br><br> - All SDL Apps except SDL Media/Video Apps will keep the current status.<br> - SDL Apps which AppHMIType are different will keep the current status.<br> - SDL Apps which AppHMIType are same will be BACKGROUND.<br> |
-| If the SDL App HMI Level is "BACKGROUND", the behavior of other SDL Apps is as follows:<br><br> - All SDL Apps will keep the current status.<br> |
+|<div align="left"> If the SDL App HMI Level is FULL", the behavior of other SDL Apps is as follows:<br><br> - All SDL Apps except SDL Media/Video App will be BACKGROUND.<br> - All SDL Media/Video Apps(such as NAVIGATION, VC, MEDIA and PROJECTION) will be LIMITED.<br> - SDL Apps which AppHMIType are same will be BACKGROUND.<br></div>|
+|<div align="left"> If the SDL App HMI Level is "LIMITED", the behavior of other SDL Apps is as follows:<br><br> - All SDL Apps except SDL Media/Video Apps will keep the current status.<br> - SDL Apps which AppHMIType are different will keep the current status.<br> - SDL Apps which AppHMIType are same will be BACKGROUND.<br></div>|
+|<div align="left"> If the SDL App HMI Level is "BACKGROUND", the behavior of other SDL Apps is as follows:<br><br> - All SDL Apps will keep the current status.<br></div>|
 
 ### 3.2. Status Transition Diagram
 In Figure1 below shows the diagram of status transition based on the current status transition rule.
@@ -66,23 +66,23 @@ The following tables below show the rules of status change, when the user switch
     <th><div align="center"> Other </div></th>
   </tr>
   <tr>
-    <td align="left" rowspan="3"><b> 1st <br>launched </b></td>
+    <td rowspan="3"><div align="left"><b> 1st <br>launched </b></div></td>
     <td><div align="center"><b> NAVIGATION </b></div></td>
-    <td align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;NS<br>2nd NAVIGATION : S </td>
-    <td align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;NS<br>2nd PROJECTION : S </td>
-    <td align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;S<br>2nd Other :NS </td>
+    <td><div align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;NS<br>2nd NAVIGATION : S </div></td>
+    <td><div align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;NS<br>2nd PROJECTION : S </div></td>
+    <td><div align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;S<br>2nd Other :NS </div></td>
   </tr>
   <tr>
     <td><div align="center"><b> PROJECTION </b></div></td>
-    <td align="left"> 1st PROJECTION : NS<br>2nd NAVIGATION : S </td>
-    <td align="left"> 1st PROJECTION : NS<br>2nd PROJECTION : S </td>
-    <td align="left"> 1st PROJECTION : S<br>2nd Other : NS </td>
+    <td><div align="left"> 1st PROJECTION : NS<br>2nd NAVIGATION : S </div></td>
+    <td><div align="left"> 1st PROJECTION : NS<br>2nd PROJECTION : S </div></td>
+    <td><div align="left"> 1st PROJECTION : S<br>2nd Other : NS </div></td>
   </tr>
   <tr>
     <td><div align="center"><b> Other </b></div></td>
-    <td align="left"> 1st Other : NS<br>2nd NAVIGATION : S </td>
-    <td align="left"> 1st Other : NS<br>2nd PROJECTION : S </td>
-    <td align="left"> 1st Other : NS<br>2nd Other : S </td>
+    <td><div align="left"> 1st Other : NS<br>2nd NAVIGATION : S </div></td>
+    <td><div align="left"> 1st Other : NS<br>2nd PROJECTION : S </div></td>
+    <td><div align="left"> 1st Other : NS<br>2nd Other : S </div></td>
   </tr>
 </table>
 *S : STREAMABLE, NS : NOT_STREAMABLE<br><br>
@@ -100,33 +100,33 @@ The following tables below show the rules of status change, when the user switch
     <th><div align="center"> Other </div></th>
   </tr>
   <tr>
-    <td align="left" rowspan="4"><b> 1st <br>launched </b></td>
+    <td rowspan="4"><div align="left"><b> 1st <br>launched </b></div></td>
     <td><div align="center"><b> NAVIGATION </b></div></td>
-    <td align="left"> 1st NAVIGATION : NA<br>2nd NAVIGATION : A </td>
-    <td align="left"> 1st NAVIGATION : A<br>2nd&nbsp;PROJECTION&nbsp;:&nbsp;NA </td>
-    <td align="left"> 1st NAVIGATION : A<br>2nd&nbsp;IsMediaApp&nbsp;:&nbsp;NA </td>
-    <td align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;A<br>2nd Other : NA </td>
+    <td><div align="left"> 1st NAVIGATION : NA<br>2nd NAVIGATION : A </div></td>
+    <td><div align="left"> 1st NAVIGATION : A<br>2nd&nbsp;PROJECTION&nbsp;:&nbsp;NA </div></td>
+    <td><div align="left"> 1st NAVIGATION : A<br>2nd&nbsp;IsMediaApp&nbsp;:&nbsp;NA </div></td>
+    <td><div align="left"> 1st&nbsp;NAVIGATION&nbsp;:&nbsp;A<br>2nd Other : NA </div></td>
   </tr>
   <tr>
     <td><div align="center"><b> PROJECTION </b></div></td>
-    <td align="left"> 1st PROJECTION : A<br>2nd&nbsp;NAVIGATION&nbsp;:&nbsp;NA </td>
-    <td align="left"> 1st PROJECTION : NA<br>2nd PROJECTION : A </td>
-    <td align="left"> 1st PROJECTION : A<br>2nd IsMediaApp : NA </td>
-    <td align="left"> 1st PROJECTION : A<br>2nd Other : NA </td>
+    <td><div align="left"> 1st PROJECTION : A<br>2nd&nbsp;NAVIGATION&nbsp;:&nbsp;NA </div></td>
+    <td><div align="left"> 1st PROJECTION : NA<br>2nd PROJECTION : A </div></td>
+    <td><div align="left"> 1st PROJECTION : A<br>2nd IsMediaApp : NA </div></td>
+    <td><div align="left"> 1st PROJECTION : A<br>2nd Other : NA </div></td>
   </tr>
   <tr>
     <td><div align="center"><b> IsMediaApp </b></div></td>
-    <td align="left"> 1st IsMediaApp : A<br>2nd NAVIGATION : NA </td>
-    <td align="left"> 1st IsMediaApp : A<br>2nd PROJECTION : NA </td>
-    <td align="left"> 1st IsMediaApp : NA<br>2nd IsMediaApp : A </td>
-    <td align="left"> 1st IsMediaApp : A<br>2nd Other : NA </td>
+    <td><div align="left"> 1st IsMediaApp : A<br>2nd NAVIGATION : NA </div></td>
+    <td><div align="left"> 1st IsMediaApp : A<br>2nd PROJECTION : NA </div></td>
+    <td><div align="left"> 1st IsMediaApp : NA<br>2nd IsMediaApp : A </div></td>
+    <td><div align="left"> 1st IsMediaApp : A<br>2nd Other : NA </div></td>
   </tr>
   <tr>
     <td><div align="center"><b> Other </b></div></td>
-    <td align="left"> 1st Other : NA<br>2nd NAVIGATION : A </td>
-    <td align="left"> 1st Other : NA<br>2nd PROJECTION : A </td>
-    <td align="left"> 1st Other : NA<br>2nd IsMediaApp : A </td>
-    <td align="left"> 1st Other : NA<br>2nd Other : A </td>
+    <td><div align="left"> 1st Other : NA<br>2nd NAVIGATION : A </div></td>
+    <td><div align="left"> 1st Other : NA<br>2nd PROJECTION : A </div></td>
+    <td><div align="left"> 1st Other : NA<br>2nd IsMediaApp : A </div></td>
+    <td><div align="left"> 1st Other : NA<br>2nd Other : A </div></td>
   </tr>
 </table>
 *A : AUDIBLE, NA : NOT_AUDIBLE

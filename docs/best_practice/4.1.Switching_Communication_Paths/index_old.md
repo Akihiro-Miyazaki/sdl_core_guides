@@ -33,7 +33,7 @@ Table 1 shows the specifications on how SDL connection path is switched when new
     <th><div align="center"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WiFi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div></th>
   </tr>
   <tr>
-    <td rowspan="4"><div align="left"><b> Current <br>Connection </b></div></td>
+    <td align="left" rowspan="4"><b> Current <br>Connection </b></td>
     <td><div align="center"><b> BT </b></div></td>
     <td><div align="center"> - </div></td>
     <td><div align="center"> USB<br>*1 </div></td>

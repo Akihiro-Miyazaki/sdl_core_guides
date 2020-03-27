@@ -45,9 +45,9 @@ The table below shows the status for each SDL App Icon display.
 
 |<div align="center"> Icon Display </div>|<div align="center"> Description </div>|<div align="center"> Icon Status </div>|
 |:---|:---|:---:|
-|<div align="left"> Not displayed </div>|<div align="left"> If there is no SDL App Icon data in the cache. </div>|<div align="center"> - </div>|
-|<div align="left"> Tonedown Icon <br>is displayed </div>|<div align="left"> There is SDL App Icon data in the cache.<br>If the RPC `RegisterAppInterface` is not received or <br>the RPC`UnregisterAppInterface` <br>is received during Toneup SDL App Icon display. </div>|<div align="center"> Inactive </div>|
-|<div align="left"> Toneup Icon <br>is displayed </div>|<div align="left"> If the RPC`RegisterAppInterface` is received. </div>|<div align="center"> Active </div>|
+| Not displayed | If there is no SDL App Icon data in the cache. |<div align="center"> - </div>|
+| Tonedown Icon <br>is displayed | There is SDL App Icon data in the cache.<br>If the RPC "RegisterAppInterface" is not received or <br>the RPC`UnregisterAppInterface` <br>is received during Toneup SDL App Icon display. |<div align="center"> Inactive </div>|
+| Toneup Icon <br>is displayed | If the RPC`RegisterAppInterface` is received. |<div align="center"> Active </div>|
 
 ### 3.5. SDL App Icon name
 The SDL App Icons are given with the SDL App name.
@@ -59,16 +59,14 @@ The HMI will keep the SDL App name, until it is updated again by the SDL App.
 ## 4. Differences from the SDL standard specification
 The items (1)-(3) listed below differ from the existing SDL Standard Specification.
 
-1. The parameters which defines the sort by priority<br><br>
+(1) The parameters which defines the sort by priority<br><br>
  - Priority of the AppHMIType<br>
- - The order list in the PolicyTable (corresponding to Policy server )<br>
+ - The order list in the PolicyTable (corresponding to Policy server )<br><br>
 Both are defined by OEM's own specification.<br><br>
-
-2. The display status of SDL App Icon
-Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.
+(2) The display status of SDL App Icon<br>
+Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.<br>
 However, the change of display SDL App Icon such as Tonedown display is not explicitly defined in the SDL Standard Specification.<br>
-
-3. The details in the HMI process defined in the sequence diagrams of SDL App Icon display status below, is not explicitly specified in the SDL Standard Specifcation.
+(3) The details in the HMI process defined in the sequence diagrams of SDL App Icon display status below, is not explicitly specified in the SDL Standard Specifcation.<br>
 Thus, we have used TOYOTA Specifications as a reference information to define it.
 There is no problem for OEMs to define the threshold value such as the number of registered SDL Apps by themselves.
 
@@ -76,7 +74,39 @@ There is no problem for OEMs to define the threshold value such as the number of
 The following tables below show the cases where the SDL App Icon display status changes.
 
 **Table2.** SDL App Icon display status in each case
-<table><tr><th><div align="center"> Cases where the SDL App Icon display status changes </div></th><th><div align="center"> Reference </div></th></tr><tr><td><div align="left"> When there is no cache (Normal case) </div></td><td><div align="center"> Figure1 </div></td></tr><tr><td><div align="left"> When there is a cache (Normal case) </div></td><td><div align="center"> Figure2 </div></td></tr><tr><td><div align="left"> When the "RPC`RegisterAppInterface` is not received within 60 seconds <br>after the primary connection." occurs three times from the same device </div></td><td><div align="center"> Figure3 </div></td></tr><tr><td><div align="left"> During initialization(Deletion of the personal information) </div></td><td rowspan="2"><div align="center"> Figure4 </div></td></tr><tr><td><div align="left"> During change in the language </div></td></tr><tr><td><div align="left"> When the SDL App data is deleted from the PolicyTable </div></td><td><div align="center"> Figure5 </div></td></tr><tr><td><div align="left"> When the RPC`UnregisterAppInterface` from the Mobile is received </div></td><td><div align="center"> Figure6 </div></td></tr></table>
+<table>
+  <tr>
+    <th><div align="center"> Cases where the SDL App Icon display status changes </div></th>
+    <th><div align="center"> Reference </div></th>
+  </tr>
+  <tr>
+    <td align="left"> When there is no cache (Normal case) </td>
+    <td><div align="center"> Figure1 </div></td>
+  </tr>
+  <tr>
+    <td align="left"> When there is a cache (Normal case) </td>
+    <td><div align="center"> Figure2 </div></td>
+  </tr>
+  <tr>
+    <td align="left"> When the "RPC`RegisterAppInterface` is not received within 60 seconds <br>after the primary connection." occurs three times from the same device </td>
+    <td><div align="center"> Figure3 </div></td>
+  </tr>
+  <tr>
+    <td align="left"> During initialization(Deletion of the personal information) </td>
+    <td rowspan="2"><div align="center"> Figure4 </div></td>
+  </tr>
+  <tr>
+    <td align="left"> During change in the language </td>
+  </tr>
+  <tr>
+    <td align="left"> When the SDL App data is deleted from the PolicyTable </td>
+    <td><div align="center"> Figure5 </div></td>
+  </tr>
+  <tr>
+    <td align="left"> When the RPC"UnregisterAppInterface" from the Mobile is received </td>
+    <td><div align="center"> Figure6 </div></td>
+  </tr>
+</table>
 
 The Sequence Diagrams of change in the SDL App Icon display status is below:
 

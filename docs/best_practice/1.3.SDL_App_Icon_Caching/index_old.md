@@ -19,11 +19,11 @@ Only one device's SDL App information is cashed in the HMI. Therefore it will be
 ### 3.2. Deletion of the SDL App Icon/Name
 The information of SDL App icon and name will be deleted if it matches the following conditions below:
 
- 1. When the "RPC`RegisterAppInterface` is not received within 60 seconds after the primary connection." occurs three times from the same device<br>
- 2. During Initialization (Deletion of personal information)<br>
- 3. During change in the language<br>
- 4. When the SDL App data is deleted from the PolicyTable<br>
- 5. When the Mobile connected via SDL is changed
+ (1) When the "RPC`RegisterAppInterface` is not received within 60 seconds after the primary connection." occurs three times from the same device<br>
+ (2) During Initialization (Deletion of personal information)<br>
+ (3) During change in the language<br>
+ (4) When the SDL App data is deleted from the PolicyTable<br>
+ (5) When the Mobile connected via SDL is changed
 
 Aside from the conditions mentioned above, the SDL App information is basically cached.
 
@@ -35,7 +35,7 @@ Therefore, all of the contents describe in "3. Function Details" differ from the
 The following sequence diagrams show the sequence for conditions (1) to (5) mentioned in the "3.2. Deletion of the SDL App Icon/Name"
 
 |||
-**Figure1.** Deletion of SDL App Icon Data(The "RPC`RegisterAppInterface` <br>is not received within 60 seconds after the primary connection." occurs three times from the same device)
+**Figure1.** Deletion of SDL App Icon Data(The "RPC'RegisterAppInterface' <br>is not received within 60 seconds after the primary connection." occurs three times from the same device)
 ![figure1_occurs_three_times_from_the_same_device.png](./assets/figure1_occurs_three_times_from_the_same_device.png)
 |||
 |||

@@ -30,13 +30,13 @@ Below is a list of control frame that is used for SecondaryTransport connection.
 
 |<div align="center"> No. </div>|<div align="center"> Frame <br>value </div>|<div align="center"> Frame </div>|<div align="center"> Description </div>|
 |:---:|:---:|:---|:---|
-|<div align="center"> 1 </div>|<div align="center"> 0x01 </div>| Start Service | Requests to start specific (type of) service. |
-|<div align="center"> 2 </div>|<div align="center"> 0x02 </div>| Start Service ACK | Notifies that Start Service has started successfully.<br>`Strat Service ACK` of PrimariyTransport has the information of SecondaryTransport.<br>When the SDL App establish SecondaryTransport session, this informaton will be refered.<br>The information on protocol version is attributed in this frame. |
-|<div align="center"> 3 </div>|<div align="center"> 0x03 </div>| Start Service NAK | Notifies that Start Service has failed. |
-|<div align="center"> 4 </div>|<div align="center"> 0x07 </div>| Register Secondary Transport | Request a session that is registered on the PrimaryTransport to use SecondaryTransport.<br>This frame is sent from the proxy to the SDL Core.<br>This frame must only be sent on SecondaryTransport that the session is requesting. |
-|<div align="center"> 5 </div>|<div align="center"> 0x08 </div>| Register Secondary Transport ACK | Notifies that the session registered to use the requested SecondaryTransport.<br>If the SDL App received this frame, it can send the additional frame on SecondaryTransport.<br>This frame must be sent on the SecondaryTransport, in which the original request is sent(`Register SecondaryTransport`). |
-|<div align="center"> 6 </div>|<div align="center"> 0x09 </div>| Register Secondary Transport NAK | Notifies that the session is not registered or not able to use the current SecondaryTransport.<br>The SDL App cannot use this SecondaryTransport for other messages.<br>This frame must be sent on the SecondaryTransport, in which the original request is sent(`Register SecondaryTransport`). |
-|<div align="center"> 7 </div>|<div align="center"> 0xFD </div>| Transport Event Update | Shows the updated information on more than one transport and is sent from the SDL Core to the Proxy.<br>Information such as the TCPIP Address/the TCP Port are sent.<br>Note that this frame should NOT be sent before the SmartDeviceLink Protcol version is determined. |
+|<div align="center"> 1 </div>|<div align="center"> 0x01 </div>|<div align="left"> Start Service </div>|<div align="left"> Requests to start specific (type of) service. </div>|
+|<div align="center"> 2 </div>|<div align="center"> 0x02 </div>|<div align="left"> Start Service ACK </div>|<div align="left"> Notifies that Start Service has started successfully.<br>`Strat Service ACK` of PrimariyTransport has the information of SecondaryTransport.<br>When the SDL App establish SecondaryTransport session, this informaton will be refered.<br>The information on protocol version is attributed in this frame. </div>|
+|<div align="center"> 3 </div>|<div align="center"> 0x03 </div>|<div align="left"> Start Service NAK </div>|<div align="left"> Notifies that Start Service has failed. </div>|
+|<div align="center"> 4 </div>|<div align="center"> 0x07 </div>|<div align="left"> Register Secondary Transport </div>|<div align="left"> Request a session that is registered on the PrimaryTransport to use SecondaryTransport.<br>This frame is sent from the proxy to the SDL Core.<br>This frame must only be sent on SecondaryTransport that the session is requesting. </div>|
+|<div align="center"> 5 </div>|<div align="center"> 0x08 </div>|<div align="left"> Register Secondary Transport ACK </div>|<div align="left"> Notifies that the session registered to use the requested SecondaryTransport.<br>If the SDL App received this frame, it can send the additional frame on SecondaryTransport.<br>This frame must be sent on the SecondaryTransport, in which the original request is sent(`Register SecondaryTransport`). </div>|
+|<div align="center"> 6 </div>|<div align="center"> 0x09 </div>|<div align="left"> Register Secondary Transport NAK </div>|<div align="left"> Notifies that the session is not registered or not able to use the current SecondaryTransport.<br>The SDL App cannot use this SecondaryTransport for other messages.<br>This frame must be sent on the SecondaryTransport, in which the original request is sent(`Register SecondaryTransport`). </div>|
+|<div align="center"> 7 </div>|<div align="center"> 0xFD </div>|<div align="left"> Transport Event Update </div>|<div align="left"> Shows the updated information on more than one transport and is sent from the SDL Core to the Proxy.<br>Information such as the TCPIP Address/the TCP Port are sent.<br>Note that this frame should NOT be sent before the SmartDeviceLink Protcol version is determined. </div>|
 
 Next, listed below are the parameter set in the control frame.
 About the parameter setting, please refer to the `smartDeviceLink.ini` file in the SDL Core.
@@ -45,12 +45,12 @@ About the parameter setting, please refer to the `smartDeviceLink.ini` file in t
 
 |<div align="center"> No. </div>|<div align="center"> Parameter </div>|<div align="center"> Description </div>|
 |:---:|:---|:---|
-|<div align="center"> 1 </div>| protocolVersion | Parameter of `Start Service ACK` frame.<br>Shows the version of SmartDeviceLink Protocol specification (Ex. "5.0.0").<br>The newest version of SmartDeviceLink Protocol specification is needed to create the SDL App. |
-|<div align="center"> 2 </div>| secondaryTransports[] | Parameter of `Start Service ACK` frame.<br>Shows transport type which supports as SecondaryTransport.<br>The proxy starts to set up SecondaryTransport, when Transport Type is notified.<br>If there is no supported Transport Type, the array should be omitted or emptied.<br>Please refer to table3 for the kinds of Transport Type. |
-|<div align="center"> 3 </div>| audioServiceTransports | Parameter of `Start Service ACK` frame.<br>Shows transports which support transport path for the Audio service.<br>The type is int32 with each of the following meaning below:<br><br> 1 : Audio service is available on PrimaryTransport.<br> 2 : Audio service is available on SecondaryTransport.<br><br>If both Transports (Primary/Secondary) support the Audio service, then it should be in prioritize order and the SDL core will decide which transport will be used.<br>If `Start Service ACK` is for SecondaryTransport, this parameter should not be included.<br>If this parameter is not included in `StartServiceACK` frame, the SDL App must launch the Audio service on PrimaryTransport. |
-|<div align="center"> 4 </div>| videoServiceTransports | Parameter of `Start Service ACK` frame.<br>Shows transports which support transport path for the Video Projection Mode (VPM) service.<br>The type is int32 with each of the following meaning below:<br><br> 1 : VPM service is available on PrimaryTransport.<br> 2 : VPM service is available on SecondaryTransport.<br><br>If both Transports (Primary/Secondary) support the VPM service, then it should be in prioritize order and the SDL core will decide which transport will be used.<br>SDL App must not launch transport that is not listed in the array.<br>If this parameter is not included in `StartServiceACK` frame, the SDL App must launch the VPM service on PrimaryTransport. |
-|<div align="center"> 5 </div>| tcpIpAddress | Parameter of `Transport Event Update` frame.<br>Shows the IP Address used to establish a TCP connection.<br>It can be (set as) either IPv4 Address(ex: "192.168.1.1") or IPv6 Address(ex: "fd12:3456:789a::1").<br>If IP address is blank, it indicates that the TCP transport cannot be used. |
-|<div align="center"> 6 </div>| tcpPort | Parameter of `Transport Event Update` frame.<br>Shows TCP port numbers used to establish a connection using tcpIpAddress.<br>The value must be the same as TCPAdapterPort in the smartDeviceLink.ini file.<br>If this parameter is set, then the value of tcpIpAddress must be included as well. |
+|<div align="center"> 1 </div>|<div align="left"> protocolVersion </div>|<div align="left"> Parameter of `Start Service ACK` frame.<br>Shows the version of SmartDeviceLink Protocol specification (Ex. "5.0.0").<br>The newest version of SmartDeviceLink Protocol specification is needed to create the SDL App. </div>|
+|<div align="center"> 2 </div>|<div align="left"> secondaryTransports[] </div>|<div align="left"> Parameter of `Start Service ACK` frame.<br>Shows transport type which supports as SecondaryTransport.<br>The proxy starts to set up SecondaryTransport, when Transport Type is notified.<br>If there is no supported Transport Type, the array should be omitted or emptied.<br>Please refer to table3 for the kinds of Transport Type. </div>|
+|<div align="center"> 3 </div>|<div align="left"> audioServiceTransports </div>|<div align="left"> Parameter of `Start Service ACK` frame.<br>Shows transports which support transport path for the Audio service.<br>The type is int32 with each of the following meaning below:<br><br> 1 : Audio service is available on PrimaryTransport.<br> 2 : Audio service is available on SecondaryTransport.<br><br>If both Transports (Primary/Secondary) support the Audio service, then it should be in prioritize order and the SDL core will decide which transport will be used.<br>If `Start Service ACK` is for SecondaryTransport, this parameter should not be included.<br>If this parameter is not included in `StartServiceACK` frame, the SDL App must launch the Audio service on PrimaryTransport. </div>|
+|<div align="center"> 4 </div>|<div align="left"> videoServiceTransports </div>|<div align="left"> Parameter of `Start Service ACK` frame.<br>Shows transports which support transport path for the Video Projection Mode (VPM) service.<br>The type is int32 with each of the following meaning below:<br><br> 1 : VPM service is available on PrimaryTransport.<br> 2 : VPM service is available on SecondaryTransport.<br><br>If both Transports (Primary/Secondary) support the VPM service, then it should be in prioritize order and the SDL core will decide which transport will be used.<br>SDL App must not launch transport that is not listed in the array.<br>If this parameter is not included in `StartServiceACK` frame, the SDL App must launch the VPM service on PrimaryTransport. </div>|
+|<div align="center"> 5 </div>|<div align="left"> tcpIpAddress </div>|<div align="left"> Parameter of `Transport Event Update` frame.<br>Shows the IP Address used to establish a TCP connection.<br>It can be (set as) either IPv4 Address(ex: "192.168.1.1") or IPv6 Address(ex: "fd12:3456:789a::1").<br>If IP address is blank, it indicates that the TCP transport cannot be used. </div>|
+|<div align="center"> 6 </div>|<div align="left"> tcpPort </div>|<div align="left"> Parameter of `Transport Event Update` frame.<br>Shows TCP port numbers used to establish a connection using tcpIpAddress.<br>The value must be the same as TCPAdapterPort in the smartDeviceLink.ini file.<br>If this parameter is set, then the value of tcpIpAddress must be included as well. </div>|
 
 !!! NOTE
 [] indicates the array type, and able for multiple settings.
@@ -62,14 +62,14 @@ Listed below are Transport Type strings used in the parameter of SecondaryTransp
 
 |<div align="center"> No. </div>|<div align="center"> TransportType string </div>|<div align="center"> Description </div>|
 |:---:|:---|:---|
-|<div align="center"> 1 </div>| IAP_BLUETOOTH | iPhone Accessary Protocol(iAP) via Bluetooth |
-|<div align="center"> 2 </div>| IAP_USB | iAP via USB, cannot distinguish between the Host mode and the Device mode |
-|<div align="center"> 3 </div>| IAP_USB_HOST_MODE | iAP via USB, mobile is running as the Host |
-|<div align="center"> 4 </div>| IAP_USB_DEVICE_MODE | iAP via USB, mobile is running as the Device |
-|<div align="center"> 5 </div>| IAP_CARPLAY | iAP via CarPlay wireless |
-|<div align="center"> 6 </div>| SPP_BLUETOOTH | Blutooth Serial Port Profile(SPP) |
-|<div align="center"> 7 </div>| AOA_USB | Android Open Accessary(AOA) |
-|<div align="center"> 8 </div>| TCP_WIFI | TCP connection via WiFi |
+|<div align="center"> 1 </div>|<div align="left"> IAP_BLUETOOTH </div>|<div align="left"> iPhone Accessary Protocol(iAP) via Bluetooth </div>|
+|<div align="center"> 2 </div>|<div align="left"> IAP_USB </div>|<div align="left"> iAP via USB, cannot distinguish between the Host mode and the Device mode </div>|
+|<div align="center"> 3 </div>|<div align="left"> IAP_USB_HOST_MODE </div>|<div align="left"> iAP via USB, mobile is running as the Host </div>|
+|<div align="center"> 4 </div>|<div align="left"> IAP_USB_DEVICE_MODE </div>|<div align="left"> iAP via USB, mobile is running as the Device </div>|
+|<div align="center"> 5 </div>|<div align="left"> IAP_CARPLAY </div>|<div align="left"> iAP via CarPlay wireless </div>|
+|<div align="center"> 6 </div>|<div align="left"> SPP_BLUETOOTH </div>|<div align="left"> Blutooth Serial Port Profile(SPP) </div>|
+|<div align="center"> 7 </div>|<div align="left"> AOA_USB </div>|<div align="left"> Android Open Accessary(AOA) </div>|
+|<div align="center"> 8 </div>|<div align="left"> TCP_WIFI </div>|<div align="left"> TCP connection via WiFi </div>|
 
 
 ### 3.3. Conditions for SecondaryTransport Connection
@@ -91,11 +91,11 @@ Note that WiFi connection cannot be set when the DriverDistraction is ON. Thus, 
 
 |<div align="center"> No. </div>|<div align="center"> Parameter </div>|<div align="center"> Description </div>|
 |:---:|:---|:---|
-|<div align="center"> 1 </div>| supportWiFiAutoConnect | Indicates whether the automatic WiFi connection is supported or not, as the parameter of struct `DeviceInfo`.<br> True : Supported<br> False : Not supported |
-|<div align="center"> 2 </div>| WiFiStateInfo | Shows WiFi Status as the parameter of RPC`GetWiFiStatusInfo(Response)`.<br> WIFI_STATE_DISABLED ： WiFi is disabled.<br> WIFI_STATE_ENABLED ： WiFi is enabled. |
-|<div align="center"> 3 </div>| ssid | Shows the specific name of WiFi AccessPoint(AP) as the parameter of RPC`GetWiFiStatusInfo(Response)`.<br>Max length is 32 characters, and can use half-width alphanumeric characters. |
-|<div align="center"> 4 </div>| password | Shows the password to connect WiFi AP as the parameter of RPC`GetWiFiStatusInfo(Response)`.<br>Max length is 100 characters, and can use half-width alphanumeric(upper/lowercase) and partical symbols characters. |
-|<div align="center"> 5 </div>| WiFiSecurityType | Shows the security method to connect WiFi AP as the parameter of RPC`GetWiFiStatusInfo(Response)`.<br>Listed below are the securityTypes settings that are currently available:<br> WIFI_SECURITY_NONE : No Security<br> WIFI_SECURITY_WEP : Uses WEP method security<br> WIFI_SECURITY_WPA : Uses WPA method security<br> WIFI_SECURITY_WPA2 : Uses WPA2 method Security |
+|<div align="center"> 1 </div>|<div align="left"> supportWiFiAutoConnect </div>|<div align="left"> Indicates whether the automatic WiFi connection is supported or not, as the parameter of struct `DeviceInfo`.<br> True : Supported<br> False : Not supported </div>|
+|<div align="center"> 2 </div>|<div align="left"> WiFiStateInfo </div>|<div align="left"> Shows WiFi Status as the parameter of RPC`GetWiFiStatusInfo(Response)`.<br> WIFI_STATE_DISABLED ： WiFi is disabled.<br> WIFI_STATE_ENABLED ： WiFi is enabled. </div>|
+|<div align="center"> 3 </div>|<div align="left"> ssid </div>|<div align="left"> Shows the specific name of WiFi AccessPoint(AP) as the parameter of RPC`GetWiFiStatusInfo(Response)`.<br>Max length is 32 characters, and can use half-width alphanumeric characters. </div>|
+|<div align="center"> 4 </div>|<div align="left"> password </div>|<div align="left"> Shows the password to connect WiFi AP as the parameter of RPC`GetWiFiStatusInfo(Response)`.<br>Max length is 100 characters, and can use half-width alphanumeric(upper/lowercase) and partical symbols characters. </div>|
+|<div align="center"> 5 </div>|<div align="left"> WiFiSecurityType </div>|<div align="left"> Shows the security method to connect WiFi AP as the parameter of RPC`GetWiFiStatusInfo(Response)`.<br>Listed below are the securityTypes settings that are currently available:<br> WIFI_SECURITY_NONE : No Security<br> WIFI_SECURITY_WEP : Uses WEP method security<br> WIFI_SECURITY_WPA : Uses WPA method security<br> WIFI_SECURITY_WPA2 : Uses WPA2 method Security </div>|
 
 ## 4. Sequence Diagrams
 Refer to Figure1 for the sequence of SecondaryTransport connection establishment, and Figure2 for the sequence of WiFi connection.
@@ -104,9 +104,6 @@ Refer to Figure1 for the sequence of SecondaryTransport connection establishment
 **Figure1.** Establishment sequence of SecondaryTransport connection
 ![figure1_establishment_of_secondarytransport_connection.png](./assets/figure1_establishment_of_secondarytransport_connection.png)
 |||
-<br>
-<br>
-<br>
 |||
 **Figure2.** WiFi connection sequence
 ![figure2_wifi_connection.png](./assets/figure2_wifi_connection.png)
