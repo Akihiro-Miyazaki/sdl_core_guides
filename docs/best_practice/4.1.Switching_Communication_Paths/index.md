@@ -67,7 +67,7 @@ Table 1 shows the specifications on how SDL connection path is switched when new
 The process of switching communication path from BT to USB
 <br>
 1. When the switching of transport occurs, the SDL Core starts the timer by setting in timeout value in the configuration file.
-2. The HMI caches the HMI Level of current running SDL App. After the SDL App has switched the device, the HMI will perform the following process:
+2. The HMI caches the HMI Level of current running SDL App. After the SDL App has switched the device, the HMI will perform the following process:<br><br>
       (1) Create the list of SDL Apps which is waitting for re-registering<br>
       (2) Terminate the current BT Transport<br>
       (3) Copy the current BT status to the USB device
