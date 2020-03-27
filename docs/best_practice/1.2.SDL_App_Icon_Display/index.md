@@ -61,8 +61,8 @@ The items (1)-(3) listed below differ from the existing SDL Standard Specificati
 
 1. The parameters which defines the sort by priority<br><br>
  1) Priority of the AppHMIType<br>
- 2) The order list in the PolicyTable (corresponding to Policy server )<br>
-Both are defined by OEM's own specification.<br><br>
+ 2) The order list in the PolicyTable (corresponding to Policy server )<br><br>
+Both are defined by OEM's own specification.<br>
 
 2. The display status of SDL App Icon
 Two of the SDL App Icon display mode (ON/OFF) are already defined in the SDL Standard Specification.
